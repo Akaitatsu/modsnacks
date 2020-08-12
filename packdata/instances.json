@@ -1,0 +1,19 @@
+{
+    "instances":[
+        {
+            "name":"Low Carb Mod Snack",
+            "shortName":"LCMS",
+            "maxMemoryMB":3072
+        },
+        {
+            "name":"Whole Food Mod Snack",
+            "shortName":"WFMS",
+            "maxMemoryMB":4608
+        },
+        {
+            "name":"Gut Wagon Mod Snack",
+            "shortName":"GWMS",
+            "maxMemoryMB":6144
+        }
+    ]
+}
