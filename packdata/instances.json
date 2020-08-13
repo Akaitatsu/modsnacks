@@ -11,7 +11,7 @@
             },
             {
                 "name": "Advanced Finders",
-                "filenamePattern": "AdvancedFinders-1.15.2-%ver%",
+                "filenamePattern": "AdFinders-1.15.2-%ver%",
                 "currentVersion": "4.0.5.0-build.0020"
             },
             {
@@ -101,7 +101,7 @@
             },
             {
                 "name": "Corail Tombstone",
-                "filenamePattern": "tombstone-4.2.5-%ver%",
+                "filenamePattern": "tombstone-%ver%",
                 "currentVersion": "4.5.6"
             },
             {
@@ -126,7 +126,7 @@
             },
             {
                 "name": "Double Slabs",
-                "filenamePattern": "DoubleSlabs-1.15.2-%ver%",
+                "filenamePattern": "DoubleSlabs-1.15-%ver%",
                 "currentVersion": "2.10.1"
             },
             {
@@ -141,17 +141,17 @@
             },
             {
                 "name": "Endergetic Expansion, The",
-                "filenamePattern": "The-Endergetic-Expansion-1.15.2-%ver%",
+                "filenamePattern": "The-Endergetic-Expansion-1.15.2-v%ver%",
                 "currentVersion": "1.3.2"
             },
             {
                 "name": "Enhanced Mushrooms",
-                "filenamePattern": "Enhanced-Mushrooms-1.15.2-%ver%",
+                "filenamePattern": "Enhanced-Mushrooms-1.15.2-v%ver%",
                 "currentVersion": "1.2.2"
             },
             {
                 "name": "Extra Boats",
-                "filenamePattern": "ExtraBoats-1.15.2-%ver%",
+                "filenamePattern": "ExtraBoats-%ver%-1.15.2",
                 "currentVersion": "1.3.6"
             },
             {
@@ -192,7 +192,7 @@
             {
                 "name": "GameMenuModOption",
                 "filenamePattern": "GameMenuModOption-1.15.2-%ver%",
-                "currentVersion": "1.3.0"
+                "currentVersion": "1.3"
             },
             {
                 "name": "Inspirations",
@@ -242,7 +242,7 @@
             {
                 "name": "Kottle",
                 "filenamePattern": "Kottle-%ver%",
-                "currentVersion": ""
+                "currentVersion": "1.5.2"
             },
             {
                 "name": "KubeJS",
@@ -257,7 +257,7 @@
             {
                 "name": "Leaves Decay on other Leaves",
                 "filenamePattern": "leavesdecayonotherleaves-%ver%",
-                "currentVersion": "1.1.0"
+                "currentVersion": "1.1"
             },
             {
                 "name": "Light Overlay (Rift/Forge/Fabric)",
@@ -312,7 +312,7 @@
             {
                 "name": "Mouse Tweaks",
                 "filenamePattern": "MouseTweaks-%ver%-mc1.15.1",
-                "currentVersion": "2.13.0"
+                "currentVersion": "2.13"
             },
             {
                 "name": "Nature's Compass",
@@ -347,17 +347,17 @@
             {
                 "name": "Patchouli",
                 "filenamePattern": "Patchouli-1.15.2-%ver%",
-                "currentVersion": "1.2.35"
+                "currentVersion": "1.2-35"
             },
             {
                 "name": "Performant",
                 "filenamePattern": "performant-1.15-%ver%",
-                "currentVersion": "2.11.0"
+                "currentVersion": "2.11m"
             },
             {
                 "name": "Persistent Bits",
                 "filenamePattern": "PersistentBits-1.15.2-%ver%",
-                "currentVersion": ""
+                "currentVersion": "2.0.3"
             },
             {
                 "name": "Phosphor (Forge)",
@@ -422,7 +422,7 @@
             {
                 "name": "ServerConfig Updater",
                 "filenamePattern": "serverconfigupdater-%ver%",
-                "currentVersion": "1.1.0"
+                "currentVersion": "1.1"
             },
             {
                 "name": "Silent Gear",
@@ -522,18 +522,42 @@
             {
                 "name": "YUNG's Better Caves",
                 "filenamePattern": "BetterCaves-1.15.2-%ver%",
-                "currentVersion": "1.0.0"
+                "currentVersion": "1.0"
             }
         ]
     },
     {
         "name": "Whole Food Mod Snack",
         "shortName": "WFMS",
-        "maxMemoryMB": 4608
+        "maxMemoryMB": 4608,
+        "mods": [
+            {
+                "name": "Aquaculture",
+                "filenamePattern": "Aquaculture-1.15.2-%ver%",
+                "currentVersion": "2.0.16"
+            },
+            {
+                "name": "Biomes O' Plenty",
+                "filenamePattern": "BiomesOPlenty-1.15.2-%ver%-universal",
+                "currentVersion": "10.0.0.366"
+            }
+        ]
     },
     {
         "name": "Gut Wagon Mod Snack",
         "shortName": "GWMS",
-        "maxMemoryMB": 6144
+        "maxMemoryMB": 6144,
+        "mods": [
+            {
+                "name": "Advanced Chimneys",
+                "filenamePattern": "AdChimneys-1.15.2-%ver%",
+                "currentVersion": "5.0.6.0-build.0044"
+            },
+            {
+                "name": "Lost Cities",
+                "filenamePattern": "lostcities-1.15-%ver%",
+                "currentVersion": "3.0.1-alpha"
+            }
+        ]
     }
 ]
