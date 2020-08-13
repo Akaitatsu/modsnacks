@@ -1,0 +1,539 @@
+[
+    {
+        "name": "Low Carb Mod Snack",
+        "shortName": "LCMS",
+        "maxMemoryMB": 3072,
+        "mods": [
+            {
+                "name": "Abnormals Core",
+                "filenamePattern": "Abnormals-Core-1.15.2-%ver%",
+                "currentVersion": "1.0.6"
+            },
+            {
+                "name": "Advanced Finders",
+                "filenamePattern": "AdvancedFinders-1.15.2-%ver%",
+                "currentVersion": "4.0.5.0-build.0020"
+            },
+            {
+                "name": "AI Improvements",
+                "filenamePattern": "AI-Improvements-1.15.2-%ver%",
+                "currentVersion": "0.3.0"
+            },
+            {
+                "name": "Akashic Tome",
+                "filenamePattern": "AkashicTome-%ver%",
+                "currentVersion": "1.3-13"
+            },
+            {
+                "name": "AppleSkin",
+                "filenamePattern": "AppleSkin-mc1.15.2-forge-%ver%",
+                "currentVersion": "1.0.14"
+            },
+            {
+                "name": "Atmospheric",
+                "filenamePattern": "Atmospheric-1.15.2-%ver%",
+                "currentVersion": "1.4.1"
+            },
+            {
+                "name": "AttributeFix",
+                "filenamePattern": "AttributeFix-1.15.2-%ver%",
+                "currentVersion": "7.0.2"
+            },
+            {
+                "name": "AutoRegLib",
+                "filenamePattern": "AutoRegLib-%ver%",
+                "currentVersion": "1.5-40"
+            },
+            {
+                "name": "Autumnity",
+                "filenamePattern": "autumnity-%ver%-1.15.2",
+                "currentVersion": "1.3.3"
+            },
+            {
+                "name": "Bad Wither No Cookie Reloaded",
+                "filenamePattern": "bwncr-1.15.1-%ver%",
+                "currentVersion": "3.6.13"
+            },
+            {
+                "name": "Bamboo Blocks",
+                "filenamePattern": "Bamboo-Blocks-1.15.2-%ver%",
+                "currentVersion": "1.4.1"
+            },
+            {
+                "name": "Berry Good",
+                "filenamePattern": "berry_good-%ver%",
+                "currentVersion": "2.0.0"
+            },
+            {
+                "name": "Better Advancements",
+                "filenamePattern": "BetterAdvancements-1.15.2-%ver%",
+                "currentVersion": "0.1.0.99"
+            },
+            {
+                "name": "Better Burning",
+                "filenamePattern": "BetterBurning-1.15.2-%ver%",
+                "currentVersion": "1.3.4"
+            },
+            {
+                "name": "Buzzier Bees",
+                "filenamePattern": "Buzzier-Bees-1.15.2-%ver%",
+                "currentVersion": "1.5.2"
+            },
+            {
+                "name": "Cloth Config 2",
+                "filenamePattern": "config-2-%ver%",
+                "currentVersion": "3.0"
+            },
+            {
+                "name": "Clumps",
+                "filenamePattern": "Clumps-%ver%",
+                "currentVersion": "5.0.2.4"
+            },
+            {
+                "name": "Controlling",
+                "filenamePattern": "Controlling-%ver%",
+                "currentVersion": "6.1.5.6"
+            },
+            {
+                "name": "Cooking for Blockheads",
+                "filenamePattern": "CookingForBlockheads_1.15.2-%ver%",
+                "currentVersion": "8.0.3"
+            },
+            {
+                "name": "Corail Tombstone",
+                "filenamePattern": "tombstone-4.2.5-%ver%",
+                "currentVersion": "4.5.6"
+            },
+            {
+                "name": "CraftDumper",
+                "filenamePattern": "CraftDumper-1.15.2-%ver%",
+                "currentVersion": "3.3.2"
+            },
+            {
+                "name": "Crafting Tweaks",
+                "filenamePattern": "CraftingTweaks_1.15.2-%ver%",
+                "currentVersion": "11.0.1"
+            },
+            {
+                "name": "Curios API (Forge)",
+                "filenamePattern": "curios-FORGE-1.15.2-%ver%",
+                "currentVersion": "2.0.2.6"
+            },
+            {
+                "name": "Default Options",
+                "filenamePattern": "DefaultOptions_1.15.2-11.0.1",
+                "currentVersion": "11.0.1"
+            },
+            {
+                "name": "Double Slabs",
+                "filenamePattern": "DoubleSlabs-1.15.2-%ver%",
+                "currentVersion": "2.10.1"
+            },
+            {
+                "name": "Druidcraft",
+                "filenamePattern": "Druidcraft-1.15-%ver%",
+                "currentVersion": "0.4.21"
+            },
+            {
+                "name": "Dude! Where's my Horse?",
+                "filenamePattern": "dwmh-1.15.2-%ver%",
+                "currentVersion": "4.0.0"
+            },
+            {
+                "name": "Endergetic Expansion, The",
+                "filenamePattern": "The-Endergetic-Expansion-1.15.2-%ver%",
+                "currentVersion": "1.3.2"
+            },
+            {
+                "name": "Enhanced Mushrooms",
+                "filenamePattern": "Enhanced-Mushrooms-1.15.2-%ver%",
+                "currentVersion": "1.2.2"
+            },
+            {
+                "name": "Extra Boats",
+                "filenamePattern": "ExtraBoats-1.15.2-%ver%",
+                "currentVersion": "1.3.6"
+            },
+            {
+                "name": "Farming for Blockheads",
+                "filenamePattern": "FarmingForBlockheads_1.15.2-%ver%",
+                "currentVersion": "6.1.5"
+            },
+            {
+                "name": "Fast Leaf Decay",
+                "filenamePattern": "FastLeafDecay-%ver%",
+                "currentVersion": "v22"
+            },
+            {
+                "name": "FastFurnace",
+                "filenamePattern": "FastFurnace-1.15.1-%ver%",
+                "currentVersion": "3.0.0"
+            },
+            {
+                "name": "FastWorkbench",
+                "filenamePattern": "FastWorkbench-1.15.2-%ver%",
+                "currentVersion": "3.1.1"
+            },
+            {
+                "name": "Finite Water & Infinite Lava",
+                "filenamePattern": "finitewater-%ver%",
+                "currentVersion": "1.0"
+            },
+            {
+                "name": "ForgeEndertech",
+                "filenamePattern": "ForgeEndertech-1.15.2-%ver%",
+                "currentVersion": "6.0.4.0-build.0044"
+            },
+            {
+                "name": "FTB Backups",
+                "filenamePattern": "ftb-backups-%ver%",
+                "currentVersion": "2.1.0.2"
+            },
+            {
+                "name": "GameMenuModOption",
+                "filenamePattern": "GameMenuModOption-1.15.2-%ver%",
+                "currentVersion": "1.3.0"
+            },
+            {
+                "name": "Inspirations",
+                "filenamePattern": "Inspirations-1.15.2-%ver%",
+                "currentVersion": "1.1.0"
+            },
+            {
+                "name": "Inventory HUD+ (Forge)",
+                "filenamePattern": "InventoryHud_1.15.2.forge-%ver%",
+                "currentVersion": "3.0.1"
+            },
+            {
+                "name": "Inventory Tweaks Renewed",
+                "filenamePattern": "invtweaks-1.15.2-%ver%",
+                "currentVersion": "2.0.9"
+            },
+            {
+                "name": "JAOPCA",
+                "filenamePattern": "JAOPCA-1.15.2-%ver%",
+                "currentVersion": "3.2.0.14"
+            },
+            {
+                "name": "JEI Enchantment Info",
+                "filenamePattern": "JEIEnchantmentInfo-1.16.1-%ver%",
+                "currentVersion": "1.2.0"
+            },
+            {
+                "name": "JEI Integration",
+                "filenamePattern": "jeiintegration_1.15.2-%ver%",
+                "currentVersion": "3.1.0.1"
+            },
+            {
+                "name": "JEITweaker",
+                "filenamePattern": "JEITweaker-1.15.2-%ver%",
+                "currentVersion": "1.0.1.3"
+            },
+            {
+                "name": "Just Enough Items (JEI)",
+                "filenamePattern": "jei-1.15.2-%ver%",
+                "currentVersion": "6.0.2.12"
+            },
+            {
+                "name": "Just Enough Resources",
+                "filenamePattern": "JustEnoughResources-1.15.2-%ver%",
+                "currentVersion": "0.10.1.77"
+            },
+            {
+                "name": "Kottle",
+                "filenamePattern": "Kottle-%ver%",
+                "currentVersion": ""
+            },
+            {
+                "name": "KubeJS",
+                "filenamePattern": "kubejs-%ver%",
+                "currentVersion": "2.7.1.13"
+            },
+            {
+                "name": "Large Ore Deposits",
+                "filenamePattern": "AdLods-1.15.2-%ver%",
+                "currentVersion": "3.0.3.0-build.0035"
+            },
+            {
+                "name": "Leaves Decay on other Leaves",
+                "filenamePattern": "leavesdecayonotherleaves-%ver%",
+                "currentVersion": "1.1.0"
+            },
+            {
+                "name": "Light Overlay (Rift/Forge/Fabric)",
+                "filenamePattern": "light-overlay-%ver%",
+                "currentVersion": "4.7.0"
+            },
+            {
+                "name": "Ma Essentials",
+                "filenamePattern": "Ma-Essentials-1.15.2-%ver%",
+                "currentVersion": "3.1.1"
+            },
+            {
+                "name": "Macaw's Roofs",
+                "filenamePattern": "mcws-roofs-1.15.2-%ver%",
+                "currentVersion": "v2.0.0"
+            },
+            {
+                "name": "Macaw's Windows",
+                "filenamePattern": "mcws-win-1.15.2-%ver%",
+                "currentVersion": "v1.0.2"
+            },
+            {
+                "name": "Mantle",
+                "filenamePattern": "Mantle-1.15.2-%ver%",
+                "currentVersion": "1.5.15"
+            },
+            {
+                "name": "Mekanism",
+                "filenamePattern": "Mekanism-1.15.2-%ver%",
+                "currentVersion": "9.10.9.422"
+            },
+            {
+                "name": "Mekanism Additions",
+                "filenamePattern": "MekanismAdditions-1.15.2-%ver%",
+                "currentVersion": "9.10.9.422"
+            },
+            {
+                "name": "Mekanism Generators",
+                "filenamePattern": "MekanismGenerators-1.15.2-%ver%",
+                "currentVersion": "9.10.9.422"
+            },
+            {
+                "name": "Mekanism Tools",
+                "filenamePattern": "MekanismTools-1.15.2-%ver%",
+                "currentVersion": "9.10.9.422"
+            },
+            {
+                "name": "Mixin Bootstrap",
+                "filenamePattern": "MixinBootstrap-%ver%",
+                "currentVersion": "1.0.3"
+            },
+            {
+                "name": "Mouse Tweaks",
+                "filenamePattern": "MouseTweaks-%ver%-mc1.15.1",
+                "currentVersion": "2.13.0"
+            },
+            {
+                "name": "Nature's Compass",
+                "filenamePattern": "NaturesCompass-1.15.2-%ver%",
+                "currentVersion": "1.8.5"
+            },
+            {
+                "name": "Neat",
+                "filenamePattern": "Neat+%ver%",
+                "currentVersion": "1.6-22"
+            },
+            {
+                "name": "Nether Portal Fix",
+                "filenamePattern": "NetherPortalFix_1.15.2-%ver%",
+                "currentVersion": "6.0.2"
+            },
+            {
+                "name": "Occultism",
+                "filenamePattern": "occultism-%ver%",
+                "currentVersion": "0.2.11"
+            },
+            {
+                "name": "One Probe, The",
+                "filenamePattern": "theoneprobe-1.15-%ver%",
+                "currentVersion": "2.0.4"
+            },
+            {
+                "name": "Open Loader",
+                "filenamePattern": "OpenLoader-1.15.2-%ver%",
+                "currentVersion": "4.0.5"
+            },
+            {
+                "name": "Patchouli",
+                "filenamePattern": "Patchouli-1.15.2-%ver%",
+                "currentVersion": "1.2.35"
+            },
+            {
+                "name": "Performant",
+                "filenamePattern": "performant-1.15-%ver%",
+                "currentVersion": "2.11.0"
+            },
+            {
+                "name": "Persistent Bits",
+                "filenamePattern": "PersistentBits-1.15.2-%ver%",
+                "currentVersion": ""
+            },
+            {
+                "name": "Phosphor (Forge)",
+                "filenamePattern": "phosphor-forge-mc1.15.2-%ver%",
+                "currentVersion": "0.5.2+build.4"
+            },
+            {
+                "name": "Placebo",
+                "filenamePattern": "Placebo-1.15.2-%ver%",
+                "currentVersion": "3.1.0"
+            },
+            {
+                "name": "Polymorph (Forge)",
+                "filenamePattern": "polymorph-FORGE-1.15.2-%ver%",
+                "currentVersion": "0.9"
+            },
+            {
+                "name": "PreGenForge",
+                "filenamePattern": "PreGenForge-%ver%-mc1.15.2",
+                "currentVersion": "0.1.1"
+            },
+            {
+                "name": "Quark",
+                "filenamePattern": "Quark-%ver%",
+                "currentVersion": "r2.1-245"
+            },
+            {
+                "name": "Quark Oddities",
+                "filenamePattern": "QuarkOddities-%ver%",
+                "currentVersion": "1.15.2"
+            },
+            {
+                "name": "RandomPatches",
+                "filenamePattern": "RandomPatches-1.15.2-%ver%",
+                "currentVersion": "1.22.1.1"
+            },
+            {
+                "name": "ReAuth",
+                "filenamePattern": "ReAuth-1.14-1.15-%ver%",
+                "currentVersion": "3.8.1"
+            },
+            {
+                "name": "Respawnable Pets",
+                "filenamePattern": "respawnablepets-%ver%",
+                "currentVersion": "1.1.4"
+            },
+            {
+                "name": "Savage & Ravage",
+                "filenamePattern": "Savage-and-Ravage-1.15.2-%ver%",
+                "currentVersion": "1.1.4"
+            },
+            {
+                "name": "Save My Stronghold",
+                "filenamePattern": "SaveMyStronghold-1.15.2-%ver%",
+                "currentVersion": "1.0.1"
+            },
+            {
+                "name": "Server Tab Info",
+                "filenamePattern": "ServerTabInfo-1.15.2-%ver%",
+                "currentVersion": "1.2.7"
+            },
+            {
+                "name": "ServerConfig Updater",
+                "filenamePattern": "serverconfigupdater-%ver%",
+                "currentVersion": "1.1.0"
+            },
+            {
+                "name": "Silent Gear",
+                "filenamePattern": "SilentGear-1.15.2-%ver%",
+                "currentVersion": "1.8.2+109"
+            },
+            {
+                "name": "SilentLib",
+                "filenamePattern": "SilentLib-1.15.2-%ver%",
+                "currentVersion": "4.6.6+59"
+            },
+            {
+                "name": "Silent's Gems",
+                "filenamePattern": "SilentGems-1.15.2-%ver%",
+                "currentVersion": "3.5.5+88"
+            },
+            {
+                "name": "Silent's Mechanisms",
+                "filenamePattern": "SilentMechanisms-1.15.2-%ver%",
+                "currentVersion": "0.8.0+59"
+            },
+            {
+                "name": "Simple Storage Network",
+                "filenamePattern": "SimpleStorageNetwork-1.15.2-%ver%",
+                "currentVersion": "1.0.1"
+            },
+            {
+                "name": "Simply Backpacks",
+                "filenamePattern": "SimplyBackpacks-1.15.2-%ver%",
+                "currentVersion": "1.4.6"
+            },
+            {
+                "name": "Storage Drawers",
+                "filenamePattern": "StorageDrawers-1.15.2-%ver%",
+                "currentVersion": "7.0.2"
+            },
+            {
+                "name": "Swamp Expansion",
+                "filenamePattern": "Swamp-Expansion-1.15.2-%ver%",
+                "currentVersion": "1.7.3"
+            },
+            {
+                "name": "SwingThroughGrass",
+                "filenamePattern": "SwingThroughGrass-1.15.2-%ver%",
+                "currentVersion": "1.4.0"
+            },
+            {
+                "name": "TellMe-forge",
+                "filenamePattern": "TellMe-forge-1.15.2-%ver%",
+                "currentVersion": "0.8.1"
+            },
+            {
+                "name": "TerraForged",
+                "filenamePattern": "TerraForged-1.15.2-%ver%",
+                "currentVersion": "0.1.1"
+            },
+            {
+                "name": "Toast Control",
+                "filenamePattern": "ToastControl-1.15.2-%ver%",
+                "currentVersion": "3.0.1"
+            },
+            {
+                "name": "Tool Belt",
+                "filenamePattern": "ToolBelt-1.15.2-%ver%",
+                "currentVersion": "1.14.1"
+            },
+            {
+                "name": "TrashSlot",
+                "filenamePattern": "TrashSlot_1.15.2-%ver%",
+                "currentVersion": "11.0.0"
+            },
+            {
+                "name": "Upgrade Aquatic",
+                "filenamePattern": "Upgrade-Aquatic-1.15.2-%ver%",
+                "currentVersion": "1.7.1"
+            },
+            {
+                "name": "V-Tweaks",
+                "filenamePattern": "VTweaks-1.15.2-%ver%",
+                "currentVersion": "3.1.7"
+            },
+            {
+                "name": "Waterworks",
+                "filenamePattern": "Waterworks-1.15.2-%ver%",
+                "currentVersion": "2.1.2"
+            },
+            {
+                "name": "Xaero's Minimap",
+                "filenamePattern": "Xaeros_Minimap_%ver%_Forge_1.15.2",
+                "currentVersion": "20.18.0.1"
+            },
+            {
+                "name": "Xaero's World Map",
+                "filenamePattern": "XaerosWorldMap_%ver%_Forge_1.15.2",
+                "currentVersion": "1.8.1"
+            },
+            {
+                "name": "YUNG's Better Caves",
+                "filenamePattern": "BetterCaves-1.15.2-%ver%",
+                "currentVersion": "1.0.0"
+            }
+        ]
+    },
+    {
+        "name": "Whole Food Mod Snack",
+        "shortName": "WFMS",
+        "maxMemoryMB": 4608
+    },
+    {
+        "name": "Gut Wagon Mod Snack",
+        "shortName": "GWMS",
+        "maxMemoryMB": 6144
+    }
+]
