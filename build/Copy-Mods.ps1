@@ -3,5 +3,6 @@ param (
 )
 Write-Host "  Copying Mods"
 $targetModsPath = "..\..\MultiMC\instances\$($instanceObject.shortName)\.minecraft\mods"
+Remove-Item ($targetModsPath + "\*.jar")
 Copy-Item -Path "..\modcache\*.jar" -Destination $targetModsPath
 Write-Host "  Copied Mods"
