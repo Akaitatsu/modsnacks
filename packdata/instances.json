@@ -529,11 +529,35 @@
     {
         "name": "Whole Food Mod Snack",
         "shortName": "WFMS",
-        "maxMemoryMB": 4608
+        "maxMemoryMB": 4608,
+        "mods": [
+            {
+                "name": "Aquaculture",
+                "filenamePattern": "Aquaculture-1.15.2-%ver%",
+                "currentVersion": "2.0.16"
+            },
+            {
+                "name": "Biomes O' Plenty",
+                "filenamePattern": "BiomesOPlenty-1.15.2-%ver%-universal",
+                "currentVersion": "10.0.0.366"
+            }
+        ]
     },
     {
         "name": "Gut Wagon Mod Snack",
         "shortName": "GWMS",
-        "maxMemoryMB": 6144
+        "maxMemoryMB": 6144,
+        "mods": [
+            {
+                "name": "Advanced Chimneys",
+                "filenamePattern": "AdChimneys-1.15.2-%ver%",
+                "currentVersion": "5.0.6.0-build.0044"
+            },
+            {
+                "name": "Lost Cities",
+                "filenamePattern": "lostcities-1.15-%ver%",
+                "currentVersion": "3.0.1-alpha"
+            }
+        ]
     }
 ]
