@@ -512,12 +512,12 @@
             {
                 "name": "Xaero's Minimap",
                 "filenamePattern": "Xaeros_Minimap_%ver%_Forge_1.15.2",
-                "currentVersion": "20.18.0.1"
+                "currentVersion": "20.20.0"
             },
             {
                 "name": "Xaero's World Map",
                 "filenamePattern": "XaerosWorldMap_%ver%_Forge_1.15.2",
-                "currentVersion": "1.8.1"
+                "currentVersion": "1.10.0"
             },
             {
                 "name": "YUNG's Better Caves",
@@ -532,14 +532,319 @@
         "maxMemoryMB": 4608,
         "mods": [
             {
+                "name": "Absent by Design",
+                "filenamePattern": "AbsentbyDesign-1.15.2-%ver%",
+                "currentVersion": "1.1.0"
+            },
+            {
+                "name": "Advanced Hook Launchers",
+                "filenamePattern": "AdHooks-1.15.2-%ver%",
+                "currentVersion": "5.1.0.0-build.0046"
+            },
+            {
+                "name": "Ambient Sounds 3",
+                "filenamePattern": "AmbientSounds_v%ver%_mc1.15.2",
+                "currentVersion": "3.0.20"
+            },
+            {
+                "name": "Apotheosis",
+                "filenamePattern": "Apotheosis-1.15.2-%ver%",
+                "currentVersion": "3.2.4"
+            },
+            {
                 "name": "Aquaculture",
                 "filenamePattern": "Aquaculture-1.15.2-%ver%",
                 "currentVersion": "2.0.16"
             },
             {
+                "name": "Archer's Paradox",
+                "filenamePattern": "archers_paradox-1.15.2-%ver%",
+                "currentVersion": "0.4.0b"
+            },
+            {
+                "name": "Attained Drops 2",
+                "filenamePattern": "AttainedDrops-1.15.2-%ver%",
+                "currentVersion": "6.0.7"
+            },
+            {
+                "name": "Bed Benefits",
+                "filenamePattern": "BedBenefits-1.15.2-%ver%",
+                "currentVersion": "1.0.4"
+            },
+            {
                 "name": "Biomes O' Plenty",
                 "filenamePattern": "BiomesOPlenty-1.15.2-%ver%-universal",
                 "currentVersion": "10.0.0.366"
+            },
+            {
+                "name": "Bloomful",
+                "filenamePattern": "Bloomful-1.15.2-%ver%",
+                "currentVersion": "1.4.1"
+            },
+            {
+                "name": "Bookshelf",
+                "filenamePattern": "Bookshelf-1.15.2-%ver%",
+                "currentVersion": "5.6.40"
+            },
+            {
+                "name": "Botania",
+                "filenamePattern": "Botania-%ver%",
+                "currentVersion": "r1.15-388"
+            },
+            {
+                "name": "Bountiful",
+                "filenamePattern": "Bountiful-1.15.2-%ver%",
+                "currentVersion": "3.1.2"
+            },
+            {
+                "name": "Charm",
+                "filenamePattern": "Charm-1.15.2-%ver%",
+                "currentVersion": "1.5.9"
+            },
+            {
+                "name": "COFH Core",
+                "filenamePattern": "cofh_core-1.15.2-%ver%",
+                "currentVersion": "0.4.0b"
+            },
+            {
+                "name": "Conjurer, The",
+                "filenamePattern": "the-conjurer-1.15.2-%ver%",
+                "currentVersion": "1.0.7"
+            },
+            {
+                "name": "Covalent",
+                "filenamePattern": "Covalent-1.15.2-%ver%",
+                "currentVersion": "1.0.2"
+            },
+            {
+                "name": "Create",
+                "filenamePattern": "create-mc1.15.2_v%ver%",
+                "currentVersion": "0.2.4d"
+            },
+            {
+                "name": "Curio of Undying (Forge)",
+                "filenamePattern": "curioofundying-FORGE-1.15.2-%ver%",
+                "currentVersion": "3.0"
+            },
+            {
+                "name": "Decorative Blocks",
+                "filenamePattern": "decorative_blocks-%ver%",
+                "currentVersion": "6e"
+            },
+            {
+                "name": "Dungeons Plus",
+                "filenamePattern": "dungeons-plus-1.15.2-%ver%",
+                "currentVersion": "1.0.2"
+            },
+            {
+                "name": "EmbellishCraft",
+                "filenamePattern": "EmbellishCraft-1.15.2-%ver%",
+                "currentVersion": "2.2.1.0"
+            },
+            {
+                "name": "EmbellishCraft: Biomes O'Plenty Addon",
+                "filenamePattern": "embellishcraft-bop-1.15.2-%ver%",
+                "currentVersion": "2.1.1"
+            },
+            {
+                "name": "Enemyz",
+                "filenamePattern": "Enemyz-1.15.2-%ver%",
+                "currentVersion": "1.0.1"
+            },
+            {
+                "name": "Equipment Tooltips",
+                "filenamePattern": "EquipmentTooltips-1.15.2-%ver%",
+                "currentVersion": "1.4.3+14"
+            },
+            {
+                "name": "Exotic Birds",
+                "filenamePattern": "ExoticBirds-1.15.2-%ver%",
+                "currentVersion": "1.0.2"
+            },
+            {
+                "name": "Extra Disks",
+                "filenamePattern": "ExtraDisks-1.15.2-%ver%",
+                "currentVersion": "1.2.2"
+            },
+            {
+                "name": "Forbidden and Arcanus",
+                "filenamePattern": "forbidden_arcanus-1.15.2-%ver%",
+                "currentVersion": "1.5"
+            },
+            {
+                "name": "In Control!",
+                "filenamePattern": "incontrol-1.15-%ver%",
+                "currentVersion": "4.0.4"
+            },
+            {
+                "name": "Incubation",
+                "filenamePattern": "incubation-%ver%-1.15.2",
+                "currentVersion": "1.0.4"
+            },
+            {
+                "name": "Iron Chests",
+                "filenamePattern": "ironchest-1.15.2-%ver%",
+                "currentVersion": "10.0.3"
+            },
+            {
+                "name": "Lightest Lamps",
+                "filenamePattern": "lightestlamp-%ver%",
+                "currentVersion": "3.4.3"
+            },
+            {
+                "name": "Lollipop",
+                "filenamePattern": "Lollipop-1.15.2-%ver%",
+                "currentVersion": "1.0.16"
+            },
+            {
+                "name": "Macaw's Bridges",
+                "filenamePattern": "mcw-bridges-%ver%-mc1.15.2",
+                "currentVersion": "1.0.4fix"
+            },
+            {
+                "name": "Mana Gear",
+                "filenamePattern": "ManaGear-1.15.2-%ver%",
+                "currentVersion": "1.2.0"
+            },
+            {
+                "name": "Mapper Base",
+                "filenamePattern": "MapperBase-1.15.2-%ver%",
+                "currentVersion": "1.1.1.0"
+            },
+            {
+                "name": "McJtyLib",
+                "filenamePattern": "mcjtylib-1.15-%ver%",
+                "currentVersion": "4.1.3-beta"
+            },
+            {
+                "name": "Miner's Helmet",
+                "filenamePattern": "mining-helmet-1.15.2-%ver%",
+                "currentVersion": "1.0.8"
+            },
+            {
+                "name": "Mining Gadgets",
+                "filenamePattern": "mininggadgets-%ver%",
+                "currentVersion": "1.3.5"
+            },
+            {
+                "name": "Pam's Harvestcraft 2 - Crops",
+                "filenamePattern": "pamhc2crops-1.15.2-%ver%",
+                "currentVersion": "1.0.5"
+            },
+            {
+                "name": "Pam's Harvestcraft 2 - Food Core",
+                "filenamePattern": "pamhc2foodcore-1.15.2-%ver%",
+                "currentVersion": "1.0.9"
+            },
+            {
+                "name": "Pam's Harvestcraft 2 - Trees",
+                "filenamePattern": "pamhc2trees-1.15.2-%ver%",
+                "currentVersion": "1.0.5"
+            },
+            {
+                "name": "Pane in the Glass",
+                "filenamePattern": "pitg-1.15.2-%ver%",
+                "currentVersion": "1.4.1"
+            },
+            {
+                "name": "Pretty Beaches",
+                "filenamePattern": "PrettyBeaches_1.15.2-%ver%",
+                "currentVersion": "4.0.1"
+            },
+            {
+                "name": "Refined Pipes",
+                "filenamePattern": "refinedpipes-%ver%",
+                "currentVersion": "0.4.2"
+            },
+            {
+                "name": "Refined Storage",
+                "filenamePattern": "refinedstorage-%ver%",
+                "currentVersion": "1.8.8"
+            },
+            {
+                "name": "Refined Storage Addons",
+                "filenamePattern": "refinedstorageaddons-%ver%",
+                "currentVersion": "0.6.3"
+            },
+            {
+                "name": "Reliquary v1.3",
+                "filenamePattern": "Reliquary-1.15.2-%ver%",
+                "currentVersion": "1.3.4.995"
+            },
+            {
+                "name": "RFTools Base",
+                "filenamePattern": "rftoolsbase-1.15-%ver%",
+                "currentVersion": "1.1.3-beta"
+            },
+            {
+                "name": "RFTools Builder",
+                "filenamePattern": "rftoolsbuilder-1.15-%ver%",
+                "currentVersion": "2.1.5-beta"
+            },
+            {
+                "name": "RFTools Power",
+                "filenamePattern": "rftoolspower-1.15-%ver%",
+                "currentVersion": "2.2.0-beta"
+            },
+            {
+                "name": "RFTools Storage",
+                "filenamePattern": "rftoolsstorage-1.15-%ver%",
+                "currentVersion": "1.1.6-beta"
+            },
+            {
+                "name": "RFTools Utility",
+                "filenamePattern": "rftoolsutility-1.15-%ver%",
+                "currentVersion": "2.1.5-beta"
+            },
+            {
+                "name": "Simply Tea!",
+                "filenamePattern": "simplytea-1.15.2-%ver%",
+                "currentVersion": "2.2.1"
+            },
+            {
+                "name": "Slime Tweaks",
+                "filenamePattern": "SlimeTweaks-1.15.2-%ver%",
+                "currentVersion": "1.0.2"
+            },
+            {
+                "name": "Solar Flux Reborn",
+                "filenamePattern": "SolarFluxReborn-1.15.2-%ver%",
+                "currentVersion": "15.2.3"
+            },
+            {
+                "name": "Spice of Life: Carrot Edition",
+                "filenamePattern": "solcarrot-1.15.2-%ver%",
+                "currentVersion": "1.9.7"
+            },
+            {
+                "name": "Structure Gel",
+                "filenamePattern": "structure-gel-api-1.15.2-%ver%",
+                "currentVersion": "1.1.0"
+            },
+            {
+                "name": "To the Bat Poles!",
+                "filenamePattern": "AdPoles-1.15.2-%ver%",
+                "currentVersion": "4.0.1.0-build.0009"
+            },
+            {
+                "name": "Voyage",
+                "filenamePattern": "Voyage-1.15.2-%ver%",
+                "currentVersion": "1.0.2"
+            },
+            {
+                "name": "Xnet",
+                "filenamePattern": "Xnet-1.15-%ver%",
+                "currentVersion": "2.1.7-beta"
+            },
+            {
+                "name": "Xnet Gases",
+                "filenamePattern": "XnetGases-1.15.2-%ver%",
+                "currentVersion": "1.0.0"
+            },
+            {
+                "name": "YUNG's Better Mineshafts",
+                "filenamePattern": "BetterMineshaftsForge-1.15.2-%ver%",
+                "currentVersion": "1.3"
             }
         ]
     },
