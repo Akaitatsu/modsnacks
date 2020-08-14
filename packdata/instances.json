@@ -607,6 +607,11 @@
                 "currentVersion": "0.4.0b"
             },
             {
+                "name": "Conjurer, The",
+                "filenamePattern": "the-conjurer-1.15.2-%ver%",
+                "currentVersion": "1.0.7"
+            },
+            {
                 "name": "Covalent",
                 "filenamePattern": "Covalent-1.15.2-%ver%",
                 "currentVersion": "1.0.2"
@@ -625,6 +630,11 @@
                 "name": "Decorative Blocks",
                 "filenamePattern": "decorative_blocks-%ver%",
                 "currentVersion": "6e"
+            },
+            {
+                "name": "Dungeons Plus",
+                "filenamePattern": "dungeons-plus-1.15.2-%ver%",
+                "currentVersion": "1.0.2"
             },
             {
                 "name": "EmbellishCraft",
@@ -805,6 +815,11 @@
                 "name": "Spice of Life: Carrot Edition",
                 "filenamePattern": "solcarrot-1.15.2-%ver%",
                 "currentVersion": "1.9.7"
+            },
+            {
+                "name": "Structure Gel",
+                "filenamePattern": "structure-gel-api-1.15.2-%ver%",
+                "currentVersion": "1.1.0"
             },
             {
                 "name": "To the Bat Poles!",
