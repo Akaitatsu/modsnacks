@@ -532,14 +532,84 @@
         "maxMemoryMB": 4608,
         "mods": [
             {
+                "name": "Absent by Design",
+                "filenamePattern": "AbsentbyDesign-1.15.2-%ver%",
+                "currentVersion": "1.1.0"
+            },
+            {
+                "name": "Advanced Hook Launchers",
+                "filenamePattern": "AdHooks-1.15.2-%ver%",
+                "currentVersion": "5.1.0.0-build.0046"
+            },
+            {
+                "name": "Ambient Sounds 3",
+                "filenamePattern": "AmbientSounds_v%ver%_mc1.15.2",
+                "currentVersion": "3.0.20"
+            },
+            {
+                "name": "Apotheosis",
+                "filenamePattern": "Apotheosis-1.15.2-%ver%",
+                "currentVersion": "3.2.4"
+            },
+            {
                 "name": "Aquaculture",
                 "filenamePattern": "Aquaculture-1.15.2-%ver%",
                 "currentVersion": "2.0.16"
             },
             {
+                "name": "Archer's Paradox",
+                "filenamePattern": "archers_paradox-1.15.2-%ver%",
+                "currentVersion": "0.4.0b"
+            },
+            {
+                "name": "Attained Drops 2",
+                "filenamePattern": "AttainedDrops-1.15.2-%ver%",
+                "currentVersion": "6.0.7"
+            },
+            {
+                "name": "Bed Benefits",
+                "filenamePattern": "BedBenefits-1.15.2-%ver%",
+                "currentVersion": "1.0.4"
+            },
+            {
                 "name": "Biomes O' Plenty",
                 "filenamePattern": "BiomesOPlenty-1.15.2-%ver%-universal",
                 "currentVersion": "10.0.0.366"
+            },
+            {
+                "name": "Bloomful",
+                "filenamePattern": "Bloomful-1.15.2-%ver%",
+                "currentVersion": "1.4.1"
+            },
+            {
+                "name": "Bookshelf",
+                "filenamePattern": "Bookshelf-1.15.2-%ver%",
+                "currentVersion": "5.6.40"
+            },
+            {
+                "name": "Botania",
+                "filenamePattern": "Botania-%ver%",
+                "currentVersion": "r1.15-388"
+            },
+            {
+                "name": "Bountiful",
+                "filenamePattern": "Bountiful-1.15.2-%ver%",
+                "currentVersion": "3.1.2"
+            },
+            {
+                "name": "Charm",
+                "filenamePattern": "Charm-1.15.2-%ver%",
+                "currentVersion": "1.5.9"
+            },
+            {
+                "name": "COFH Core",
+                "filenamePattern": "cofh_core-1.15.2-%ver%",
+                "currentVersion": "0.4.0b"
+            },
+            {
+                "name": "Covalent",
+                "filenamePattern": "Covalent-1.15.2-%ver%",
+                "currentVersion": "1.0.2"
             }
         ]
     },
