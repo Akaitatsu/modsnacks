@@ -80,6 +80,21 @@
                 "currentVersion": "1.5.2"
             },
             {
+                "name": "CC: Tweaked",
+                "filenamePattern": "cc-tweaked-1.15.2-%ver%",
+                "currentVersion": "1.90.2"
+            },
+            {
+                "name": "Ceramics",
+                "filenamePattern": "Ceramics-1.15.2-%ver%",
+                "currentVersion": "1.4.0"
+            },
+            {
+                "name": "Cherished Worlds (Forge)",
+                "filenamePattern": "cherishedworlds-FORGE-1.15.2-%ver%",
+                "currentVersion": "3.0.0.1"
+            },
+            {
                 "name": "Cloth Config 2",
                 "filenamePattern": "config-2-%ver%",
                 "currentVersion": "3.0"
@@ -103,6 +118,11 @@
                 "name": "Corail Tombstone",
                 "filenamePattern": "tombstone-%ver%",
                 "currentVersion": "4.5.6"
+            },
+            {
+                "name": "Cosmetic Armor Reworked",
+                "filenamePattern": "CosmeticArmorReworked-1.15.2-%ver%",
+                "currentVersion": "v3a"
             },
             {
                 "name": "CraftDumper",
@@ -859,9 +879,314 @@
                 "currentVersion": "5.0.6.0-build.0044"
             },
             {
+                "name": "Applied Energistics 2",
+                "filenamePattern": "appliedenergistics2-%ver%-beta.2",
+                "currentVersion": "7.0.0"
+            },
+            {
+                "name": "Atum 2: Return to the Sands",
+                "filenamePattern": "Atum-1.15.2-%ver%",
+                "currentVersion": "2.1.4"
+            },
+            {
+                "name": "Bonsai Trees",
+                "filenamePattern": "BonsaiTrees-%ver%",
+                "currentVersion": "2.1.2.6"
+            },
+            {
+                "name": "Botany Pots",
+                "filenamePattern": "BotanyPots-1.15.2-%ver%",
+                "currentVersion": "2.0.27"
+            },
+            {
+                "name": "Caelus API (Forge)",
+                "filenamePattern": "caelus-FORGE-1.15.2-%ver%",
+                "currentVersion": "2.0-beta3"
+            },
+            {
+                "name": "CodeChicken Lib 1.8.+",
+                "filenamePattern": "CodeChickenLib-1.15.2-%ver%-universal",
+                "currentVersion": "3.3.1.379"
+            },
+            {
+                "name": "Cucumber",
+                "filenamePattern": "Cucumber-1.15.2-%ver%",
+                "currentVersion": "3.0.9"
+            },
+            {
+                "name": "Culinary Construct",
+                "filenamePattern": "culinaryconstruct-FORGE-1.15.2-%ver%",
+                "currentVersion": "2.0.0.2"
+            },
+            {
+                "name": "Curious Elytra",
+                "filenamePattern": "curiouselytra-FORGE-1.15.2-%ver%",
+                "currentVersion": "2.0"
+            },
+            {
+                "name": "Dark Paintings",
+                "filenamePattern": "DarkPaintings-1.15.2-%ver%",
+                "currentVersion": "1.0.6"
+            },
+            {
+                "name": "Dark Utilities",
+                "filenamePattern": "DarkUtilities-1.15.2-%ver%",
+                "currentVersion": "3.1.8"
+            },
+            {
+                "name": "Doggy Talents",
+                "filenamePattern": "DoggyTalents-1.15.2-%ver%",
+                "currentVersion": "1.15.2.3"
+            },
+            {
+                "name": "Ender Storage 1.8+",
+                "filenamePattern": "EnderStorage-1.15.2-%ver%-universal",
+                "currentVersion": "2.5.0.151"
+            },
+            {
+                "name": "Engineer's Decor",
+                "filenamePattern": "EngineersDecor-1.15.2-%ver%",
+                "currentVersion": "1.1.2"
+            },
+            {
+                "name": "Ensorcellation",
+                "filenamePattern": "Ensorcellation-1.15.2-%ver%",
+                "currentVersion": "0.4.1b"
+            },
+            {
+                "name": "Essentials",
+                "filenamePattern": "Essentials-1.15.2-%ver%",
+                "currentVersion": "2.7.4"
+            },
+            {
+                "name": "Extended Lights",
+                "filenamePattern": "extlights-%ver%",
+                "currentVersion": "2.1"
+            },
+            {
+                "name": "Extended Nether",
+                "filenamePattern": "Extended-Nether+1.15.2+%ver%",
+                "currentVersion": "Beta-3.1.3"
+            },
+            {
+                "name": "Fairy Lights",
+                "filenamePattern": "fairylights-%ver%-1.15.2",
+                "currentVersion": "3.0.7"
+            },
+            {
+                "name": "Farlanders, The",
+                "filenamePattern": "farlanders-1.15.2-%ver%",
+                "currentVersion": "1.3.1"
+            },
+            {
+                "name": "Flux Networks",
+                "filenamePattern": "FluxNetworks-1.15.2-%ver%",
+                "currentVersion": "5.0.3-4"
+            },
+            {
+                "name": "Immersive Engineering",
+                "filenamePattern": "ImmersiveEngineering-1.15.2-%ver%",
+                "currentVersion": "3.1-111"
+            },
+            {
+                "name": "Immersive Posts",
+                "filenamePattern": "immersiveposts-1.15.2-%ver%",
+                "currentVersion": "2.1.0"
+            },
+            {
+                "name": "Industrial Foregoing",
+                "filenamePattern": "industrial-foregoing-1.15.2-%ver%",
+                "currentVersion": "2.3.3-e356e61"
+            },
+            {
+                "name": "Kiwi",
+                "filenamePattern": "Kiwi-1.15.2-%ver%",
+                "currentVersion": "2.8.2"
+            },
+            {
+                "name": "Libnonymous",
+                "filenamePattern": "Libnonymous-1.15.2-%ver%",
+                "currentVersion": "1.1.1.5"
+            },
+            {
                 "name": "Lost Cities",
                 "filenamePattern": "lostcities-1.15-%ver%",
                 "currentVersion": "3.0.1-alpha"
+            },
+            {
+                "name": "Macaw's Doors",
+                "filenamePattern": "mcw-doors-%ver%-mc1.15.2",
+                "currentVersion": "1.0.0"
+            },
+            {
+                "name": "Macaw's Furniture",
+                "filenamePattern": "mcw-furniture-%ver%-mc1.15.1+1.15.2",
+                "currentVersion": "1.0.1"
+            },
+            {
+                "name": "mGui",
+                "filenamePattern": "mGui-1.15.2-%ver%",
+                "currentVersion": "2.1.1"
+            },
+            {
+                "name": "Midnight, The",
+                "filenamePattern": "themidnight-%ver%",
+                "currentVersion": "0.5.9"
+            },
+            {
+                "name": "MineColonies",
+                "filenamePattern": "minecolonies-%ver%-universal",
+                "currentVersion": "0.13.81-RELEASE"
+            },
+            {
+                "name": "Morph-o-Tool",
+                "filenamePattern": "Morph-o-Tool-%ver%",
+                "currentVersion": "1.3-23"
+            },
+            {
+                "name": "MrCrayfish's Furniture Mod",
+                "filenamePattern": "furniture-%ver%",
+                "currentVersion": "7.0.0-pre16-1.15.1"
+            },
+            {
+                "name": "MrCrayfish's Vehicle Mod",
+                "filenamePattern": "vehicle-mod-%ver%-1.15.2",
+                "currentVersion": "0.44.1"
+            },
+            {
+                "name": "Mystical Agradditions",
+                "filenamePattern": "MysticalAgradditions-1.15.2-%ver%",
+                "currentVersion": "3.0.1"
+            },
+            {
+                "name": "Mystical Agriculture",
+                "filenamePattern": "MysticalAgriculture-1.15.2-%ver%",
+                "currentVersion": "3.0.10"
+            },
+            {
+                "name": "Mystical Customization",
+                "filenamePattern": "MysticalCustomization-1.15.2-%ver%",
+                "currentVersion": "1.0.0"
+            },
+            {
+                "name": "Mystical World",
+                "filenamePattern": "MysticalWorld-1.15.2-%ver%",
+                "currentVersion": "2.0.6"
+            },
+            {
+                "name": "MysticalLib",
+                "filenamePattern": "MysticalLib-1.15.2-%ver%",
+                "currentVersion": "2.0.1"
+            },
+            {
+                "name": "Obfuscate",
+                "filenamePattern": "obfuscate-%ver%-1.15.2",
+                "currentVersion": "0.4.3"
+            },
+            {
+                "name": "OpenBlocks Elevator",
+                "filenamePattern": "elevatorid-1.15.2-%ver%",
+                "currentVersion": "1.7.1"
+            },
+            {
+                "name": "Paintings++",
+                "filenamePattern": "paintings-1.15.2-%ver%",
+                "currentVersion": "7.0.0.0"
+            },
+            {
+                "name": "Powah!",
+                "filenamePattern": "Powah-1.15.2-%ver%",
+                "currentVersion": "1.1.15"
+            },
+            {
+                "name": "Progressive Bosses",
+                "filenamePattern": "ProgressiveBosses-%ver%-mc1.15.2",
+                "currentVersion": "2.1.5"
+            },
+            {
+                "name": "ProjectE",
+                "filenamePattern": "ProjectE-1.15.2-PE%ver%",
+                "currentVersion": "1.0.4"
+            },
+            {
+                "name": "Psi",
+                "filenamePattern": "Psi+%ver%",
+                "currentVersion": "r1.2-83"
+            },
+            {
+                "name": "Ranged Pumps",
+                "filenamePattern": "rangedpumps-%ver%",
+                "currentVersion": "0.7.1"
+            },
+            {
+                "name": "RFTools Control",
+                "filenamePattern": "rftoolscontrol-1.15-%ver%",
+                "currentVersion": "3.0.3-beta"
+            },
+            {
+                "name": "Road Stuff",
+                "filenamePattern": "RoadStuff-1.15.2-%ver%",
+                "currentVersion": "3.2.0"
+            },
+            {
+                "name": "Scenic",
+                "filenamePattern": "Scenic-1.15.2-%ver%",
+                "currentVersion": "1.0.2"
+            },
+            {
+                "name": "Simple Farming",
+                "filenamePattern": "SimpleFarming-1.15.2-%ver%",
+                "currentVersion": "1.3.0"
+            },
+            {
+                "name": "Snow! Real Magic!",
+                "filenamePattern": "SnowRealMagic-1.15.2-%ver%",
+                "currentVersion": "1.7.5"
+            },
+            {
+                "name": "Structurize",
+                "filenamePattern": "structurize-%ver%",
+                "currentVersion": "0.13.31-RELEASE"
+            },
+            {
+                "name": "Strange",
+                "filenamePattern": "Strange-1.15.2-%ver%",
+                "currentVersion": "1.0.0-beta.5.hotfix1"
+            },
+            {
+                "name": "Tetra",
+                "filenamePattern": "Tetra-1.15.2-%ver%",
+                "currentVersion": "2.18.1"
+            },
+            {
+                "name": "Titanium",
+                "filenamePattern": "Titanium-1.15.2-%ver%",
+                "currentVersion": "2.4.2"
+            },
+            {
+                "name": "Torch Slabs Mod",
+                "filenamePattern": "torchslabmod-1.15.2_v%ver%",
+                "currentVersion": "1.7.0"
+            },
+            {
+                "name": "U Team Core",
+                "filenamePattern": "u_team_core-1.15.2-%ver%",
+                "currentVersion": "3.0.2.169"
+            },
+            {
+                "name": "Useful Railroads",
+                "filenamePattern": "useful_railroads-1.15.2-%ver%",
+                "currentVersion": "1.4.0.23"
+            },
+            {
+                "name": "Valhelsia Structures",
+                "filenamePattern": "valhelsia_structures-%ver%",
+                "currentVersion": "15.0.3a"
+            },
+            {
+                "name": "Wither Skeleton Tweaks",
+                "filenamePattern": "WitherSkeletonTweaks-1.15.1-%ver%",
+                "currentVersion": "4.0.0"
             }
         ]
     }
