@@ -15,14 +15,16 @@ function Test-ModCache {
     $foundModCount = 0
     foreach ($instance in $allInstances) {
         foreach ($mod in $instance.mods) {
-            $modFilename = Get-ModFilename $mod
-            $modPath = Get-ModFilePath $mod
-            $totalModCount++
-            if (Test-Path $modPath) {
-                $foundModCount++
-            }
-            else {
-                Write-Host ("  Missing {0} for {1}" -f $modFilename, $instance.name)
+            if ($mod.filenamePattern -ne "NA") {
+                $modFilename = Get-ModFilename $mod
+                $modPath = Get-ModFilePath $mod
+                $totalModCount++
+                if (Test-Path $modPath) {
+                    $foundModCount++
+                }
+                else {
+                    Write-Host ("  Missing {0} for {1}" -f $modFilename, $instance.name)
+                }
             }
         }
     }
@@ -34,8 +36,9 @@ function Copy-ModFromCache {
         $modObject,
         [string]$destinationPath
     )
-    $sourcePath = Get-ModFilePath $modObject
-    #$destinationFilePath = $destinationPath + (Get-ModFilename $modObject)
-    $destinationFilePath
-    Copy-Item -Path $sourcePath -Destination $destinationPath
+    if ($modObject.filenamePattern -ne "NA") {
+        $sourcePath = Get-ModFilePath $modObject
+        $destinationFilePath
+        Copy-Item -Path $sourcePath -Destination $destinationPath    
+    }
 }
