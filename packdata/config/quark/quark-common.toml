@@ -752,10 +752,10 @@
 			"Is Blacklist" = false
 
 	[world.new_stone_types]
-		"Enable Marble" = false
+		"Enable Marble" = true
 		"Enable Jasper" = true
-		"Enable Basalt" = false
-		"Enable Slate" = false
+		"Enable Basalt" = true
+		"Enable Slate" = true
 		"Enable Limestone" = true
 
 		[world.new_stone_types.marble]
