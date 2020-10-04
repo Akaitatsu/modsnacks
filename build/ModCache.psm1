@@ -1,3 +1,5 @@
+Import-Module .\ModConfig.psm1 -Force
+
 # Verify that all the mods defined in the instance configuration have been downloaded to the modcache folder
 function Get-ModFilename {
     param ($modObject)
