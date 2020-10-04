@@ -747,7 +747,7 @@
                 "name": "Create",
                 "modid": "create",
                 "filenamePattern": "create-mc1.15.2_v%ver%",
-                "currentVersion": "0.2.4d"
+                "currentVersion": "0.2.4e"
             },
             {
                 "name": "Curio of Undying",
