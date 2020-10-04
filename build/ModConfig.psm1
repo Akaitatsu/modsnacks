@@ -1,17 +1,12 @@
-function Add-LodDepositConfig {
+function New-LodDepositConfig {
     param (
-        [Parameter(Mandatory=$True)][string]$configPath,
-        [Parameter(Mandatory=$True)][string]$filename,
-        [Parameter(Mandatory=$True)][string]$modId,
-        [Parameter(Mandatory=$True)][string]$blockRegistryName,
-        [Parameter(Mandatory=$True)][int]$maxHeight,
-        [Parameter(Mandatory=$True)][int]$minHeight,
-        [Parameter(Mandatory=$True)][int]$maxVeinSize,
-        [Parameter(Mandatory=$True)][int]$minVeinSize,
-        [Parameter(Mandatory=$True)][string]$indicationFlowerRegistryId
+        [string]$modId,
+        $lodConfig,
+        [string]$configPath
     )
     
     $templatePath = "$PSScriptRoot\configtemplates\lod_deposit_template.cfg"
+    $filename = $lodConfig.blockRegistryName.Replace("_ore", "")
     $newConfigPath = "$configPath\adlods\Deposits\$filename.cfg"
     $templateContent = Get-Content $templatePath
     $section = ""
@@ -21,41 +16,68 @@ function Add-LodDepositConfig {
             "# Configuration file" { $currentLine | Out-File $newConfigPath }
             "S:ores <" {
                 $currentLine | Out-File $newConfigPath -Append
-                "		$($modId):$blockRegistryName" | Out-File $newConfigPath -Append
+                "		$($modId):$($lodConfig.blockRegistryName)" | Out-File $newConfigPath -Append
             }
             "Altitude {" { $section = "altitude" }
             "Size {" { $section = "size" }
             "I:max=" {
                 switch ($section) {
-                    "altitude" { "$currentLine$maxHeight" | Out-File $newConfigPath -Append }
-                    "size" { "$currentLine$maxVeinSize" | Out-File $newConfigPath -Append }
+                    "altitude" { "$currentLine$($lodConfig.maxHeight)" | Out-File $newConfigPath -Append }
+                    "size" { "$currentLine$($lodConfig.maxVeinSize)" | Out-File $newConfigPath -Append }
                     default { throw "Unrecognized config file section: $section" }
                 }
             }
             "I:min=" {
                 switch ($section) {
-                    "altitude" { "$currentLine$minHeight" | Out-File $newConfigPath -Append }
-                    "size" { "$currentLine$minVeinSize" | Out-File $newConfigPath -Append }
+                    "altitude" { "$currentLine$($lodConfig.minHeight)" | Out-File $newConfigPath -Append }
+                    "size" { "$currentLine$($lodConfig.minVeinSize)" | Out-File $newConfigPath -Append }
                     default { throw "Unrecognized config file section: $section" }
                 }
             }
             "S:circles <" {
                 $currentLine | Out-File $newConfigPath -Append
-                "			$indicationFlowerRegistryId, 3" | Out-File $newConfigPath -Append
-                "			$indicationFlowerRegistryId, 6" | Out-File $newConfigPath -Append
+                "			$($lodConfig.indicationFlowerRegistryId), 3" | Out-File $newConfigPath -Append
+                "			$($lodConfig.indicationFlowerRegistryId), 6" | Out-File $newConfigPath -Append
             }
             default { $currentLine | Out-File $newConfigPath -Append }
         }
     }
 }
+
+function New-LodDepositConfigsForMod {
+    param (
+        $modObject,
+        [string]$configPath
+    )
+
+    if ($null -eq $modObject.largeOreDepositsConfig) {
+        return
+    }
+
+    if (-not (Test-Path "$configPath\adlods")) {
+        New-Item "$configPath\adlods" -ItemType Directory | Out-Null
+    }
+    if (-not (Test-Path "$configPath\adlods\Deposits")) {
+        New-Item "$configPath\adlods\Deposits" -ItemType Directory | Out-Null
+    }
+
+    $modObject.largeOreDepositsConfig | ForEach-Object {
+        New-LodDepositConfig $modObject.modid $_ $configPath
+    }
+}
+
 function Copy-ModConfig {
     param (
         $modObject,
         [string]$destinationPath
     )
+    # Copy mod config files
     $sourceFolder = "..\packdata\config\$($modObject.modid)"
     $sourcePath = "$sourceFolder\*"
     if (Test-Path $sourceFolder -PathType Container) {
-        Copy-Item -Path $sourcePath -Destination $destinationPath -Recurse
+        Copy-Item -Path $sourcePath -Destination $destinationPath -Recurse -Force | Out-Null
     }
+
+    # Create deposit configs for Large Ore Deposits
+    New-LodDepositConfigsForMod -modObject $modObject -configPath $destinationPath
 }
