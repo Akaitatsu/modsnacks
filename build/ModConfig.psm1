@@ -11,7 +11,7 @@ function Add-LodDepositConfig {
         [Parameter(Mandatory=$True)][string]$indicationFlowerRegistryId
     )
     
-    $templatePath = "$PSScriptRoot\lod_deposit_template.cfg"
+    $templatePath = "$PSScriptRoot\configtemplates\lod_deposit_template.cfg"
     $newConfigPath = "$configPath\adlods\Deposits\$filename.cfg"
     $templateContent = Get-Content $templatePath
     $section = ""
