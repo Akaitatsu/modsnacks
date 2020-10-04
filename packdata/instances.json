@@ -158,7 +158,25 @@
                 "name": "Druidcraft",
                 "modid": "druidcraft",
                 "filenamePattern": "Druidcraft-1.15-%ver%",
-                "currentVersion": "0.4.31"
+                "currentVersion": "0.4.31",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "fiery_glass_ore",
+                        "maxHeight": 64,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "minecraft:red_tulip"
+                    },
+                    {
+                        "blockRegistryName": "rockroot_ore",
+                        "maxHeight": 32,
+                        "minHeight": 16,
+                        "maxVeinSize": 200,
+                        "minVeinSize": 100,
+                        "indicationFlowerRegistryId": "druidcraft:elderflower"
+                    }
+                ]
             },
             {
                 "name": "Dude! Where's my Horse?",
@@ -344,7 +362,17 @@
                 "name": "Mekanism",
                 "modid": "mekanism",
                 "filenamePattern": "Mekanism-1.15.2-%ver%",
-                "currentVersion": "9.10.9.422"
+                "currentVersion": "9.10.9.422",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "osmium_ore",
+                        "maxHeight": 30,
+                        "minHeight": 15,
+                        "maxVeinSize": 1200,
+                        "minVeinSize": 600,
+                        "indicationFlowerRegistryId": "atmospheric:yucca_flower"
+                    }
+                ]
             },
             {
                 "name": "Mekanism Additions",
@@ -368,7 +396,65 @@
                 "name": "Minecraft",
                 "modid": "minecraft",
                 "filenamePattern": "NA",
-                "currentVersion": "1.15.2"
+                "currentVersion": "1.15.2",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "coal_ore",
+                        "maxHeight": 80,
+                        "minHeight": 32,
+                        "maxVeinSize": 1800,
+                        "minVeinSize": 900,
+                        "indicationFlowerRegistryId": "minecraft:large_fern"
+                    },
+                    {
+                        "blockRegistryName": "diamond_ore",
+                        "maxHeight": 16,
+                        "minHeight": 4,
+                        "maxVeinSize": 600,
+                        "minVeinSize": 300,
+                        "indicationFlowerRegistryId": "minecraft:white_tulip"
+                    },
+                    {
+                        "blockRegistryName": "emerald_ore",
+                        "maxHeight": 32,
+                        "minHeight": 8,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "minecraft:dandelion"
+                    },
+                    {
+                        "blockRegistryName": "gold_ore",
+                        "maxHeight": 16,
+                        "minHeight": 4,
+                        "maxVeinSize": 600,
+                        "minVeinSize": 300,
+                        "indicationFlowerRegistryId": "minecraft:blue_orchid"
+                    },
+                    {
+                        "blockRegistryName": "iron_ore",
+                        "maxHeight": 64,
+                        "minHeight": 16,
+                        "maxVeinSize": 1400,
+                        "minVeinSize": 700,
+                        "indicationFlowerRegistryId": "minecraft:orange_tulip"
+                    },
+                    {
+                        "blockRegistryName": "lapis_ore",
+                        "maxHeight": 16,
+                        "minHeight": 4,
+                        "maxVeinSize": 600,
+                        "minVeinSize": 300,
+                        "indicationFlowerRegistryId": "minecraft:cornflower"
+                    },
+                    {
+                        "blockRegistryName": "redstone_ore",
+                        "maxHeight": 16,
+                        "minHeight": 4,
+                        "maxVeinSize": 600,
+                        "minVeinSize": 300,
+                        "indicationFlowerRegistryId": "minecraft:poppy"
+                    }
+                ]
             },
             {
                 "name": "Mixin Bootstrap",
@@ -528,15 +614,315 @@
             },
             {
                 "name": "Silent's Gems",
-                "modid": "silent'sgems",
+                "modid": "silentgems",
                 "filenamePattern": "SilentGems-1.15.2-%ver%",
-                "currentVersion": "3.5.5+88"
+                "currentVersion": "3.5.5+88",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "jade_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:jade_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "jasper_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:jasper_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "kunzite_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:kunzite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "kyanite_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:kyanite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "lepidolite_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:lepidolite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "malachite_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:malachite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "moldavite_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:moldavite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "moonstone_ore",
+                        "maxHeight": 64,
+                        "minHeight": 48,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:moonstone_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "morganite_ore",
+                        "maxHeight": 24,
+                        "minHeight": 12,
+                        "maxVeinSize": 300,
+                        "minVeinSize": 150,
+                        "indicationFlowerRegistryId": "silentgems:morganite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "onyx_ore",
+                        "maxHeight": 32,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:onyx_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "opal_ore",
+                        "maxHeight": 32,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:opal_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "pearl_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:pearl_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "peridot_ore",
+                        "maxHeight": 24,
+                        "minHeight": 12,
+                        "maxVeinSize": 300,
+                        "minVeinSize": 150,
+                        "indicationFlowerRegistryId": "silentgems:peridot_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "phosphophyllite_ore",
+                        "maxHeight": 24,
+                        "minHeight": 12,
+                        "maxVeinSize": 300,
+                        "minVeinSize": 150,
+                        "indicationFlowerRegistryId": "silentgems:phosphophyllite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "pyrope_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:pyrope_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "rose_quartz_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:rose_quartz_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "ruby_ore",
+                        "maxHeight": 32,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:ruby_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "sapphire_ore",
+                        "maxHeight": 32,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:sapphire_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "sodalite_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:sodalite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "spinel_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:spinel_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "sunstone_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:sunstone_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "tanzanite_ore",
+                        "maxHeight": 32,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:tanzanite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "tektite_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:tektite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "topaz_ore",
+                        "maxHeight": 24,
+                        "minHeight": 12,
+                        "maxVeinSize": 300,
+                        "minVeinSize": 150,
+                        "indicationFlowerRegistryId": "silentgems:topaz_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "turquoise_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:turquoise_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "yellow_diamond_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:yellow_diamond_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "zircon_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:zircon_glowrose"
+                    }
+                ]
             },
             {
                 "name": "Silent's Mechanisms",
                 "modid": "silents_mechanisms",
                 "filenamePattern": "SilentMechanisms-1.15.2-%ver%",
-                "currentVersion": "0.8.0+59"
+                "currentVersion": "0.8.0+59",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "bauxite_ore",
+                        "maxHeight": 40,
+                        "minHeight": 25,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "minecraft:lily_of_the_valley"
+                    },
+                    {
+                        "blockRegistryName": "bismuth_ore",
+                        "maxHeight": 70,
+                        "minHeight": 40,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "buzzierbees:magenta_hibiscus"
+                    },
+                    {
+                        "blockRegistryName": "copper_ore",
+                        "maxHeight": 48,
+                        "minHeight": 32,
+                        "maxVeinSize": 1200,
+                        "minVeinSize": 600,
+                        "indicationFlowerRegistryId": "buzzierbees:orange_hibiscus"
+                    },
+                    {
+                        "blockRegistryName": "lead_ore",
+                        "maxHeight": 25,
+                        "minHeight": 5,
+                        "maxVeinSize": 1200,
+                        "minVeinSize": 600,
+                        "indicationFlowerRegistryId": "inspirations:cyan_flower"
+                    },
+                    {
+                        "blockRegistryName": "nickel_ore",
+                        "maxHeight": 24,
+                        "minHeight": 2,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "buzzierbees:bluebell"
+                    },
+                    {
+                        "blockRegistryName": "platinum_ore",
+                        "maxHeight": 20,
+                        "minHeight": 5,
+                        "maxVeinSize": 800,
+                        "minVeinSize": 400,
+                        "indicationFlowerRegistryId": "buzzierbees:columbine"
+                    },
+                    {
+                        "blockRegistryName": "silver_ore",
+                        "maxHeight": 25,
+                        "minHeight": 10,
+                        "maxVeinSize": 1200,
+                        "minVeinSize": 600,
+                        "indicationFlowerRegistryId": "inspirations:paeonia"
+                    },
+                    {
+                        "blockRegistryName": "tin_ore",
+                        "maxHeight": 65,
+                        "minHeight": 35,
+                        "maxVeinSize": 1600,
+                        "minVeinSize": 800,
+                        "indicationFlowerRegistryId": "inspirations:syringa"
+                    },
+                    {
+                        "blockRegistryName": "uranium_ore",
+                        "maxHeight": 18,
+                        "minHeight": 2,
+                        "maxVeinSize": 500,
+                        "minVeinSize": 250,
+                        "indicationFlowerRegistryId": "minecraft:azure_bluet"
+                    },
+                    {
+                        "blockRegistryName": "zinc_ore",
+                        "maxHeight": 50,
+                        "minHeight": 30,
+                        "maxVeinSize": 1500,
+                        "minVeinSize": 750,
+                        "indicationFlowerRegistryId": "buzzierbees:jolyce"
+                    }
+                ]
             },
             {
                 "name": "Simple Storage Network",
@@ -807,7 +1193,25 @@
                 "name": "Forbidden and Arcanus",
                 "modid": "forbidden_arcanus",
                 "filenamePattern": "forbidden_arcanus-1.15.2-%ver%",
-                "currentVersion": "1.5"
+                "currentVersion": "1.5",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "arcane_crystal_ore",
+                        "maxHeight": 12,
+                        "minHeight": 2,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "botania:spectranthemum"
+                    },
+                    {
+                        "blockRegistryName": "xpetrified_ore",
+                        "maxHeight": 12,
+                        "minHeight": 2,
+                        "maxVeinSize": 600,
+                        "minVeinSize": 300,
+                        "indicationFlowerRegistryId": "botania:dandelifeon"
+                    }
+                ]
             },
             {
                 "name": "In Control!",
@@ -855,7 +1259,17 @@
                 "name": "Mapper Base",
                 "modid": "mapperbase",
                 "filenamePattern": "MapperBase-1.15.2-%ver%",
-                "currentVersion": "1.1.1.0"
+                "currentVersion": "1.1.1.0",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "bitumen_ore",
+                        "maxHeight": 80,
+                        "minHeight": 40,
+                        "maxVeinSize": 1200,
+                        "minVeinSize": 600,
+                        "indicationFlowerRegistryId": "botania:black_mystical_flower"
+                    }
+                ]
             },
             {
                 "name": "McJtyLib",
@@ -1042,7 +1456,17 @@
                 "name": "Astral Sorcery",
                 "modid": "astralsorcery",
                 "filenamePattern": "AstralSorcery-1.15.2-%ver%",
-                "currentVersion": "1.12.6"
+                "currentVersion": "1.12.6",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "rock_crystal_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 150,
+                        "minVeinSize": 75,
+                        "indicationFlowerRegistryId": "botania:white_mystical_flower"
+                    }
+                ]
             },
             {
                 "name": "Atum 2: Return to the Sands",
@@ -1282,7 +1706,25 @@
                 "name": "Mystical Agriculture",
                 "modid": "mysticalagriculture",
                 "filenamePattern": "MysticalAgriculture-1.15.2-%ver%",
-                "currentVersion": "3.0.10"
+                "currentVersion": "3.0.10",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "inferium_ore",
+                        "maxHeight": 50,
+                        "minHeight": 25,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "botania:light_gray_mystical_flower"
+                    },
+                    {
+                        "blockRegistryName": "prosperity_ore",
+                        "maxHeight": 50,
+                        "minHeight": 25,
+                        "maxVeinSize": 1200,
+                        "minVeinSize": 600,
+                        "indicationFlowerRegistryId": "botania:gray_mystical_flower"
+                    }
+                ]
             },
             {
                 "name": "Mystical Customization",
@@ -1294,7 +1736,17 @@
                 "name": "Mystical World",
                 "modid": "mysticalworld",
                 "filenamePattern": "MysticalWorld-1.15.2-%ver%",
-                "currentVersion": "2.0.6"
+                "currentVersion": "2.0.6",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "quicksilver_ore",
+                        "maxHeight": 16,
+                        "minHeight": 2,
+                        "maxVeinSize": 200,
+                        "minVeinSize": 100,
+                        "indicationFlowerRegistryId": "botania:hopperhock"
+                    }
+                ]
             },
             {
                 "name": "MysticalLib",
@@ -1330,7 +1782,17 @@
                 "name": "Powah!",
                 "modid": "powah",
                 "filenamePattern": "Powah-1.15.2-%ver%",
-                "currentVersion": "1.1.15"
+                "currentVersion": "1.1.15",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "uraninite_ore",
+                        "maxHeight": 32,
+                        "minHeight": 16,
+                        "maxVeinSize": 1200,
+                        "minVeinSize": 600,
+                        "indicationFlowerRegistryId": "botania:agricarnation"
+                    }
+                ]
             },
             {
                 "name": "Progressive Bosses",
