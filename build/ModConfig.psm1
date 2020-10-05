@@ -16,10 +16,16 @@ function New-LodDepositConfig {
             "# Configuration file" { $currentLine | Out-File $newConfigPath }
             "S:ores <" {
                 $currentLine | Out-File $newConfigPath -Append
-                "		$($modId):$($lodConfig.blockRegistryName)" | Out-File $newConfigPath -Append
+                "		#$($modId):$($lodConfig.blockRegistryName)" | Out-File $newConfigPath -Append
             }
-            "Altitude {" { $section = "altitude" }
-            "Size {" { $section = "size" }
+            "Altitude {" {
+                $section = "altitude"
+                $currentLine | Out-File $newConfigPath -Append
+            }
+            "Size {" {
+                $section = "size"
+                $currentLine | Out-File $newConfigPath -Append
+            }
             "I:max=" {
                 switch ($section) {
                     "altitude" { "$currentLine$($lodConfig.maxHeight)" | Out-File $newConfigPath -Append }
