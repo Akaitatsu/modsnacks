@@ -619,6 +619,182 @@
                 "currentVersion": "3.5.5+88",
                 "largeOreDepositsConfig": [
                     {
+                        "blockRegistryName": "agate_ore",
+                        "maxHeight": 24,
+                        "minHeight": 12,
+                        "maxVeinSize": 300,
+                        "minVeinSize": 150,
+                        "indicationFlowerRegistryId": "silentgems:agate_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "alexandrite_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:alexandrite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "amber_ore",
+                        "maxHeight": 48,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:amber_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "amethyst_ore",
+                        "maxHeight": 24,
+                        "minHeight": 12,
+                        "maxVeinSize": 300,
+                        "minVeinSize": 150,
+                        "indicationFlowerRegistryId": "silentgems:amethyst_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "ametrine_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:ametrine_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "ammolite_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:ammolite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "apatite_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:apatite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "aquamarine_ore",
+                        "maxHeight": 48,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:aquamarine_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "benitoite_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:benitoite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "black_diamond_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:black_diamond_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "carnelian_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:carnelian_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "cats_eye_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:cats_eye_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "chaos_ore",
+                        "maxHeight": 64,
+                        "minHeight": 2,
+                        "maxVeinSize": 1500,
+                        "minVeinSize": 750,
+                        "indicationFlowerRegistryId": "silentgems:chaos_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "chrysoprase_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:chrysoprase_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "citrine_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:citrine_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "coral_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:coral_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "euclase_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:euclase_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "fluorite_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:fluorite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "garnet_ore",
+                        "maxHeight": 24,
+                        "minHeight": 12,
+                        "maxVeinSize": 300,
+                        "minVeinSize": 150,
+                        "indicationFlowerRegistryId": "silentgems:garnet_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "green_sapphire_ore",
+                        "maxHeight": 48,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:green_sapphire_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "heliodor_ore",
+                        "maxHeight": 48,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:heliodor_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "iolite_ore",
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:iolite_glowrose"
+                    },
+                    {
                         "blockRegistryName": "jade_ore",
                         "maxHeight": 8,
                         "minHeight": 2,

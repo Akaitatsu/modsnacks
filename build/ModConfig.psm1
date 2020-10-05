@@ -11,6 +11,7 @@ function New-LodDepositConfig {
     $templateContent = Get-Content $templatePath
     $section = ""
     
+    $PSDefaultParameterValues['Out-File:Encoding'] = 'ASCII'
     foreach ($currentLine in $templateContent) {
         switch ($currentLine.Trim()) {
             "# Configuration file" { $currentLine | Out-File $newConfigPath }
