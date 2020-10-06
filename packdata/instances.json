@@ -2,545 +2,1266 @@
     {
         "name": "Low Carb Mod Snack",
         "shortName": "LCMS",
-        "maxMemoryMB": 3072,
+        "maxMemoryMB": 4096,
         "mods": [
             {
                 "name": "Abnormals Core",
+                "modid": "abnormals_core",
                 "filenamePattern": "Abnormals-Core-1.15.2-%ver%",
                 "currentVersion": "1.0.6"
             },
             {
                 "name": "Advanced Finders",
+                "modid": "adfinders",
                 "filenamePattern": "AdFinders-1.15.2-%ver%",
                 "currentVersion": "4.0.5.0-build.0020"
             },
             {
                 "name": "AI Improvements",
+                "modid": "aiimprovements",
                 "filenamePattern": "AI-Improvements-1.15.2-%ver%",
                 "currentVersion": "0.3.0"
             },
             {
                 "name": "Akashic Tome",
+                "modid": "akashictome",
                 "filenamePattern": "AkashicTome-%ver%",
                 "currentVersion": "1.3-13"
             },
             {
                 "name": "AppleSkin",
+                "modid": "appleskin",
                 "filenamePattern": "AppleSkin-mc1.15.2-forge-%ver%",
                 "currentVersion": "1.0.14"
             },
             {
                 "name": "Atmospheric",
+                "modid": "atmospheric",
                 "filenamePattern": "Atmospheric-1.15.2-%ver%",
                 "currentVersion": "1.4.1"
             },
             {
                 "name": "AttributeFix",
+                "modid": "attributefix",
                 "filenamePattern": "AttributeFix-1.15.2-%ver%",
                 "currentVersion": "7.0.2"
             },
             {
                 "name": "AutoRegLib",
+                "modid": "autoreglib",
                 "filenamePattern": "AutoRegLib-%ver%",
                 "currentVersion": "1.5-40"
             },
             {
                 "name": "Autumnity",
+                "modid": "autumnity",
                 "filenamePattern": "autumnity-%ver%-1.15.2",
                 "currentVersion": "1.3.3"
             },
             {
                 "name": "Bad Wither No Cookie Reloaded",
+                "modid": "bwncr",
                 "filenamePattern": "bwncr-1.15.1-%ver%",
                 "currentVersion": "3.6.13"
             },
             {
                 "name": "Bamboo Blocks",
+                "modid": "bambooblocks",
                 "filenamePattern": "Bamboo-Blocks-1.15.2-%ver%",
                 "currentVersion": "1.4.1"
             },
             {
                 "name": "Berry Good",
+                "modid": "berry_good",
                 "filenamePattern": "berry_good-%ver%",
                 "currentVersion": "2.0.0"
             },
             {
                 "name": "Better Advancements",
+                "modid": "betteradvancements",
                 "filenamePattern": "BetterAdvancements-1.15.2-%ver%",
                 "currentVersion": "0.1.0.99"
             },
             {
                 "name": "Better Burning",
+                "modid": "betterburning",
                 "filenamePattern": "BetterBurning-1.15.2-%ver%",
                 "currentVersion": "1.3.4"
             },
             {
                 "name": "Buzzier Bees",
+                "modid": "buzzierbees",
                 "filenamePattern": "Buzzier-Bees-1.15.2-%ver%",
                 "currentVersion": "1.5.2"
             },
             {
-                "name": "CC: Tweaked",
-                "filenamePattern": "cc-tweaked-1.15.2-%ver%",
-                "currentVersion": "1.90.2"
-            },
-            {
-                "name": "Ceramics",
-                "filenamePattern": "Ceramics-1.15.2-%ver%",
-                "currentVersion": "1.4.0"
-            },
-            {
-                "name": "Cherished Worlds (Forge)",
-                "filenamePattern": "cherishedworlds-FORGE-1.15.2-%ver%",
-                "currentVersion": "3.0.0.1"
-            },
-            {
                 "name": "Cloth Config 2",
+                "modid": "cloth-config2",
                 "filenamePattern": "config-2-%ver%",
                 "currentVersion": "3.0"
             },
             {
                 "name": "Clumps",
+                "modid": "clumps",
                 "filenamePattern": "Clumps-%ver%",
                 "currentVersion": "5.0.2.4"
             },
             {
                 "name": "Controlling",
+                "modid": "controlling",
                 "filenamePattern": "Controlling-%ver%",
                 "currentVersion": "6.1.5.6"
             },
             {
                 "name": "Cooking for Blockheads",
+                "modid": "cookingforblockheads",
                 "filenamePattern": "CookingForBlockheads_1.15.2-%ver%",
                 "currentVersion": "8.0.3"
             },
             {
                 "name": "Corail Tombstone",
+                "modid": "tombstone",
                 "filenamePattern": "tombstone-%ver%",
                 "currentVersion": "4.5.6"
             },
             {
-                "name": "Cosmetic Armor Reworked",
-                "filenamePattern": "CosmeticArmorReworked-1.15.2-%ver%",
-                "currentVersion": "v3a"
-            },
-            {
                 "name": "CraftDumper",
+                "modid": "craftdumper",
                 "filenamePattern": "CraftDumper-1.15.2-%ver%",
                 "currentVersion": "3.3.2"
             },
             {
                 "name": "Crafting Tweaks",
+                "modid": "craftingtweaks",
                 "filenamePattern": "CraftingTweaks_1.15.2-%ver%",
                 "currentVersion": "11.0.1"
             },
             {
-                "name": "Curios API (Forge)",
+                "name": "Curios API",
+                "modid": "curios",
                 "filenamePattern": "curios-FORGE-1.15.2-%ver%",
                 "currentVersion": "2.0.2.6"
             },
             {
                 "name": "Default Options",
+                "modid": "defaultoptions",
                 "filenamePattern": "DefaultOptions_1.15.2-11.0.1",
                 "currentVersion": "11.0.1"
             },
             {
                 "name": "Double Slabs",
+                "modid": "doubleslabs",
                 "filenamePattern": "DoubleSlabs-1.15-%ver%",
                 "currentVersion": "2.10.1"
             },
             {
                 "name": "Druidcraft",
+                "modid": "druidcraft",
                 "filenamePattern": "Druidcraft-1.15-%ver%",
-                "currentVersion": "0.4.21"
+                "currentVersion": "0.4.31",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "fiery_glass_ore",
+                        "rarity": 1100,
+                        "maxHeight": 64,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "minecraft:red_tulip"
+                    },
+                    {
+                        "blockRegistryName": "rockroot_ore",
+                        "rarity": 3500,
+                        "maxHeight": 32,
+                        "minHeight": 16,
+                        "maxVeinSize": 200,
+                        "minVeinSize": 100,
+                        "indicationFlowerRegistryId": "druidcraft:elderflower"
+                    }
+                ]
             },
             {
                 "name": "Dude! Where's my Horse?",
+                "modid": "dwmh",
                 "filenamePattern": "dwmh-1.15.2-%ver%",
                 "currentVersion": "4.0.0"
             },
             {
                 "name": "Endergetic Expansion, The",
+                "modid": "endergetic",
                 "filenamePattern": "The-Endergetic-Expansion-1.15.2-v%ver%",
                 "currentVersion": "1.3.2"
             },
             {
                 "name": "Enhanced Mushrooms",
+                "modid": "enhanced_mushrooms",
                 "filenamePattern": "Enhanced-Mushrooms-1.15.2-v%ver%",
                 "currentVersion": "1.2.2"
             },
             {
                 "name": "Extra Boats",
+                "modid": "extraboats",
                 "filenamePattern": "ExtraBoats-%ver%-1.15.2",
                 "currentVersion": "1.3.6"
             },
             {
                 "name": "Farming for Blockheads",
+                "modid": "farmingforblockheads",
                 "filenamePattern": "FarmingForBlockheads_1.15.2-%ver%",
                 "currentVersion": "6.1.5"
             },
             {
                 "name": "Fast Leaf Decay",
+                "modid": "fastleafdecay",
                 "filenamePattern": "FastLeafDecay-%ver%",
                 "currentVersion": "v22"
             },
             {
                 "name": "FastFurnace",
+                "modid": "fastfurnace",
                 "filenamePattern": "FastFurnace-1.15.1-%ver%",
                 "currentVersion": "3.0.0"
             },
             {
                 "name": "FastWorkbench",
+                "modid": "fastbench",
                 "filenamePattern": "FastWorkbench-1.15.2-%ver%",
                 "currentVersion": "3.1.1"
             },
             {
                 "name": "Finite Water & Infinite Lava",
+                "modid": "finitewater",
                 "filenamePattern": "finitewater-%ver%",
                 "currentVersion": "1.0"
             },
             {
                 "name": "ForgeEndertech",
+                "modid": "forgeendertech",
                 "filenamePattern": "ForgeEndertech-1.15.2-%ver%",
                 "currentVersion": "6.0.4.0-build.0044"
             },
             {
                 "name": "FTB Backups",
+                "modid": "ftbbackups",
                 "filenamePattern": "ftb-backups-%ver%",
                 "currentVersion": "2.1.0.2"
             },
             {
                 "name": "GameMenuModOption",
+                "modid": "gamemenumodoption",
                 "filenamePattern": "GameMenuModOption-1.15.2-%ver%",
                 "currentVersion": "1.3"
             },
             {
                 "name": "Inspirations",
+                "modid": "inspirations",
                 "filenamePattern": "Inspirations-1.15.2-%ver%",
                 "currentVersion": "1.1.0"
             },
             {
-                "name": "Inventory HUD+ (Forge)",
+                "name": "Inventory HUD+",
+                "modid": "inventoryhud",
                 "filenamePattern": "InventoryHud_1.15.2.forge-%ver%",
                 "currentVersion": "3.0.1"
             },
             {
                 "name": "Inventory Tweaks Renewed",
+                "modid": "invtweaks",
                 "filenamePattern": "invtweaks-1.15.2-%ver%",
                 "currentVersion": "2.0.9"
             },
             {
                 "name": "JAOPCA",
+                "modid": "jaopca",
                 "filenamePattern": "JAOPCA-1.15.2-%ver%",
                 "currentVersion": "3.2.0.14"
             },
             {
                 "name": "JEI Enchantment Info",
+                "modid": "jeienchantmentinfo",
                 "filenamePattern": "JEIEnchantmentInfo-1.16.1-%ver%",
                 "currentVersion": "1.2.0"
             },
             {
                 "name": "JEI Integration",
+                "modid": "jeiintegration",
                 "filenamePattern": "jeiintegration_1.15.2-%ver%",
                 "currentVersion": "3.1.0.1"
             },
             {
                 "name": "JEITweaker",
+                "modid": "jeitweaker",
                 "filenamePattern": "JEITweaker-1.15.2-%ver%",
                 "currentVersion": "1.0.1.3"
             },
             {
                 "name": "Just Enough Items (JEI)",
+                "modid": "jei",
                 "filenamePattern": "jei-1.15.2-%ver%",
                 "currentVersion": "6.0.2.12"
             },
             {
                 "name": "Just Enough Resources",
+                "modid": "jeresources",
                 "filenamePattern": "JustEnoughResources-1.15.2-%ver%",
                 "currentVersion": "0.10.1.77"
             },
             {
                 "name": "Kottle",
+                "modid": "kottle",
                 "filenamePattern": "Kottle-%ver%",
                 "currentVersion": "1.5.2"
             },
             {
                 "name": "KubeJS",
+                "modid": "kubejs",
                 "filenamePattern": "kubejs-%ver%",
                 "currentVersion": "2.7.1.13"
             },
             {
                 "name": "Large Ore Deposits",
+                "modid": "largeoredeposits",
                 "filenamePattern": "AdLods-1.15.2-%ver%",
                 "currentVersion": "3.0.3.0-build.0035"
             },
             {
                 "name": "Leaves Decay on other Leaves",
+                "modid": "leavesdecayonotherleaves",
                 "filenamePattern": "leavesdecayonotherleaves-%ver%",
                 "currentVersion": "1.1"
             },
             {
-                "name": "Light Overlay (Rift/Forge/Fabric)",
+                "name": "Light Overlay Forge",
+                "modid": "lightoverlayforge",
                 "filenamePattern": "light-overlay-%ver%",
                 "currentVersion": "4.7.0"
             },
             {
                 "name": "Ma Essentials",
+                "modid": "maessentials",
                 "filenamePattern": "Ma-Essentials-1.15.2-%ver%",
                 "currentVersion": "3.1.1"
             },
             {
                 "name": "Macaw's Roofs",
+                "modid": "mcwroofs",
                 "filenamePattern": "mcws-roofs-1.15.2-%ver%",
                 "currentVersion": "v2.0.0"
             },
             {
                 "name": "Macaw's Windows",
+                "modid": "mcwwindows",
                 "filenamePattern": "mcws-win-1.15.2-%ver%",
                 "currentVersion": "v1.0.2"
             },
             {
                 "name": "Mantle",
+                "modid": "mantle",
                 "filenamePattern": "Mantle-1.15.2-%ver%",
                 "currentVersion": "1.5.15"
             },
             {
                 "name": "Mekanism",
+                "modid": "mekanism",
                 "filenamePattern": "Mekanism-1.15.2-%ver%",
-                "currentVersion": "9.10.9.422"
+                "currentVersion": "9.10.9.422",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "osmium_ore",
+                        "rarity": 1000,
+                        "maxHeight": 30,
+                        "minHeight": 15,
+                        "maxVeinSize": 1200,
+                        "minVeinSize": 600,
+                        "indicationFlowerRegistryId": "atmospheric:yucca_flower"
+                    }
+                ]
             },
             {
                 "name": "Mekanism Additions",
+                "modid": "mekanismadditions",
                 "filenamePattern": "MekanismAdditions-1.15.2-%ver%",
                 "currentVersion": "9.10.9.422"
             },
             {
                 "name": "Mekanism Generators",
+                "modid": "mekanismgenerators",
                 "filenamePattern": "MekanismGenerators-1.15.2-%ver%",
                 "currentVersion": "9.10.9.422"
             },
             {
                 "name": "Mekanism Tools",
+                "modid": "mekanismtools",
                 "filenamePattern": "MekanismTools-1.15.2-%ver%",
                 "currentVersion": "9.10.9.422"
             },
             {
+                "name": "Minecraft",
+                "modid": "minecraft",
+                "filenamePattern": "NA",
+                "currentVersion": "1.15.2",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "coal_ore",
+                        "rarity": 800,
+                        "maxHeight": 80,
+                        "minHeight": 32,
+                        "maxVeinSize": 1800,
+                        "minVeinSize": 900,
+                        "indicationFlowerRegistryId": "minecraft:large_fern"
+                    },
+                    {
+                        "blockRegistryName": "diamond_ore",
+                        "rarity": 4200,
+                        "maxHeight": 16,
+                        "minHeight": 4,
+                        "maxVeinSize": 600,
+                        "minVeinSize": 300,
+                        "indicationFlowerRegistryId": "minecraft:blue_orchid"
+                    },
+                    {
+                        "blockRegistryName": "emerald_ore",
+                        "rarity": 4480,
+                        "maxHeight": 32,
+                        "minHeight": 8,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "buzzierbees:four_leaf_clover"
+                    },
+                    {
+                        "blockRegistryName": "gold_ore",
+                        "rarity": 3256,
+                        "maxHeight": 16,
+                        "minHeight": 4,
+                        "maxVeinSize": 600,
+                        "minVeinSize": 300,
+                        "indicationFlowerRegistryId": "minecraft:dandelion"
+                    },
+                    {
+                        "blockRegistryName": "iron_ore",
+                        "rarity": 1020,
+                        "maxHeight": 64,
+                        "minHeight": 16,
+                        "maxVeinSize": 1400,
+                        "minVeinSize": 700,
+                        "indicationFlowerRegistryId": "minecraft:orange_tulip"
+                    },
+                    {
+                        "blockRegistryName": "lapis_ore",
+                        "rarity": 3640,
+                        "maxHeight": 16,
+                        "minHeight": 4,
+                        "maxVeinSize": 600,
+                        "minVeinSize": 300,
+                        "indicationFlowerRegistryId": "minecraft:cornflower"
+                    },
+                    {
+                        "blockRegistryName": "redstone_ore",
+                        "rarity": 2400,
+                        "maxHeight": 16,
+                        "minHeight": 4,
+                        "maxVeinSize": 600,
+                        "minVeinSize": 300,
+                        "indicationFlowerRegistryId": "minecraft:poppy"
+                    }
+                ]
+            },
+            {
                 "name": "Mixin Bootstrap",
+                "modid": "mixinbootstrap",
                 "filenamePattern": "MixinBootstrap-%ver%",
                 "currentVersion": "1.0.3"
             },
             {
                 "name": "Mouse Tweaks",
+                "modid": "mousetweaks",
                 "filenamePattern": "MouseTweaks-%ver%-mc1.15.1",
                 "currentVersion": "2.13"
             },
             {
                 "name": "Nature's Compass",
+                "modid": "naturescompass",
                 "filenamePattern": "NaturesCompass-1.15.2-%ver%",
                 "currentVersion": "1.8.5"
             },
             {
                 "name": "Neat",
+                "modid": "neat",
                 "filenamePattern": "Neat+%ver%",
                 "currentVersion": "1.6-22"
             },
             {
                 "name": "Nether Portal Fix",
+                "modid": "netherportalfix",
                 "filenamePattern": "NetherPortalFix_1.15.2-%ver%",
                 "currentVersion": "6.0.2"
             },
             {
                 "name": "Occultism",
+                "modid": "occultism",
                 "filenamePattern": "occultism-%ver%",
                 "currentVersion": "0.2.11"
             },
             {
                 "name": "One Probe, The",
+                "modid": "theoneprobe",
                 "filenamePattern": "theoneprobe-1.15-%ver%",
-                "currentVersion": "2.0.4"
+                "currentVersion": "2.0.6"
             },
             {
                 "name": "Open Loader",
+                "modid": "openloader",
                 "filenamePattern": "OpenLoader-1.15.2-%ver%",
                 "currentVersion": "4.0.5"
             },
             {
                 "name": "Patchouli",
+                "modid": "patchouli",
                 "filenamePattern": "Patchouli-1.15.2-%ver%",
                 "currentVersion": "1.2-35"
             },
             {
                 "name": "Performant",
+                "modid": "performant",
                 "filenamePattern": "performant-1.15-%ver%",
                 "currentVersion": "2.11m"
             },
             {
                 "name": "Persistent Bits",
+                "modid": "persistentbits",
                 "filenamePattern": "PersistentBits-1.15.2-%ver%",
                 "currentVersion": "2.0.3"
             },
             {
-                "name": "Phosphor (Forge)",
+                "name": "Phosphor",
+                "modid": "phosphor",
                 "filenamePattern": "phosphor-forge-mc1.15.2-%ver%",
                 "currentVersion": "0.5.2+build.4"
             },
             {
                 "name": "Placebo",
+                "modid": "placebo",
                 "filenamePattern": "Placebo-1.15.2-%ver%",
                 "currentVersion": "3.1.0"
             },
             {
-                "name": "Polymorph (Forge)",
+                "name": "Polymorph",
+                "modid": "polymorph",
                 "filenamePattern": "polymorph-FORGE-1.15.2-%ver%",
                 "currentVersion": "0.9"
             },
             {
                 "name": "PreGenForge",
+                "modid": "pregenforge",
                 "filenamePattern": "PreGenForge-%ver%-mc1.15.2",
                 "currentVersion": "0.1.1"
             },
             {
                 "name": "Quark",
+                "modid": "quark",
                 "filenamePattern": "Quark-%ver%",
                 "currentVersion": "r2.1-245"
             },
             {
                 "name": "Quark Oddities",
+                "modid": "quarkoddities",
                 "filenamePattern": "QuarkOddities-%ver%",
                 "currentVersion": "1.15.2"
             },
             {
                 "name": "RandomPatches",
+                "modid": "randompatches",
                 "filenamePattern": "RandomPatches-1.15.2-%ver%",
                 "currentVersion": "1.22.1.1"
             },
             {
                 "name": "ReAuth",
+                "modid": "reauth",
                 "filenamePattern": "ReAuth-1.14-1.15-%ver%",
                 "currentVersion": "3.8.1"
             },
             {
                 "name": "Respawnable Pets",
+                "modid": "respawnablepets",
                 "filenamePattern": "respawnablepets-%ver%",
                 "currentVersion": "1.1.4"
             },
             {
                 "name": "Savage & Ravage",
+                "modid": "savageandravage",
                 "filenamePattern": "Savage-and-Ravage-1.15.2-%ver%",
                 "currentVersion": "1.1.4"
             },
             {
                 "name": "Save My Stronghold",
+                "modid": "savemystronghold",
                 "filenamePattern": "SaveMyStronghold-1.15.2-%ver%",
                 "currentVersion": "1.0.1"
             },
             {
                 "name": "Server Tab Info",
+                "modid": "servertabinfo",
                 "filenamePattern": "ServerTabInfo-1.15.2-%ver%",
                 "currentVersion": "1.2.7"
             },
             {
                 "name": "ServerConfig Updater",
+                "modid": "serverconfigupdater",
                 "filenamePattern": "serverconfigupdater-%ver%",
                 "currentVersion": "1.1"
             },
             {
                 "name": "Silent Gear",
+                "modid": "silentgear",
                 "filenamePattern": "SilentGear-1.15.2-%ver%",
                 "currentVersion": "1.8.2+109"
             },
             {
                 "name": "SilentLib",
+                "modid": "silentlib",
                 "filenamePattern": "SilentLib-1.15.2-%ver%",
                 "currentVersion": "4.6.6+59"
             },
             {
                 "name": "Silent's Gems",
+                "modid": "silentgems",
                 "filenamePattern": "SilentGems-1.15.2-%ver%",
-                "currentVersion": "3.5.5+88"
+                "currentVersion": "3.5.5+88",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "agate_ore",
+                        "rarity": 3360,
+                        "maxHeight": 24,
+                        "minHeight": 12,
+                        "maxVeinSize": 300,
+                        "minVeinSize": 150,
+                        "indicationFlowerRegistryId": "silentgems:agate_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "alexandrite_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:alexandrite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "amber_ore",
+                        "rarity": 2400,
+                        "maxHeight": 48,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:amber_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "amethyst_ore",
+                        "rarity": 3360,
+                        "maxHeight": 24,
+                        "minHeight": 12,
+                        "maxVeinSize": 300,
+                        "minVeinSize": 150,
+                        "indicationFlowerRegistryId": "silentgems:amethyst_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "ametrine_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:ametrine_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "ammolite_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:ammolite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "apatite_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:apatite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "aquamarine_ore",
+                        "rarity": 2800,
+                        "maxHeight": 48,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:aquamarine_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "benitoite_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:benitoite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "black_diamond_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:black_diamond_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "carnelian_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:carnelian_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "cats_eye_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:cats_eye_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "chaos_ore",
+                        "rarity": 1800,
+                        "maxHeight": 64,
+                        "minHeight": 2,
+                        "maxVeinSize": 1500,
+                        "minVeinSize": 750,
+                        "indicationFlowerRegistryId": "silentgems:chaos_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "chrysoprase_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:chrysoprase_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "citrine_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:citrine_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "coral_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:coral_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "euclase_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:euclase_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "fluorite_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:fluorite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "garnet_ore",
+                        "rarity": 3200,
+                        "maxHeight": 24,
+                        "minHeight": 12,
+                        "maxVeinSize": 300,
+                        "minVeinSize": 150,
+                        "indicationFlowerRegistryId": "silentgems:garnet_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "green_sapphire_ore",
+                        "rarity": 2400,
+                        "maxHeight": 48,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:green_sapphire_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "heliodor_ore",
+                        "rarity": 2400,
+                        "maxHeight": 48,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:heliodor_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "iolite_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:iolite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "jade_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:jade_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "jasper_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:jasper_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "kunzite_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:kunzite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "kyanite_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:kyanite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "lepidolite_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:lepidolite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "malachite_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:malachite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "moldavite_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:moldavite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "moonstone_ore",
+                        "rarity": 4500,
+                        "maxHeight": 64,
+                        "minHeight": 48,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:moonstone_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "morganite_ore",
+                        "rarity": 3200,
+                        "maxHeight": 24,
+                        "minHeight": 12,
+                        "maxVeinSize": 300,
+                        "minVeinSize": 150,
+                        "indicationFlowerRegistryId": "silentgems:morganite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "onyx_ore",
+                        "rarity": 2800,
+                        "maxHeight": 32,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:onyx_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "opal_ore",
+                        "rarity": 2800,
+                        "maxHeight": 32,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:opal_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "pearl_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:pearl_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "peridot_ore",
+                        "rarity": 2400,
+                        "maxHeight": 24,
+                        "minHeight": 12,
+                        "maxVeinSize": 300,
+                        "minVeinSize": 150,
+                        "indicationFlowerRegistryId": "silentgems:peridot_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "phosphophyllite_ore",
+                        "rarity": 2400,
+                        "maxHeight": 24,
+                        "minHeight": 12,
+                        "maxVeinSize": 300,
+                        "minVeinSize": 150,
+                        "indicationFlowerRegistryId": "silentgems:phosphophyllite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "pyrope_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:pyrope_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "rose_quartz_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:rose_quartz_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "ruby_ore",
+                        "rarity": 3920,
+                        "maxHeight": 32,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:ruby_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "sapphire_ore",
+                        "rarity": 3640,
+                        "maxHeight": 32,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:sapphire_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "sodalite_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:sodalite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "spinel_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:spinel_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "sunstone_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:sunstone_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "tanzanite_ore",
+                        "rarity": 2800,
+                        "maxHeight": 32,
+                        "minHeight": 16,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "silentgems:tanzanite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "tektite_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:tektite_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "topaz_ore",
+                        "rarity": 3200,
+                        "maxHeight": 24,
+                        "minHeight": 12,
+                        "maxVeinSize": 300,
+                        "minVeinSize": 150,
+                        "indicationFlowerRegistryId": "silentgems:topaz_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "turquoise_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:turquoise_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "yellow_diamond_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:yellow_diamond_glowrose"
+                    },
+                    {
+                        "blockRegistryName": "zircon_ore",
+                        "rarity": 4500,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 100,
+                        "minVeinSize": 50,
+                        "indicationFlowerRegistryId": "silentgems:zircon_glowrose"
+                    }
+                ]
             },
             {
                 "name": "Silent's Mechanisms",
+                "modid": "silents_mechanisms",
                 "filenamePattern": "SilentMechanisms-1.15.2-%ver%",
-                "currentVersion": "0.8.0+59"
+                "currentVersion": "0.8.0+59",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "bauxite_ore",
+                        "rarity": 1150,
+                        "maxHeight": 40,
+                        "minHeight": 25,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "minecraft:lily_of_the_valley"
+                    },
+                    {
+                        "blockRegistryName": "bismuth_ore",
+                        "rarity": 1450,
+                        "maxHeight": 70,
+                        "minHeight": 40,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "buzzierbees:magenta_hibiscus"
+                    },
+                    {
+                        "blockRegistryName": "copper_ore",
+                        "rarity": 1450,
+                        "maxHeight": 48,
+                        "minHeight": 32,
+                        "maxVeinSize": 1200,
+                        "minVeinSize": 600,
+                        "indicationFlowerRegistryId": "buzzierbees:orange_hibiscus"
+                    },
+                    {
+                        "blockRegistryName": "lead_ore",
+                        "rarity": 1140,
+                        "maxHeight": 25,
+                        "minHeight": 5,
+                        "maxVeinSize": 1200,
+                        "minVeinSize": 600,
+                        "indicationFlowerRegistryId": "inspirations:cyan_flower"
+                    },
+                    {
+                        "blockRegistryName": "nickel_ore",
+                        "rarity": 2000,
+                        "maxHeight": 24,
+                        "minHeight": 2,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "buzzierbees:bluebell"
+                    },
+                    {
+                        "blockRegistryName": "platinum_ore",
+                        "rarity": 2600,
+                        "maxHeight": 20,
+                        "minHeight": 5,
+                        "maxVeinSize": 800,
+                        "minVeinSize": 400,
+                        "indicationFlowerRegistryId": "buzzierbees:columbine"
+                    },
+                    {
+                        "blockRegistryName": "silver_ore",
+                        "rarity": 1250,
+                        "maxHeight": 25,
+                        "minHeight": 10,
+                        "maxVeinSize": 1200,
+                        "minVeinSize": 600,
+                        "indicationFlowerRegistryId": "inspirations:paeonia"
+                    },
+                    {
+                        "blockRegistryName": "tin_ore",
+                        "rarity": 2500,
+                        "maxHeight": 65,
+                        "minHeight": 35,
+                        "maxVeinSize": 1600,
+                        "minVeinSize": 800,
+                        "indicationFlowerRegistryId": "inspirations:syringa"
+                    },
+                    {
+                        "blockRegistryName": "uranium_ore",
+                        "rarity": 3600,
+                        "maxHeight": 18,
+                        "minHeight": 2,
+                        "maxVeinSize": 500,
+                        "minVeinSize": 250,
+                        "indicationFlowerRegistryId": "minecraft:azure_bluet"
+                    },
+                    {
+                        "blockRegistryName": "zinc_ore",
+                        "rarity": 1200,
+                        "maxHeight": 50,
+                        "minHeight": 30,
+                        "maxVeinSize": 1500,
+                        "minVeinSize": 750,
+                        "indicationFlowerRegistryId": "buzzierbees:jolyce"
+                    }
+                ]
             },
             {
                 "name": "Simple Storage Network",
+                "modid": "storagenetwork",
                 "filenamePattern": "SimpleStorageNetwork-1.15.2-%ver%",
                 "currentVersion": "1.0.1"
             },
             {
                 "name": "Simply Backpacks",
+                "modid": "simplybackpacks",
                 "filenamePattern": "SimplyBackpacks-1.15.2-%ver%",
                 "currentVersion": "1.4.6"
             },
             {
                 "name": "Storage Drawers",
+                "modid": "storagedrawers",
                 "filenamePattern": "StorageDrawers-1.15.2-%ver%",
                 "currentVersion": "7.0.2"
             },
             {
                 "name": "Swamp Expansion",
+                "modid": "swampexpansion",
                 "filenamePattern": "Swamp-Expansion-1.15.2-%ver%",
                 "currentVersion": "1.7.3"
             },
             {
                 "name": "SwingThroughGrass",
+                "modid": "swingthroughgrass",
                 "filenamePattern": "SwingThroughGrass-1.15.2-%ver%",
                 "currentVersion": "1.4.0"
             },
             {
                 "name": "TellMe-forge",
+                "modid": "tellme",
                 "filenamePattern": "TellMe-forge-1.15.2-%ver%",
                 "currentVersion": "0.8.1"
             },
             {
                 "name": "TerraForged",
+                "modid": "terraforged",
                 "filenamePattern": "TerraForged-1.15.2-%ver%",
                 "currentVersion": "0.1.1"
             },
             {
                 "name": "Toast Control",
+                "modid": "toastcontrol",
                 "filenamePattern": "ToastControl-1.15.2-%ver%",
                 "currentVersion": "3.0.1"
             },
             {
                 "name": "Tool Belt",
+                "modid": "toolbelt",
                 "filenamePattern": "ToolBelt-1.15.2-%ver%",
                 "currentVersion": "1.14.1"
             },
             {
                 "name": "TrashSlot",
+                "modid": "trashslot",
                 "filenamePattern": "TrashSlot_1.15.2-%ver%",
                 "currentVersion": "11.0.0"
             },
             {
                 "name": "Upgrade Aquatic",
+                "modid": "upgrade_aquatic",
                 "filenamePattern": "Upgrade-Aquatic-1.15.2-%ver%",
                 "currentVersion": "1.7.1"
             },
             {
                 "name": "V-Tweaks",
+                "modid": "vtweaks",
                 "filenamePattern": "VTweaks-1.15.2-%ver%",
                 "currentVersion": "3.1.7"
             },
             {
                 "name": "Waterworks",
+                "modid": "waterworks",
                 "filenamePattern": "Waterworks-1.15.2-%ver%",
                 "currentVersion": "2.1.2"
             },
             {
                 "name": "Xaero's Minimap",
+                "modid": "xaerominimap",
                 "filenamePattern": "Xaeros_Minimap_%ver%_Forge_1.15.2",
                 "currentVersion": "20.20.0"
             },
             {
                 "name": "Xaero's World Map",
+                "modid": "xaeroworldmap",
                 "filenamePattern": "XaerosWorldMap_%ver%_Forge_1.15.2",
                 "currentVersion": "1.10.0"
             },
             {
                 "name": "YUNG's Better Caves",
+                "modid": "bettercaves",
                 "filenamePattern": "BetterCaves-1.15.2-%ver%",
                 "currentVersion": "1.0"
             }
@@ -549,320 +1270,414 @@
     {
         "name": "Whole Food Mod Snack",
         "shortName": "WFMS",
-        "maxMemoryMB": 4608,
+        "maxMemoryMB": 5120,
         "mods": [
             {
                 "name": "Absent by Design",
+                "modid": "absentbydesign",
                 "filenamePattern": "AbsentbyDesign-1.15.2-%ver%",
                 "currentVersion": "1.1.0"
             },
             {
                 "name": "Advanced Hook Launchers",
+                "modid": "adhooks",
                 "filenamePattern": "AdHooks-1.15.2-%ver%",
                 "currentVersion": "5.1.0.0-build.0046"
             },
             {
-                "name": "Ambient Sounds 3",
+                "name": "Ambient Sounds",
+                "modid": "ambientsounds",
                 "filenamePattern": "AmbientSounds_v%ver%_mc1.15.2",
                 "currentVersion": "3.0.20"
             },
             {
                 "name": "Apotheosis",
+                "modid": "apotheosis",
                 "filenamePattern": "Apotheosis-1.15.2-%ver%",
                 "currentVersion": "3.2.4"
             },
             {
                 "name": "Aquaculture",
+                "modid": "aquaculture",
                 "filenamePattern": "Aquaculture-1.15.2-%ver%",
                 "currentVersion": "2.0.16"
             },
             {
                 "name": "Archer's Paradox",
+                "modid": "archers_paradox",
                 "filenamePattern": "archers_paradox-1.15.2-%ver%",
                 "currentVersion": "0.4.0b"
             },
             {
                 "name": "Attained Drops 2",
+                "modid": "attained_drops",
                 "filenamePattern": "AttainedDrops-1.15.2-%ver%",
                 "currentVersion": "6.0.7"
             },
             {
                 "name": "Bed Benefits",
+                "modid": "bedbenefits",
                 "filenamePattern": "BedBenefits-1.15.2-%ver%",
                 "currentVersion": "1.0.4"
             },
             {
                 "name": "Biomes O' Plenty",
+                "modid": "biomesoplenty",
                 "filenamePattern": "BiomesOPlenty-1.15.2-%ver%-universal",
                 "currentVersion": "10.0.0.366"
             },
             {
                 "name": "Bloomful",
+                "modid": "bloomful",
                 "filenamePattern": "Bloomful-1.15.2-%ver%",
                 "currentVersion": "1.4.1"
             },
             {
                 "name": "Bookshelf",
+                "modid": "bookshelf",
                 "filenamePattern": "Bookshelf-1.15.2-%ver%",
                 "currentVersion": "5.6.40"
             },
             {
                 "name": "Botania",
+                "modid": "botania",
                 "filenamePattern": "Botania-%ver%",
                 "currentVersion": "r1.15-388"
             },
             {
                 "name": "Bountiful",
+                "modid": "bountiful",
                 "filenamePattern": "Bountiful-1.15.2-%ver%",
                 "currentVersion": "3.1.2"
             },
             {
                 "name": "Charm",
+                "modid": "charm",
                 "filenamePattern": "Charm-1.15.2-%ver%",
                 "currentVersion": "1.5.9"
             },
             {
                 "name": "COFH Core",
+                "modid": "cofh_core",
                 "filenamePattern": "cofh_core-1.15.2-%ver%",
                 "currentVersion": "0.4.0b"
             },
             {
                 "name": "Conjurer, The",
+                "modid": "conjurer_illager",
                 "filenamePattern": "the-conjurer-1.15.2-%ver%",
                 "currentVersion": "1.0.7"
             },
             {
                 "name": "Covalent",
+                "modid": "covalent",
                 "filenamePattern": "Covalent-1.15.2-%ver%",
                 "currentVersion": "1.0.2"
             },
             {
                 "name": "Create",
+                "modid": "create",
                 "filenamePattern": "create-mc1.15.2_v%ver%",
-                "currentVersion": "0.2.4d"
+                "currentVersion": "0.2.4e"
             },
             {
-                "name": "Curio of Undying (Forge)",
+                "name": "Curio of Undying",
+                "modid": "curioofundying",
                 "filenamePattern": "curioofundying-FORGE-1.15.2-%ver%",
                 "currentVersion": "3.0"
             },
             {
                 "name": "Decorative Blocks",
+                "modid": "decorative_blocks",
                 "filenamePattern": "decorative_blocks-%ver%",
                 "currentVersion": "6e"
             },
             {
                 "name": "Dungeons Plus",
+                "modid": "dungeons_plus",
                 "filenamePattern": "dungeons-plus-1.15.2-%ver%",
                 "currentVersion": "1.0.2"
             },
             {
                 "name": "EmbellishCraft",
+                "modid": "embellishcraft",
                 "filenamePattern": "EmbellishCraft-1.15.2-%ver%",
                 "currentVersion": "2.2.1.0"
             },
             {
                 "name": "EmbellishCraft: Biomes O'Plenty Addon",
+                "modid": "embellishcraft-bop",
                 "filenamePattern": "embellishcraft-bop-1.15.2-%ver%",
                 "currentVersion": "2.1.1"
             },
             {
                 "name": "Enemyz",
+                "modid": "enemyz",
                 "filenamePattern": "Enemyz-1.15.2-%ver%",
                 "currentVersion": "1.0.1"
             },
             {
                 "name": "Equipment Tooltips",
+                "modid": "equipmenttooltips",
                 "filenamePattern": "EquipmentTooltips-1.15.2-%ver%",
                 "currentVersion": "1.4.3+14"
             },
             {
                 "name": "Exotic Birds",
+                "modid": "exoticbirds",
                 "filenamePattern": "ExoticBirds-1.15.2-%ver%",
-                "currentVersion": "1.0.2"
+                "currentVersion": "1.0.3"
             },
             {
                 "name": "Extra Disks",
+                "modid": "extradisks",
                 "filenamePattern": "ExtraDisks-1.15.2-%ver%",
                 "currentVersion": "1.2.2"
             },
             {
                 "name": "Forbidden and Arcanus",
+                "modid": "forbidden_arcanus",
                 "filenamePattern": "forbidden_arcanus-1.15.2-%ver%",
-                "currentVersion": "1.5"
+                "currentVersion": "1.5",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "arcane_crystal_ore",
+                        "rarity": 2200,
+                        "maxHeight": 12,
+                        "minHeight": 2,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "botania:spectranthemum"
+                    },
+                    {
+                        "blockRegistryName": "xpetrified_ore",
+                        "rarity": 2800,
+                        "maxHeight": 12,
+                        "minHeight": 2,
+                        "maxVeinSize": 600,
+                        "minVeinSize": 300,
+                        "indicationFlowerRegistryId": "botania:dandelifeon"
+                    }
+                ]
             },
             {
                 "name": "In Control!",
+                "modid": "incontrol",
                 "filenamePattern": "incontrol-1.15-%ver%",
                 "currentVersion": "4.0.4"
             },
             {
                 "name": "Incubation",
+                "modid": "incubation",
                 "filenamePattern": "incubation-%ver%-1.15.2",
                 "currentVersion": "1.0.4"
             },
             {
                 "name": "Iron Chests",
+                "modid": "ironchests",
                 "filenamePattern": "ironchest-1.15.2-%ver%",
                 "currentVersion": "10.0.3"
             },
             {
                 "name": "Lightest Lamps",
+                "modid": "lightestlamp",
                 "filenamePattern": "lightestlamp-%ver%",
                 "currentVersion": "3.4.3"
             },
             {
                 "name": "Lollipop",
+                "modid": "lollipop",
                 "filenamePattern": "Lollipop-1.15.2-%ver%",
                 "currentVersion": "1.0.16"
             },
             {
                 "name": "Macaw's Bridges",
+                "modid": "mcwbridges",
                 "filenamePattern": "mcw-bridges-%ver%-mc1.15.2",
                 "currentVersion": "1.0.4fix"
             },
             {
                 "name": "Mana Gear",
+                "modid": "managear",
                 "filenamePattern": "ManaGear-1.15.2-%ver%",
                 "currentVersion": "1.2.0"
             },
             {
                 "name": "Mapper Base",
+                "modid": "mapperbase",
                 "filenamePattern": "MapperBase-1.15.2-%ver%",
-                "currentVersion": "1.1.1.0"
+                "currentVersion": "1.1.1.0",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "bitumen_ore",
+                        "rarity": 1000,
+                        "maxHeight": 80,
+                        "minHeight": 40,
+                        "maxVeinSize": 1200,
+                        "minVeinSize": 600,
+                        "indicationFlowerRegistryId": "botania:black_mystical_flower"
+                    }
+                ]
             },
             {
                 "name": "McJtyLib",
+                "modid": "mcjtylib",
                 "filenamePattern": "mcjtylib-1.15-%ver%",
                 "currentVersion": "4.1.3-beta"
             },
             {
                 "name": "Miner's Helmet",
+                "modid": "mining_helmet",
                 "filenamePattern": "mining-helmet-1.15.2-%ver%",
                 "currentVersion": "1.0.8"
             },
             {
                 "name": "Mining Gadgets",
+                "modid": "mininggadgets",
                 "filenamePattern": "mininggadgets-%ver%",
                 "currentVersion": "1.3.5"
             },
             {
                 "name": "Pam's Harvestcraft 2 - Crops",
+                "modid": "pamhc2crops",
                 "filenamePattern": "pamhc2crops-1.15.2-%ver%",
                 "currentVersion": "1.0.5"
             },
             {
                 "name": "Pam's Harvestcraft 2 - Food Core",
+                "modid": "pamhc2foodcore",
                 "filenamePattern": "pamhc2foodcore-1.15.2-%ver%",
                 "currentVersion": "1.0.9"
             },
             {
                 "name": "Pam's Harvestcraft 2 - Trees",
+                "modid": "pamhc2trees",
                 "filenamePattern": "pamhc2trees-1.15.2-%ver%",
                 "currentVersion": "1.0.5"
             },
             {
                 "name": "Pane in the Glass",
+                "modid": "pitg",
                 "filenamePattern": "pitg-1.15.2-%ver%",
                 "currentVersion": "1.4.1"
             },
             {
                 "name": "Pretty Beaches",
+                "modid": "prettybeaches",
                 "filenamePattern": "PrettyBeaches_1.15.2-%ver%",
                 "currentVersion": "4.0.1"
             },
             {
                 "name": "Refined Pipes",
+                "modid": "refinedpipes",
                 "filenamePattern": "refinedpipes-%ver%",
                 "currentVersion": "0.4.2"
             },
             {
                 "name": "Refined Storage",
+                "modid": "refinedstorage",
                 "filenamePattern": "refinedstorage-%ver%",
                 "currentVersion": "1.8.8"
             },
             {
                 "name": "Refined Storage Addons",
+                "modid": "refinedstorageaddons",
                 "filenamePattern": "refinedstorageaddons-%ver%",
                 "currentVersion": "0.6.3"
             },
             {
                 "name": "Reliquary v1.3",
+                "modid": "xreliquary",
                 "filenamePattern": "Reliquary-1.15.2-%ver%",
                 "currentVersion": "1.3.4.995"
             },
             {
                 "name": "RFTools Base",
+                "modid": "rftoolsbase",
                 "filenamePattern": "rftoolsbase-1.15-%ver%",
                 "currentVersion": "1.1.3-beta"
             },
             {
                 "name": "RFTools Builder",
+                "modid": "rftoolsbuilder",
                 "filenamePattern": "rftoolsbuilder-1.15-%ver%",
                 "currentVersion": "2.1.5-beta"
             },
             {
                 "name": "RFTools Power",
+                "modid": "rftoolspower",
                 "filenamePattern": "rftoolspower-1.15-%ver%",
                 "currentVersion": "2.2.0-beta"
             },
             {
                 "name": "RFTools Storage",
+                "modid": "rftoolsstorage",
                 "filenamePattern": "rftoolsstorage-1.15-%ver%",
                 "currentVersion": "1.1.6-beta"
             },
             {
                 "name": "RFTools Utility",
+                "modid": "rftoolsutility",
                 "filenamePattern": "rftoolsutility-1.15-%ver%",
                 "currentVersion": "2.1.5-beta"
             },
             {
                 "name": "Simply Tea!",
+                "modid": "simplytea",
                 "filenamePattern": "simplytea-1.15.2-%ver%",
                 "currentVersion": "2.2.1"
             },
             {
                 "name": "Slime Tweaks",
+                "modid": "slimetweaks",
                 "filenamePattern": "SlimeTweaks-1.15.2-%ver%",
                 "currentVersion": "1.0.2"
             },
             {
                 "name": "Solar Flux Reborn",
+                "modid": "solarfluxreborn",
                 "filenamePattern": "SolarFluxReborn-1.15.2-%ver%",
                 "currentVersion": "15.2.3"
             },
             {
                 "name": "Spice of Life: Carrot Edition",
+                "modid": "spiceoflife:carrotedition",
                 "filenamePattern": "solcarrot-1.15.2-%ver%",
                 "currentVersion": "1.9.7"
             },
             {
                 "name": "Structure Gel",
+                "modid": "structure_gel",
                 "filenamePattern": "structure-gel-api-1.15.2-%ver%",
                 "currentVersion": "1.1.0"
             },
             {
                 "name": "To the Bat Poles!",
+                "modid": "adpoles",
                 "filenamePattern": "AdPoles-1.15.2-%ver%",
                 "currentVersion": "4.0.1.0-build.0009"
             },
             {
                 "name": "Voyage",
+                "modid": "voyage",
                 "filenamePattern": "Voyage-1.15.2-%ver%",
                 "currentVersion": "1.0.2"
             },
             {
                 "name": "Xnet",
+                "modid": "xnet",
                 "filenamePattern": "Xnet-1.15-%ver%",
                 "currentVersion": "2.1.7-beta"
             },
             {
                 "name": "Xnet Gases",
+                "modid": "xnetgases",
                 "filenamePattern": "XnetGases-1.15.2-%ver%",
                 "currentVersion": "1.0.0"
             },
             {
                 "name": "YUNG's Better Mineshafts",
+                "modid": "bettermineshafts",
                 "filenamePattern": "BetterMineshaftsForge-1.15.2-%ver%",
                 "currentVersion": "1.3"
             }
@@ -871,320 +1686,472 @@
     {
         "name": "Gut Wagon Mod Snack",
         "shortName": "GWMS",
-        "maxMemoryMB": 6144,
+        "maxMemoryMB": 7168,
         "mods": [
             {
                 "name": "Advanced Chimneys",
+                "modid": "adchimneys",
                 "filenamePattern": "AdChimneys-1.15.2-%ver%",
                 "currentVersion": "5.0.6.0-build.0044"
             },
             {
                 "name": "Applied Energistics 2",
+                "modid": "appliedenergistics2",
                 "filenamePattern": "appliedenergistics2-%ver%-beta.2",
                 "currentVersion": "7.0.0"
             },
             {
+                "name": "Astral Sorcery",
+                "modid": "astralsorcery",
+                "filenamePattern": "AstralSorcery-1.15.2-%ver%",
+                "currentVersion": "1.12.6",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "rock_crystal_ore",
+                        "rarity": 4200,
+                        "maxHeight": 8,
+                        "minHeight": 2,
+                        "maxVeinSize": 150,
+                        "minVeinSize": 75,
+                        "indicationFlowerRegistryId": "botania:white_mystical_flower"
+                    }
+                ]
+            },
+            {
                 "name": "Atum 2: Return to the Sands",
+                "modid": "atum",
                 "filenamePattern": "Atum-1.15.2-%ver%",
                 "currentVersion": "2.1.4"
             },
             {
-                "name": "Bonsai Trees",
+                "name": "Bonsai Trees 2",
+                "modid": "bonsaitrees2",
                 "filenamePattern": "BonsaiTrees-%ver%",
                 "currentVersion": "2.1.2.6"
             },
             {
                 "name": "Botany Pots",
+                "modid": "botanypots",
                 "filenamePattern": "BotanyPots-1.15.2-%ver%",
                 "currentVersion": "2.0.27"
             },
             {
                 "name": "Caelus API (Forge)",
+                "modid": "caelus",
                 "filenamePattern": "caelus-FORGE-1.15.2-%ver%",
                 "currentVersion": "2.0-beta3"
             },
             {
-                "name": "CodeChicken Lib 1.8.+",
+                "name": "CC: Tweaked",
+                "modid": "computercraft",
+                "filenamePattern": "cc-tweaked-1.15.2-%ver%",
+                "currentVersion": "1.90.2"
+            },
+            {
+                "name": "Ceramics",
+                "modid": "ceramics",
+                "filenamePattern": "Ceramics-1.15.2-%ver%",
+                "currentVersion": "1.4.0"
+            },
+            {
+                "name": "Cherished Worlds",
+                "modid": "cherishedworlds",
+                "filenamePattern": "cherishedworlds-FORGE-1.15.2-%ver%",
+                "currentVersion": "3.0.0.1"
+            },
+            {
+                "name": "CodeChicken Lib",
+                "modid": "codechickenlib",
                 "filenamePattern": "CodeChickenLib-1.15.2-%ver%-universal",
                 "currentVersion": "3.3.1.379"
             },
             {
+                "name": "Cosmetic Armor Reworked",
+                "modid": "cosmeticarmorreworked",
+                "filenamePattern": "CosmeticArmorReworked-1.15.2-%ver%",
+                "currentVersion": "v3a"
+            },
+            {
                 "name": "Cucumber",
+                "modid": "cucumber",
                 "filenamePattern": "Cucumber-1.15.2-%ver%",
                 "currentVersion": "3.0.9"
             },
             {
                 "name": "Culinary Construct",
+                "modid": "culinaryconstruct",
                 "filenamePattern": "culinaryconstruct-FORGE-1.15.2-%ver%",
                 "currentVersion": "2.0.0.2"
             },
             {
                 "name": "Curious Elytra",
+                "modid": "curiouselytra",
                 "filenamePattern": "curiouselytra-FORGE-1.15.2-%ver%",
                 "currentVersion": "2.0"
             },
             {
                 "name": "Dark Paintings",
+                "modid": "darkpaintings",
                 "filenamePattern": "DarkPaintings-1.15.2-%ver%",
                 "currentVersion": "1.0.6"
             },
             {
                 "name": "Dark Utilities",
+                "modid": "darkutils",
                 "filenamePattern": "DarkUtilities-1.15.2-%ver%",
                 "currentVersion": "3.1.8"
             },
             {
                 "name": "Doggy Talents",
+                "modid": "doggytalents",
                 "filenamePattern": "DoggyTalents-1.15.2-%ver%",
                 "currentVersion": "1.15.2.3"
             },
             {
                 "name": "Ender Storage 1.8+",
+                "modid": "enderstorage",
                 "filenamePattern": "EnderStorage-1.15.2-%ver%-universal",
                 "currentVersion": "2.5.0.151"
             },
             {
                 "name": "Engineer's Decor",
+                "modid": "engineersdecor",
                 "filenamePattern": "EngineersDecor-1.15.2-%ver%",
                 "currentVersion": "1.1.2"
             },
             {
                 "name": "Ensorcellation",
+                "modid": "ensorcellation",
                 "filenamePattern": "Ensorcellation-1.15.2-%ver%",
                 "currentVersion": "0.4.1b"
             },
             {
                 "name": "Essentials",
+                "modid": "essentials",
                 "filenamePattern": "Essentials-1.15.2-%ver%",
                 "currentVersion": "2.7.4"
             },
             {
                 "name": "Extended Lights",
+                "modid": "extlights",
                 "filenamePattern": "extlights-%ver%",
                 "currentVersion": "2.1"
             },
             {
                 "name": "Extended Nether",
+                "modid": "extendednether",
                 "filenamePattern": "Extended-Nether+1.15.2+%ver%",
                 "currentVersion": "Beta-3.1.3"
             },
             {
                 "name": "Fairy Lights",
+                "modid": "fairylights",
                 "filenamePattern": "fairylights-%ver%-1.15.2",
                 "currentVersion": "3.0.7"
             },
             {
                 "name": "Farlanders, The",
+                "modid": "farlanders",
                 "filenamePattern": "farlanders-1.15.2-%ver%",
                 "currentVersion": "1.3.1"
             },
             {
                 "name": "Flux Networks",
+                "modid": "fluxnetworks",
                 "filenamePattern": "FluxNetworks-1.15.2-%ver%",
                 "currentVersion": "5.0.3-4"
             },
             {
                 "name": "Immersive Engineering",
+                "modid": "immersiveengineering",
                 "filenamePattern": "ImmersiveEngineering-1.15.2-%ver%",
                 "currentVersion": "3.1-111"
             },
             {
                 "name": "Immersive Posts",
+                "modid": "immersiveposts",
                 "filenamePattern": "immersiveposts-1.15.2-%ver%",
                 "currentVersion": "2.1.0"
             },
             {
                 "name": "Industrial Foregoing",
+                "modid": "industrialforegoing",
                 "filenamePattern": "industrial-foregoing-1.15.2-%ver%",
                 "currentVersion": "2.3.3-e356e61"
             },
             {
                 "name": "Kiwi",
+                "modid": "kiwi",
                 "filenamePattern": "Kiwi-1.15.2-%ver%",
                 "currentVersion": "2.8.2"
             },
             {
                 "name": "Libnonymous",
+                "modid": "libnonymous",
                 "filenamePattern": "Libnonymous-1.15.2-%ver%",
                 "currentVersion": "1.1.1.5"
             },
             {
                 "name": "Lost Cities",
+                "modid": "lostcities",
                 "filenamePattern": "lostcities-1.15-%ver%",
                 "currentVersion": "3.0.1-alpha"
             },
             {
                 "name": "Macaw's Doors",
+                "modid": "mcwdoors",
                 "filenamePattern": "mcw-doors-%ver%-mc1.15.2",
                 "currentVersion": "1.0.0"
             },
             {
                 "name": "Macaw's Furniture",
+                "modid": "mcwfurnitures",
                 "filenamePattern": "mcw-furniture-%ver%-mc1.15.1+1.15.2",
                 "currentVersion": "1.0.1"
             },
             {
                 "name": "mGui",
+                "modid": "mgui",
                 "filenamePattern": "mGui-1.15.2-%ver%",
                 "currentVersion": "2.1.1"
             },
             {
                 "name": "Midnight, The",
+                "modid": "midnight",
                 "filenamePattern": "themidnight-%ver%",
                 "currentVersion": "0.5.9"
             },
             {
                 "name": "MineColonies",
+                "modid": "minecolonies",
                 "filenamePattern": "minecolonies-%ver%-universal",
                 "currentVersion": "0.13.81-RELEASE"
             },
             {
                 "name": "Morph-o-Tool",
+                "modid": "morphtool",
                 "filenamePattern": "Morph-o-Tool-%ver%",
                 "currentVersion": "1.3-23"
             },
             {
                 "name": "MrCrayfish's Furniture Mod",
+                "modid": "mrcrayfish'sfurnituremod",
                 "filenamePattern": "furniture-%ver%",
                 "currentVersion": "7.0.0-pre16-1.15.1"
             },
             {
                 "name": "MrCrayfish's Vehicle Mod",
+                "modid": "mrcrayfish'svehiclemod",
                 "filenamePattern": "vehicle-mod-%ver%-1.15.2",
                 "currentVersion": "0.44.1"
             },
             {
                 "name": "Mystical Agradditions",
+                "modid": "mysticalagradditions",
                 "filenamePattern": "MysticalAgradditions-1.15.2-%ver%",
                 "currentVersion": "3.0.1"
             },
             {
                 "name": "Mystical Agriculture",
+                "modid": "mysticalagriculture",
                 "filenamePattern": "MysticalAgriculture-1.15.2-%ver%",
-                "currentVersion": "3.0.10"
+                "currentVersion": "3.0.10",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "inferium_ore",
+                        "rarity": 1000,
+                        "maxHeight": 50,
+                        "minHeight": 25,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "botania:light_gray_mystical_flower"
+                    },
+                    {
+                        "blockRegistryName": "prosperity_ore",
+                        "rarity": 1000,
+                        "maxHeight": 50,
+                        "minHeight": 25,
+                        "maxVeinSize": 1200,
+                        "minVeinSize": 600,
+                        "indicationFlowerRegistryId": "botania:gray_mystical_flower"
+                    }
+                ]
             },
             {
                 "name": "Mystical Customization",
+                "modid": "mysticalcustomization",
                 "filenamePattern": "MysticalCustomization-1.15.2-%ver%",
                 "currentVersion": "1.0.0"
             },
             {
                 "name": "Mystical World",
+                "modid": "mysticalworld",
                 "filenamePattern": "MysticalWorld-1.15.2-%ver%",
-                "currentVersion": "2.0.6"
+                "currentVersion": "2.0.6",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "quicksilver_ore",
+                        "rarity": 3000,
+                        "maxHeight": 16,
+                        "minHeight": 2,
+                        "maxVeinSize": 200,
+                        "minVeinSize": 100,
+                        "indicationFlowerRegistryId": "botania:hopperhock"
+                    }
+                ]
             },
             {
                 "name": "MysticalLib",
+                "modid": "mysticallib",
                 "filenamePattern": "MysticalLib-1.15.2-%ver%",
                 "currentVersion": "2.0.1"
             },
             {
                 "name": "Obfuscate",
+                "modid": "obfuscate",
                 "filenamePattern": "obfuscate-%ver%-1.15.2",
                 "currentVersion": "0.4.3"
             },
             {
+                "name": "ObserverLib",
+                "modid": "observerlib",
+                "filenamePattern": "ObserverLib-1.15.2-%ver%",
+                "currentVersion": "1.2.0.v60"
+            },
+            {
                 "name": "OpenBlocks Elevator",
+                "modid": "openblockselevator",
                 "filenamePattern": "elevatorid-1.15.2-%ver%",
                 "currentVersion": "1.7.1"
             },
             {
                 "name": "Paintings++",
+                "modid": "paintings",
                 "filenamePattern": "paintings-1.15.2-%ver%",
                 "currentVersion": "7.0.0.0"
             },
             {
                 "name": "Powah!",
+                "modid": "powah",
                 "filenamePattern": "Powah-1.15.2-%ver%",
-                "currentVersion": "1.1.15"
+                "currentVersion": "1.1.15",
+                "largeOreDepositsConfig": [
+                    {
+                        "blockRegistryName": "uraninite_ore",
+                        "rarity": 3000,
+                        "maxHeight": 32,
+                        "minHeight": 16,
+                        "maxVeinSize": 1200,
+                        "minVeinSize": 600,
+                        "indicationFlowerRegistryId": "botania:agricarnation"
+                    }
+                ]
             },
             {
                 "name": "Progressive Bosses",
+                "modid": "progressivebosses",
                 "filenamePattern": "ProgressiveBosses-%ver%-mc1.15.2",
                 "currentVersion": "2.1.5"
             },
             {
                 "name": "ProjectE",
+                "modid": "projecte",
                 "filenamePattern": "ProjectE-1.15.2-PE%ver%",
                 "currentVersion": "1.0.4"
             },
             {
                 "name": "Psi",
+                "modid": "psi",
                 "filenamePattern": "Psi+%ver%",
                 "currentVersion": "r1.2-83"
             },
             {
                 "name": "Ranged Pumps",
+                "modid": "rangedpumps",
                 "filenamePattern": "rangedpumps-%ver%",
                 "currentVersion": "0.7.1"
             },
             {
                 "name": "RFTools Control",
+                "modid": "rftoolscontrol",
                 "filenamePattern": "rftoolscontrol-1.15-%ver%",
                 "currentVersion": "3.0.3-beta"
             },
             {
                 "name": "Road Stuff",
+                "modid": "roadstuff",
                 "filenamePattern": "RoadStuff-1.15.2-%ver%",
                 "currentVersion": "3.2.0"
             },
             {
                 "name": "Scenic",
+                "modid": "scenic",
                 "filenamePattern": "Scenic-1.15.2-%ver%",
                 "currentVersion": "1.0.2"
             },
             {
                 "name": "Simple Farming",
+                "modid": "simplefarming",
                 "filenamePattern": "SimpleFarming-1.15.2-%ver%",
                 "currentVersion": "1.3.0"
             },
             {
                 "name": "Snow! Real Magic!",
+                "modid": "snowrealmagic",
                 "filenamePattern": "SnowRealMagic-1.15.2-%ver%",
                 "currentVersion": "1.7.5"
             },
             {
-                "name": "Structurize",
-                "filenamePattern": "structurize-%ver%",
-                "currentVersion": "0.13.31-RELEASE"
-            },
-            {
                 "name": "Strange",
+                "modid": "strange",
                 "filenamePattern": "Strange-1.15.2-%ver%",
                 "currentVersion": "1.0.0-beta.5.hotfix1"
             },
             {
+                "name": "Structurize",
+                "modid": "structurize",
+                "filenamePattern": "structurize-%ver%",
+                "currentVersion": "0.13.31-RELEASE"
+            },
+            {
                 "name": "Tetra",
+                "modid": "tetra",
                 "filenamePattern": "Tetra-1.15.2-%ver%",
                 "currentVersion": "2.18.1"
             },
             {
                 "name": "Titanium",
+                "modid": "titanium",
                 "filenamePattern": "Titanium-1.15.2-%ver%",
                 "currentVersion": "2.4.2"
             },
             {
                 "name": "Torch Slabs Mod",
+                "modid": "torchslabsmod",
                 "filenamePattern": "torchslabmod-1.15.2_v%ver%",
                 "currentVersion": "1.7.0"
             },
             {
                 "name": "U Team Core",
+                "modid": "uteamcore",
                 "filenamePattern": "u_team_core-1.15.2-%ver%",
                 "currentVersion": "3.0.2.169"
             },
             {
                 "name": "Useful Railroads",
+                "modid": "usefulrailroads",
                 "filenamePattern": "useful_railroads-1.15.2-%ver%",
                 "currentVersion": "1.4.0.23"
             },
             {
                 "name": "Valhelsia Structures",
+                "modid": "valhelsia_structures",
                 "filenamePattern": "valhelsia_structures-%ver%",
                 "currentVersion": "15.0.3a"
             },
             {
                 "name": "Wither Skeleton Tweaks",
+                "modid": "wstweaks",
                 "filenamePattern": "WitherSkeletonTweaks-1.15.1-%ver%",
                 "currentVersion": "4.0.0"
             }
