@@ -162,6 +162,7 @@
                 "largeOreDepositsConfig": [
                     {
                         "blockRegistryName": "fiery_glass_ore",
+                        "rarity": 1100,
                         "maxHeight": 64,
                         "minHeight": 16,
                         "maxVeinSize": 1000,
@@ -170,6 +171,7 @@
                     },
                     {
                         "blockRegistryName": "rockroot_ore",
+                        "rarity": 3500,
                         "maxHeight": 32,
                         "minHeight": 16,
                         "maxVeinSize": 200,
@@ -366,6 +368,7 @@
                 "largeOreDepositsConfig": [
                     {
                         "blockRegistryName": "osmium_ore",
+                        "rarity": 1000,
                         "maxHeight": 30,
                         "minHeight": 15,
                         "maxVeinSize": 1200,
@@ -400,6 +403,7 @@
                 "largeOreDepositsConfig": [
                     {
                         "blockRegistryName": "coal_ore",
+                        "rarity": 800,
                         "maxHeight": 80,
                         "minHeight": 32,
                         "maxVeinSize": 1800,
@@ -408,22 +412,7 @@
                     },
                     {
                         "blockRegistryName": "diamond_ore",
-                        "maxHeight": 16,
-                        "minHeight": 4,
-                        "maxVeinSize": 600,
-                        "minVeinSize": 300,
-                        "indicationFlowerRegistryId": "minecraft:white_tulip"
-                    },
-                    {
-                        "blockRegistryName": "emerald_ore",
-                        "maxHeight": 32,
-                        "minHeight": 8,
-                        "maxVeinSize": 1000,
-                        "minVeinSize": 500,
-                        "indicationFlowerRegistryId": "minecraft:dandelion"
-                    },
-                    {
-                        "blockRegistryName": "gold_ore",
+                        "rarity": 4200,
                         "maxHeight": 16,
                         "minHeight": 4,
                         "maxVeinSize": 600,
@@ -431,7 +420,26 @@
                         "indicationFlowerRegistryId": "minecraft:blue_orchid"
                     },
                     {
+                        "blockRegistryName": "emerald_ore",
+                        "rarity": 4480,
+                        "maxHeight": 32,
+                        "minHeight": 8,
+                        "maxVeinSize": 1000,
+                        "minVeinSize": 500,
+                        "indicationFlowerRegistryId": "buzzierbees:four_leaf_clover"
+                    },
+                    {
+                        "blockRegistryName": "gold_ore",
+                        "rarity": 3256,
+                        "maxHeight": 16,
+                        "minHeight": 4,
+                        "maxVeinSize": 600,
+                        "minVeinSize": 300,
+                        "indicationFlowerRegistryId": "minecraft:dandelion"
+                    },
+                    {
                         "blockRegistryName": "iron_ore",
+                        "rarity": 1020,
                         "maxHeight": 64,
                         "minHeight": 16,
                         "maxVeinSize": 1400,
@@ -440,6 +448,7 @@
                     },
                     {
                         "blockRegistryName": "lapis_ore",
+                        "rarity": 3640,
                         "maxHeight": 16,
                         "minHeight": 4,
                         "maxVeinSize": 600,
@@ -448,6 +457,7 @@
                     },
                     {
                         "blockRegistryName": "redstone_ore",
+                        "rarity": 2400,
                         "maxHeight": 16,
                         "minHeight": 4,
                         "maxVeinSize": 600,
@@ -620,6 +630,7 @@
                 "largeOreDepositsConfig": [
                     {
                         "blockRegistryName": "agate_ore",
+                        "rarity": 3360,
                         "maxHeight": 24,
                         "minHeight": 12,
                         "maxVeinSize": 300,
@@ -628,6 +639,7 @@
                     },
                     {
                         "blockRegistryName": "alexandrite_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -636,6 +648,7 @@
                     },
                     {
                         "blockRegistryName": "amber_ore",
+                        "rarity": 2400,
                         "maxHeight": 48,
                         "minHeight": 16,
                         "maxVeinSize": 1000,
@@ -644,6 +657,7 @@
                     },
                     {
                         "blockRegistryName": "amethyst_ore",
+                        "rarity": 3360,
                         "maxHeight": 24,
                         "minHeight": 12,
                         "maxVeinSize": 300,
@@ -652,6 +666,7 @@
                     },
                     {
                         "blockRegistryName": "ametrine_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -660,6 +675,7 @@
                     },
                     {
                         "blockRegistryName": "ammolite_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -668,6 +684,7 @@
                     },
                     {
                         "blockRegistryName": "apatite_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -676,6 +693,7 @@
                     },
                     {
                         "blockRegistryName": "aquamarine_ore",
+                        "rarity": 2800,
                         "maxHeight": 48,
                         "minHeight": 16,
                         "maxVeinSize": 1000,
@@ -684,6 +702,7 @@
                     },
                     {
                         "blockRegistryName": "benitoite_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -692,6 +711,7 @@
                     },
                     {
                         "blockRegistryName": "black_diamond_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -700,6 +720,7 @@
                     },
                     {
                         "blockRegistryName": "carnelian_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -708,6 +729,7 @@
                     },
                     {
                         "blockRegistryName": "cats_eye_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -716,6 +738,7 @@
                     },
                     {
                         "blockRegistryName": "chaos_ore",
+                        "rarity": 1800,
                         "maxHeight": 64,
                         "minHeight": 2,
                         "maxVeinSize": 1500,
@@ -724,6 +747,7 @@
                     },
                     {
                         "blockRegistryName": "chrysoprase_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -732,6 +756,7 @@
                     },
                     {
                         "blockRegistryName": "citrine_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -740,6 +765,7 @@
                     },
                     {
                         "blockRegistryName": "coral_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -748,6 +774,7 @@
                     },
                     {
                         "blockRegistryName": "euclase_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -756,6 +783,7 @@
                     },
                     {
                         "blockRegistryName": "fluorite_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -764,6 +792,7 @@
                     },
                     {
                         "blockRegistryName": "garnet_ore",
+                        "rarity": 3200,
                         "maxHeight": 24,
                         "minHeight": 12,
                         "maxVeinSize": 300,
@@ -772,6 +801,7 @@
                     },
                     {
                         "blockRegistryName": "green_sapphire_ore",
+                        "rarity": 2400,
                         "maxHeight": 48,
                         "minHeight": 16,
                         "maxVeinSize": 1000,
@@ -780,6 +810,7 @@
                     },
                     {
                         "blockRegistryName": "heliodor_ore",
+                        "rarity": 2400,
                         "maxHeight": 48,
                         "minHeight": 16,
                         "maxVeinSize": 1000,
@@ -788,6 +819,7 @@
                     },
                     {
                         "blockRegistryName": "iolite_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -796,6 +828,7 @@
                     },
                     {
                         "blockRegistryName": "jade_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -804,6 +837,7 @@
                     },
                     {
                         "blockRegistryName": "jasper_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -812,6 +846,7 @@
                     },
                     {
                         "blockRegistryName": "kunzite_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -820,6 +855,7 @@
                     },
                     {
                         "blockRegistryName": "kyanite_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -828,6 +864,7 @@
                     },
                     {
                         "blockRegistryName": "lepidolite_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -836,6 +873,7 @@
                     },
                     {
                         "blockRegistryName": "malachite_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -844,6 +882,7 @@
                     },
                     {
                         "blockRegistryName": "moldavite_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -852,6 +891,7 @@
                     },
                     {
                         "blockRegistryName": "moonstone_ore",
+                        "rarity": 4500,
                         "maxHeight": 64,
                         "minHeight": 48,
                         "maxVeinSize": 100,
@@ -860,6 +900,7 @@
                     },
                     {
                         "blockRegistryName": "morganite_ore",
+                        "rarity": 3200,
                         "maxHeight": 24,
                         "minHeight": 12,
                         "maxVeinSize": 300,
@@ -868,6 +909,7 @@
                     },
                     {
                         "blockRegistryName": "onyx_ore",
+                        "rarity": 2800,
                         "maxHeight": 32,
                         "minHeight": 16,
                         "maxVeinSize": 1000,
@@ -876,6 +918,7 @@
                     },
                     {
                         "blockRegistryName": "opal_ore",
+                        "rarity": 2800,
                         "maxHeight": 32,
                         "minHeight": 16,
                         "maxVeinSize": 1000,
@@ -884,6 +927,7 @@
                     },
                     {
                         "blockRegistryName": "pearl_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -892,6 +936,7 @@
                     },
                     {
                         "blockRegistryName": "peridot_ore",
+                        "rarity": 2400,
                         "maxHeight": 24,
                         "minHeight": 12,
                         "maxVeinSize": 300,
@@ -900,6 +945,7 @@
                     },
                     {
                         "blockRegistryName": "phosphophyllite_ore",
+                        "rarity": 2400,
                         "maxHeight": 24,
                         "minHeight": 12,
                         "maxVeinSize": 300,
@@ -908,6 +954,7 @@
                     },
                     {
                         "blockRegistryName": "pyrope_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -916,6 +963,7 @@
                     },
                     {
                         "blockRegistryName": "rose_quartz_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -924,6 +972,7 @@
                     },
                     {
                         "blockRegistryName": "ruby_ore",
+                        "rarity": 3920,
                         "maxHeight": 32,
                         "minHeight": 16,
                         "maxVeinSize": 1000,
@@ -932,6 +981,7 @@
                     },
                     {
                         "blockRegistryName": "sapphire_ore",
+                        "rarity": 3640,
                         "maxHeight": 32,
                         "minHeight": 16,
                         "maxVeinSize": 1000,
@@ -940,6 +990,7 @@
                     },
                     {
                         "blockRegistryName": "sodalite_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -948,6 +999,7 @@
                     },
                     {
                         "blockRegistryName": "spinel_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -956,6 +1008,7 @@
                     },
                     {
                         "blockRegistryName": "sunstone_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -964,6 +1017,7 @@
                     },
                     {
                         "blockRegistryName": "tanzanite_ore",
+                        "rarity": 2800,
                         "maxHeight": 32,
                         "minHeight": 16,
                         "maxVeinSize": 1000,
@@ -972,6 +1026,7 @@
                     },
                     {
                         "blockRegistryName": "tektite_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -980,6 +1035,7 @@
                     },
                     {
                         "blockRegistryName": "topaz_ore",
+                        "rarity": 3200,
                         "maxHeight": 24,
                         "minHeight": 12,
                         "maxVeinSize": 300,
@@ -988,6 +1044,7 @@
                     },
                     {
                         "blockRegistryName": "turquoise_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -996,6 +1053,7 @@
                     },
                     {
                         "blockRegistryName": "yellow_diamond_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -1004,6 +1062,7 @@
                     },
                     {
                         "blockRegistryName": "zircon_ore",
+                        "rarity": 4500,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 100,
@@ -1020,6 +1079,7 @@
                 "largeOreDepositsConfig": [
                     {
                         "blockRegistryName": "bauxite_ore",
+                        "rarity": 1150,
                         "maxHeight": 40,
                         "minHeight": 25,
                         "maxVeinSize": 1000,
@@ -1028,6 +1088,7 @@
                     },
                     {
                         "blockRegistryName": "bismuth_ore",
+                        "rarity": 1450,
                         "maxHeight": 70,
                         "minHeight": 40,
                         "maxVeinSize": 1000,
@@ -1036,6 +1097,7 @@
                     },
                     {
                         "blockRegistryName": "copper_ore",
+                        "rarity": 1450,
                         "maxHeight": 48,
                         "minHeight": 32,
                         "maxVeinSize": 1200,
@@ -1044,6 +1106,7 @@
                     },
                     {
                         "blockRegistryName": "lead_ore",
+                        "rarity": 1140,
                         "maxHeight": 25,
                         "minHeight": 5,
                         "maxVeinSize": 1200,
@@ -1052,6 +1115,7 @@
                     },
                     {
                         "blockRegistryName": "nickel_ore",
+                        "rarity": 2000,
                         "maxHeight": 24,
                         "minHeight": 2,
                         "maxVeinSize": 1000,
@@ -1060,6 +1124,7 @@
                     },
                     {
                         "blockRegistryName": "platinum_ore",
+                        "rarity": 2600,
                         "maxHeight": 20,
                         "minHeight": 5,
                         "maxVeinSize": 800,
@@ -1068,6 +1133,7 @@
                     },
                     {
                         "blockRegistryName": "silver_ore",
+                        "rarity": 1250,
                         "maxHeight": 25,
                         "minHeight": 10,
                         "maxVeinSize": 1200,
@@ -1076,6 +1142,7 @@
                     },
                     {
                         "blockRegistryName": "tin_ore",
+                        "rarity": 2500,
                         "maxHeight": 65,
                         "minHeight": 35,
                         "maxVeinSize": 1600,
@@ -1084,6 +1151,7 @@
                     },
                     {
                         "blockRegistryName": "uranium_ore",
+                        "rarity": 3600,
                         "maxHeight": 18,
                         "minHeight": 2,
                         "maxVeinSize": 500,
@@ -1092,6 +1160,7 @@
                     },
                     {
                         "blockRegistryName": "zinc_ore",
+                        "rarity": 1200,
                         "maxHeight": 50,
                         "minHeight": 30,
                         "maxVeinSize": 1500,
@@ -1373,6 +1442,7 @@
                 "largeOreDepositsConfig": [
                     {
                         "blockRegistryName": "arcane_crystal_ore",
+                        "rarity": 2200,
                         "maxHeight": 12,
                         "minHeight": 2,
                         "maxVeinSize": 1000,
@@ -1381,6 +1451,7 @@
                     },
                     {
                         "blockRegistryName": "xpetrified_ore",
+                        "rarity": 2800,
                         "maxHeight": 12,
                         "minHeight": 2,
                         "maxVeinSize": 600,
@@ -1439,6 +1510,7 @@
                 "largeOreDepositsConfig": [
                     {
                         "blockRegistryName": "bitumen_ore",
+                        "rarity": 1000,
                         "maxHeight": 80,
                         "minHeight": 40,
                         "maxVeinSize": 1200,
@@ -1636,6 +1708,7 @@
                 "largeOreDepositsConfig": [
                     {
                         "blockRegistryName": "rock_crystal_ore",
+                        "rarity": 4200,
                         "maxHeight": 8,
                         "minHeight": 2,
                         "maxVeinSize": 150,
@@ -1886,6 +1959,7 @@
                 "largeOreDepositsConfig": [
                     {
                         "blockRegistryName": "inferium_ore",
+                        "rarity": 1000,
                         "maxHeight": 50,
                         "minHeight": 25,
                         "maxVeinSize": 1000,
@@ -1894,6 +1968,7 @@
                     },
                     {
                         "blockRegistryName": "prosperity_ore",
+                        "rarity": 1000,
                         "maxHeight": 50,
                         "minHeight": 25,
                         "maxVeinSize": 1200,
@@ -1916,6 +1991,7 @@
                 "largeOreDepositsConfig": [
                     {
                         "blockRegistryName": "quicksilver_ore",
+                        "rarity": 3000,
                         "maxHeight": 16,
                         "minHeight": 2,
                         "maxVeinSize": 200,
@@ -1962,6 +2038,7 @@
                 "largeOreDepositsConfig": [
                     {
                         "blockRegistryName": "uraninite_ore",
+                        "rarity": 3000,
                         "maxHeight": 32,
                         "minHeight": 16,
                         "maxVeinSize": 1200,
