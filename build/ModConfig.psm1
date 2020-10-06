@@ -19,6 +19,7 @@ function New-LodDepositConfig {
                 $currentLine | Out-File $newConfigPath -Append
                 "		#$($modId):$($lodConfig.blockRegistryName)" | Out-File $newConfigPath -Append
             }
+            "I:rarity=" { "$currentLine$($lodConfig.rarity)" | Out-File $newConfigPath -Append }
             "Altitude {" {
                 $section = "altitude"
                 $currentLine | Out-File $newConfigPath -Append
