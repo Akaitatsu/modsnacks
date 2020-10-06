@@ -17,7 +17,7 @@ function New-LodDepositConfig {
             "# Configuration file" { $currentLine | Out-File $newConfigPath }
             "S:ores <" {
                 $currentLine | Out-File $newConfigPath -Append
-                "		#$($modId):$($lodConfig.blockRegistryName)" | Out-File $newConfigPath -Append
+                "		$($modId):$($lodConfig.blockRegistryName)" | Out-File $newConfigPath -Append
             }
             "I:rarity=" { "$currentLine$($lodConfig.rarity)" | Out-File $newConfigPath -Append }
             "Altitude {" {
