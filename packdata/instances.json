@@ -2,16 +2,28 @@
     {
         "name": "Low Carb Mod Snack",
         "shortName": "LCMS",
-        "maxMemoryMB": 4096
+        "maxMemoryMB": 4096,
+        "includeInstanceMods": [
+            "LCMS"
+        ]
     },
     {
         "name": "Whole Food Mod Snack",
         "shortName": "WFMS",
-        "maxMemoryMB": 5120
+        "maxMemoryMB": 5120,
+        "includeInstanceMods": [
+            "LCMS",
+            "WFMS"
+        ]
     },
     {
         "name": "Gut Wagon Mod Snack",
         "shortName": "GWMS",
-        "maxMemoryMB": 7168
+        "maxMemoryMB": 7168,
+        "includeInstanceMods": [
+            "LCMS",
+            "WFMS",
+            "GWMS"
+        ]
     }
 ]

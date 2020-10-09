@@ -23,18 +23,6 @@ $targetConfigPath = "$minecraftPath\config\"
 Remove-Item ($targetModsPath + "*.jar")
 Remove-Item ($targetConfigPath + "*") -Recurse
 Get-ChildItem $targetConfigPath -Directory | Remove-Item -Force -Confirm:$false
-foreach ($currentInstance in $allInstances) {
-    # Copy LCMS mods to current instance
-    if ($currentInstance.shortName -eq "LCMS") {
-        Copy-ModsInList $currentInstance.mods $targetModsPath $targetConfigPath
-    }
-    # If installing WFMS or GWMS, copy WFMS mods to current instance
-    if ($currentInstance.shortName -eq "WFMS" -and ($instanceObject.shortName -eq "WFMS" -or $instanceObject.shortName -eq "GWMS")) {
-        Copy-ModsInList $currentInstance.mods $targetModsPath $targetConfigPath
-    }
-    # If installing GWMS, copy GWMS mods to current instance
-    if ($currentInstance.shortName -eq "GWMS" -and $instanceObject.shortName -eq "GWMS") {
-        Copy-ModsInList $currentInstance.mods $targetModsPath $targetConfigPath
-    }
-}
+$instanceMods = Get-Mods | Where-Object { $instanceObject.includeInstanceMods.Contains($_.firstInstance) }
+Copy-ModsInList $instanceMods $targetModsPath $targetConfigPath
 Write-Host "  Copied Mods"
