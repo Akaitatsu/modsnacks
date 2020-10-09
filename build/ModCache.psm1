@@ -9,24 +9,26 @@ function Get-ModFilePath {
     param ($modObject)
     return "..\modcache\" + (Get-ModFilename $modObject)
 }
+function Get-Mods {
+    Push-Location
+    Set-Location $PSScriptRoot
+    return (Get-Content -Raw -Path ..\packdata\mods.json | ConvertFrom-Json)
+    Pop-Location
+}
 function Test-ModCache {
-    param (
-        [Parameter(Mandatory=$True)]$allInstances
-    )
     $totalModCount = 0
     $foundModCount = 0
-    foreach ($instance in $allInstances) {
-        foreach ($mod in $instance.mods) {
-            if ($mod.filenamePattern -ne "NA") {
-                $modFilename = Get-ModFilename $mod
-                $modPath = Get-ModFilePath $mod
-                $totalModCount++
-                if (Test-Path $modPath) {
-                    $foundModCount++
-                }
-                else {
-                    Write-Host ("  Missing {0} for {1}" -f $modFilename, $instance.name)
-                }
+    $mods = Get-Mods
+    foreach ($mod in $mods) {
+        if ($mod.filenamePattern -ne "NA") {
+            $modFilename = Get-ModFilename $mod
+            $modPath = Get-ModFilePath $mod
+            $totalModCount++
+            if (Test-Path $modPath) {
+                $foundModCount++
+            }
+            else {
+                Write-Host ("  Missing {0} for {1}" -f $modFilename, $instance.name)
             }
         }
     }

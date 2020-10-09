@@ -3,7 +3,7 @@ Set-Location $PSScriptRoot
 $instances = (Get-Content -Raw -Path ..\packdata\instances.json | ConvertFrom-Json)
 Write-Host "Verifying Mod Cache"
 Import-Module .\ModCache.psm1 -Force
-if (-not (Test-ModCache $instances)) {
+if (-not (Test-ModCache)) {
     Write-Host "Mod Cache Failed Verification; see messages above"
     Exit 1
 }
