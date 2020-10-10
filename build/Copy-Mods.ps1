@@ -18,11 +18,18 @@ function Copy-ModsInList {
 
 Write-Host "  Copying Mods"
 $minecraftPath = "..\..\MultiMC\instances\$($instanceObject.shortName)\.minecraft"
+# Prep mods folder
 $targetModsPath = "$minecraftPath\mods\"
-$targetConfigPath = "$minecraftPath\config\"
 Remove-Item ($targetModsPath + "*.jar")
+# Prep config folder
+$targetConfigPath = "$minecraftPath\config\"
 Remove-Item ($targetConfigPath + "*") -Recurse
 Get-ChildItem $targetConfigPath -Directory | Remove-Item -Force -Confirm:$false
+# Prep openloader folder
+$targetOpenLoaderPath = "$minecraftPath\openloader\"
+if (-not (Test-Path $targetOpenLoaderPath)) { New-Item -Path $targetOpenLoaderPath -ItemType Directory }
+Remove-Item ($targetOpenLoaderPath + "*") -Recurse
+# Copy mods and configs
 $instanceMods = Get-Mods | Where-Object { $instanceObject.includeInstanceMods.Contains($_.firstInstance) }
 Copy-ModsInList $instanceMods $targetModsPath $targetConfigPath
 Write-Host "  Copied Mods"
