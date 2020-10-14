@@ -11,10 +11,14 @@ function Copy-ModsInList {
         [string]$destinationModsPath,
         [string]$destinationConfigPath
     )
+    $copiedCount = 0
     foreach ($mod in $modsArray) {
         Copy-ModFromCache $mod $destinationModsPath
         Copy-ModConfig $mod $destinationConfigPath
+        $copiedCount++
+        Write-Progress -Activity "Copying Mods and Static Configs" -Status "Progress:" -PercentComplete (($copiedCount / $modsArray.Count) * 100)
     }
+    Write-Progress -Activity "Copying Mods and Static Configs" -Status "Progress:" -Completed
 }
 
 Write-Host "  Copying Mods"
