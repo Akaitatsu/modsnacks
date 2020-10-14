@@ -12,7 +12,8 @@ if (-not (Test-ModCache)) {
     Exit 1
 }
 Write-Host "Verified Mod Cache"
-Import-Module .\dynamicconfig\*.psm1
+Import-Module .\dynamicconfig\Create.psm1 -Force
+Import-Module .\dynamicconfig\Druidcraft.psm1 -Force
 foreach ($instance in $instances) {
     Write-Host ("Installing Instance {0} ({1})" -f $instance.name, $instance.shortName)
     .\Build-InstanceCfgFile.ps1 -instanceObject $instance
@@ -29,6 +30,7 @@ foreach ($instance in $instances) {
     Remove-Item ($targetOpenLoaderPath + "\*") -Recurse
     $modList = $instanceMods.modid
     New-CreateConfig -modList $modList -openloaderPath $targetOpenLoaderPath
+    New-DruidcraftConfig -modList $modList -openloaderPath $targetOpenLoaderPath
     Write-Host "  Generated dynamic configuration files"
     Write-Host ("Installed Instance {0} ({1})" -f $instance.name, $instance.shortName)
     Write-Host ""

@@ -1,0 +1,41 @@
+{
+    "template": {
+        "type": "druidcraft:woodcutting",
+        "ingredient": {
+            "tag": "**inputRegistryName"
+        },
+        "result": "**outputRegistryName",
+        "count": 1
+    },
+    "outputCounts": {
+        "beam": 1,
+        "palisade": 3,
+        "post": 2,
+        "seat": 1,
+        "support": 1
+    },
+    "modGroups": [
+        {
+            "mods": [
+                "decorative_blocks"
+            ],
+            "recipes": [
+                {
+                    "name": "acacia_beam",
+                    "inputRegistryName": "minecraft:acacia_logs",
+                    "outputRegistryName": "decorative_blocks:acacia_beam"
+                },
+                {
+                    "name": "acacia_palisade",
+                    "inputRegistryName": "minecraft:acacia_logs",
+                    "outputRegistryName": "decorative_blocks:acacia_palisade"
+                },
+                {
+                    "name": "acacia_support",
+                    "inputRegistryName": "minecraft:acacia_planks",
+                    "outputRegistryName": "decorative_blocks:acacia_support"
+                }
+            ]
+        }
+    ]
+}

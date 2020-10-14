@@ -15,8 +15,10 @@ function Test-AllModsInList {
         [string[]]$modsToCheck,
         [string[]]$modList
     )
-$modsToCheck
-    return ($(Compare-Object $modsToCheck $modList -IncludeEqual -ExcludeDifferent).Count -eq $modsToCheck.Count)
+    foreach ($mod in $modsToCheck) {
+        if (-not ($modList.Contains($mod))) { return $false }
+    }
+    return $true
 }
 
 function New-DirectoryStructure {
