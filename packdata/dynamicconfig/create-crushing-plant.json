@@ -1,0 +1,57 @@
+{
+    "template": {
+        "type": "create:crushing",
+        "ingredients": [
+            {
+                "item": "**inputRegistryName**"
+            }
+        ],
+        "results": [
+            {
+                "item": "**guaranteedOutputRegistryName**",
+                "count": 2
+            },
+            {
+                "item": "**bonusOutputRegistryName**",
+                "count": 1,
+                "chance": 0.05
+            }
+        ],
+        "processingTime": 50
+    },
+    "modGroups": [
+        {
+            "mods": [
+                "atmospheric"
+            ],
+            "recipes": [
+                {
+                    "name": "barrel_cactus",
+                    "inputRegistryName": "atmospheric:barrel_cactus",
+                    "guaranteedOutputRegistryName": "minecraft:orange_dye",
+                    "bonusOutputRegistryName": "minecraft:green_dye"
+                },
+                {
+                    "name": "warm_monkey_brush",
+                    "inputRegistryName": "atmospheric:warm_monkey_brush",
+                    "guaranteedOutputRegistryName": "minecraft:yellow_dye",
+                    "bonusOutputRegistryName": "minecraft:orange_dye",
+                    "bonusOutputChance": 0.25
+                }
+            ]
+        },
+        {
+            "mods": [
+                "autumnity"
+            ],
+            "recipes": [
+                {
+                    "name": "autumn_crocus",
+                    "inputRegistryName": "autumnity:autumn_crocus",
+                    "guaranteedOutputRegistryName": "minecraft:magenta_dye",
+                    "bonusOutputRegistryName": "minecraft:purple_dye"
+                }
+            ]
+        }
+    ]
+}

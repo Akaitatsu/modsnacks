@@ -1,3 +1,4 @@
+Import-Module .\Utilities.psm1 -Force
 Import-Module .\ModConfig.psm1 -Force
 
 # Verify that all the mods defined in the instance configuration have been downloaded to the modcache folder
@@ -12,7 +13,7 @@ function Get-ModFilePath {
 function Get-Mods {
     Push-Location
     Set-Location $PSScriptRoot
-    return (Get-Content -Raw -Path ..\packdata\mods.json | ConvertFrom-Json)
+    return Get-JsonAsPSCustomObject -Path ..\packdata\mods.json
     Pop-Location
 }
 function Test-ModCache {
