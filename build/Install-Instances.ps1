@@ -25,8 +25,7 @@ foreach ($instance in $instances) {
     }
     Write-Host "  Generating dynamic configuration files"
     # Prep openloader folder
-    $targetOpenLoaderPath = "$minecraftPath\openloader"
-    if (-not (Test-Path $targetOpenLoaderPath)) { New-Item -Path $targetOpenLoaderPath -ItemType Directory }
+    $targetOpenLoaderPath = New-DirectoryStructure $minecraftPath "openloader\data"
     Remove-Item ($targetOpenLoaderPath + "\*") -Recurse
     $modList = $instanceMods.modid
     New-CreateConfig -modList $modList -openloaderPath $targetOpenLoaderPath
