@@ -179,6 +179,43 @@
                     "bonusOutputRegistryName": "minecraft:lime_dye"
                 }
             ]
+        },
+        {
+            "mods": [
+                "upgrade_aquatic"
+            ],
+            "recipes": [
+                {
+                    "name": "flowering_rush",
+                    "inputRegistryName": "upgrade_aquatic:flowering_rush",
+                    "guaranteedOutputRegistryName": "minecraft:pink_dye",
+                    "bonusOutputRegistryName": "minecraft:pink_dye"
+                },
+                {
+                    "name": "pickerel_weed_blue",
+                    "inputRegistryName": "upgrade_aquatic:pickerel_weed_blue",
+                    "guaranteedOutputRegistryName": "minecraft:cyan_dye",
+                    "bonusOutputRegistryName": "minecraft:blue_dye"
+                },
+                {
+                    "name": "pickerel_weed_purple",
+                    "inputRegistryName": "upgrade_aquatic:pickerel_weed_purple",
+                    "guaranteedOutputRegistryName": "minecraft:purple_dye",
+                    "bonusOutputRegistryName": "minecraft:green_dye"
+                },
+                {
+                    "name": "searocket_pink",
+                    "inputRegistryName": "upgrade_aquatic:searocket_pink",
+                    "guaranteedOutputRegistryName": "minecraft:pink_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "searocket_white",
+                    "inputRegistryName": "upgrade_aquatic:searocket_white",
+                    "guaranteedOutputRegistryName": "minecraft:white_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                }
+            ]
         }
     ]
 }
