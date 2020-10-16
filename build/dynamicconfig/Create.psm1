@@ -19,7 +19,7 @@ function New-CreateCrushingPlantConfig {
                 $newRecipe.results[0].item = $recipe.guaranteedOutputRegistryName
                 $newRecipe.results[1].item = $recipe.bonusOutputRegistryName
                 if ($null -ne $recipe.bonusOutputChance) { $newRecipe.results[1].chance = $recipe.bonusOutputChance }
-                $newRecipe | ConvertTo-Json | Out-File -FilePath "$crushingRecipesPath\$($recipe.name).json"
+                Out-JsonRaw -Content $newRecipe -FilePath "$crushingRecipesPath\$($recipe.name).json"
             }
         }
     }

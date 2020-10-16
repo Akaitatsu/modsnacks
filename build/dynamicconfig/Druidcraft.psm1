@@ -20,7 +20,7 @@ function New-DruidcraftWoodcuttingConfig {
                 $outputType = $recipe.name.Substring($recipe.name.LastIndexOf("_") + 1)
                 $newRecipe.count = $configData.outputCounts.PSObject.Properties[$outputType].Value
                 #$newRecipe
-                $newRecipe | ConvertTo-Json | Out-File -FilePath "$woodcuttingRecipesPath\$($recipe.name).json"
+                Out-JsonRaw -Content $newRecipe -FilePath "$woodcuttingRecipesPath\$($recipe.name).json"
             }
         }
     }

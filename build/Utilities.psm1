@@ -35,3 +35,11 @@ function New-DirectoryStructure {
     }
     return $newPath
 }
+
+function Out-JsonRaw {
+    param (
+        [PSCustomObject]$Content,
+        [string]$FilePath
+    )
+    $Content | ConvertTo-Json | Out-File -FilePath $FilePath -Encoding ascii
+}
