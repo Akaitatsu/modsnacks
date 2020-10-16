@@ -14,7 +14,7 @@
             {
                 "item": "**bonusOutputRegistryName**",
                 "count": 1,
-                "chance": 0.20
+                "chance": 0.2
             }
         ],
         "processingTime": 50
@@ -59,6 +59,97 @@
                     "name": "yucca_flower",
                     "inputRegistryName": "atmospheric:yucca_flower",
                     "guaranteedOutputRegistryName": "minecraft:light_gray_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                }
+            ]
+        },
+        {
+            "mods": [
+                "buzzierbees"
+            ],
+            "recipes": [
+                {
+                    "name": "bird_of_paradise",
+                    "inputRegistryName": "buzzierbees:bird_of_paradise",
+                    "guaranteedOutputRegistryName": "minecraft:orange_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "bluebell",
+                    "inputRegistryName": "buzzierbees:bluebell",
+                    "guaranteedOutputRegistryName": "minecraft:blue_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "cartwheel",
+                    "inputRegistryName": "buzzierbees:cartwheel",
+                    "guaranteedOutputRegistryName": "minecraft:pink_dye",
+                    "bonusOutputRegistryName": "minecraft:yellow_dye"
+                },
+                {
+                    "name": "columbine",
+                    "inputRegistryName": "buzzierbees:columbine",
+                    "guaranteedOutputRegistryName": "minecraft:purple_dye",
+                    "bonusOutputRegistryName": "minecraft:light_blue_dye"
+                },
+                {
+                    "name": "daybloom",
+                    "inputRegistryName": "buzzierbees:daybloom",
+                    "guaranteedOutputRegistryName": "minecraft:yellow_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "jolyce",
+                    "inputRegistryName": "buzzierbees:jolyce",
+                    "guaranteedOutputRegistryName": "minecraft:green_dye",
+                    "bonusOutputRegistryName": "minecraft:green_dye"
+                },
+                {
+                    "name": "magenta_hibiscus",
+                    "inputRegistryName": "buzzierbees:magenta_hibiscus",
+                    "guaranteedOutputRegistryName": "minecraft:magenta_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "orange_hibiscus",
+                    "inputRegistryName": "buzzierbees:orange_hibiscus",
+                    "guaranteedOutputRegistryName": "minecraft:orange_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "pink_clover",
+                    "inputRegistryName": "buzzierbees:pink_clover",
+                    "guaranteedOutputRegistryName": "minecraft:pink_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "pink_hibiscus",
+                    "inputRegistryName": "buzzierbees:pink_hibiscus",
+                    "guaranteedOutputRegistryName": "minecraft:pink_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "purple_hibiscus",
+                    "inputRegistryName": "buzzierbees:purple_hibiscus",
+                    "guaranteedOutputRegistryName": "minecraft:purple_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "red_hibiscus",
+                    "inputRegistryName": "buzzierbees:red_hibiscus",
+                    "guaranteedOutputRegistryName": "minecraft:red_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "violet",
+                    "inputRegistryName": "buzzierbees:violet",
+                    "guaranteedOutputRegistryName": "minecraft:purple_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "white_clover",
+                    "inputRegistryName": "buzzierbees:white_clover",
+                    "guaranteedOutputRegistryName": "minecraft:white_dye",
                     "bonusOutputRegistryName": "minecraft:lime_dye"
                 }
             ]
