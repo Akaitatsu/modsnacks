@@ -14,7 +14,7 @@
             {
                 "item": "**bonusOutputRegistryName**",
                 "count": 1,
-                "chance": 0.05
+                "chance": 0.20
             }
         ],
         "processingTime": 50
@@ -32,11 +32,34 @@
                     "bonusOutputRegistryName": "minecraft:green_dye"
                 },
                 {
+                    "name": "gilia",
+                    "inputRegistryName": "atmospheric:gilia",
+                    "guaranteedOutputRegistryName": "minecraft:purple_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "monkey_brush",
+                    "inputRegistryName": "atmospheric:monkey_brush",
+                    "guaranteedOutputRegistryName": "minecraft:orange_dye",
+                    "bonusOutputRegistryName": "minecraft:red_dye"
+                },
+                {
+                    "name": "scalding_monkey_brush",
+                    "inputRegistryName": "atmospheric:scalding_monkey_brush",
+                    "guaranteedOutputRegistryName": "minecraft:red_dye",
+                    "bonusOutputRegistryName": "minecraft:orange_dye"
+                },
+                {
                     "name": "warm_monkey_brush",
                     "inputRegistryName": "atmospheric:warm_monkey_brush",
                     "guaranteedOutputRegistryName": "minecraft:yellow_dye",
-                    "bonusOutputRegistryName": "minecraft:orange_dye",
-                    "bonusOutputChance": 0.25
+                    "bonusOutputRegistryName": "minecraft:orange_dye"
+                },
+                {
+                    "name": "yucca_flower",
+                    "inputRegistryName": "atmospheric:yucca_flower",
+                    "guaranteedOutputRegistryName": "minecraft:light_gray_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
                 }
             ]
         },
@@ -50,6 +73,19 @@
                     "inputRegistryName": "autumnity:autumn_crocus",
                     "guaranteedOutputRegistryName": "minecraft:magenta_dye",
                     "bonusOutputRegistryName": "minecraft:purple_dye"
+                }
+            ]
+        },
+        {
+            "mods": [
+                "druidcraft"
+            ],
+            "recipes": [
+                {
+                    "name": "lavender",
+                    "inputRegistryName": "druidcraft:lavender",
+                    "guaranteedOutputRegistryName": "minecraft:purple_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
                 }
             ]
         }
