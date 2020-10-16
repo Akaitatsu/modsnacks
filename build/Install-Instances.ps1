@@ -1,12 +1,12 @@
 param (
     [bool]$SkipModCopy = $false
 )
+Import-Module .\Utilities.psm1 -Force
+Import-Module .\ModCache.psm1 -Force
 Clear-Host
 Set-Location $PSScriptRoot
 $instances = Get-JsonAsPSCustomObject -Path ..\packdata\instances.json
 Write-Host "Verifying Mod Cache"
-Import-Module .\Utilities.psm1 -Force
-Import-Module .\ModCache.psm1 -Force
 if (-not (Test-ModCache)) {
     Write-Host "Mod Cache Failed Verification; see messages above"
     Exit 1
