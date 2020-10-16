@@ -34,6 +34,118 @@
                     "name": "acacia_support",
                     "inputRegistryName": "minecraft:acacia_planks",
                     "outputRegistryName": "decorative_blocks:acacia_support"
+                },
+                {
+                    "name": "birch_beam",
+                    "inputRegistryName": "minecraft:birch_logs",
+                    "outputRegistryName": "decorative_blocks:birch_beam"
+                },
+                {
+                    "name": "birch_palisade",
+                    "inputRegistryName": "minecraft:birch_logs",
+                    "outputRegistryName": "decorative_blocks:birch_palisade"
+                },
+                {
+                    "name": "birch_support",
+                    "inputRegistryName": "minecraft:birch_planks",
+                    "outputRegistryName": "decorative_blocks:birch_support"
+                },
+                {
+                    "name": "dark_oak_beam",
+                    "inputRegistryName": "minecraft:dark_oak_logs",
+                    "outputRegistryName": "decorative_blocks:dark_oak_beam"
+                },
+                {
+                    "name": "dark_oak_palisade",
+                    "inputRegistryName": "minecraft:dark_oak_logs",
+                    "outputRegistryName": "decorative_blocks:dark_oak_palisade"
+                },
+                {
+                    "name": "dark_oak_support",
+                    "inputRegistryName": "minecraft:dark_oak_planks",
+                    "outputRegistryName": "decorative_blocks:dark_oak_support"
+                },
+                {
+                    "name": "jungle_beam",
+                    "inputRegistryName": "minecraft:jungle_logs",
+                    "outputRegistryName": "decorative_blocks:jungle_beam"
+                },
+                {
+                    "name": "jungle_palisade",
+                    "inputRegistryName": "minecraft:jungle_logs",
+                    "outputRegistryName": "decorative_blocks:jungle_palisade"
+                },
+                {
+                    "name": "jungle_support",
+                    "inputRegistryName": "minecraft:jungle_planks",
+                    "outputRegistryName": "decorative_blocks:jungle_support"
+                },
+                {
+                    "name": "oak_beam",
+                    "inputRegistryName": "minecraft:oak_logs",
+                    "outputRegistryName": "decorative_blocks:oak_beam"
+                },
+                {
+                    "name": "oak_palisade",
+                    "inputRegistryName": "minecraft:oak_logs",
+                    "outputRegistryName": "decorative_blocks:oak_palisade"
+                },
+                {
+                    "name": "oak_support",
+                    "inputRegistryName": "minecraft:oak_planks",
+                    "outputRegistryName": "decorative_blocks:oak_support"
+                },
+                {
+                    "name": "spruce_beam",
+                    "inputRegistryName": "minecraft:spruce_logs",
+                    "outputRegistryName": "decorative_blocks:spruce_beam"
+                },
+                {
+                    "name": "spruce_palisade",
+                    "inputRegistryName": "minecraft:spruce_logs",
+                    "outputRegistryName": "decorative_blocks:spruce_palisade"
+                },
+                {
+                    "name": "spruce_support",
+                    "inputRegistryName": "minecraft:spruce_planks",
+                    "outputRegistryName": "decorative_blocks:spruce_support"
+                }
+            ]
+        },
+        {
+            "mods": [
+                "valhelsia_structures"
+            ],
+            "recipes": [
+                {
+                    "name": "acacia_post",
+                    "inputRegistryName": "minecraft:acacia_logs",
+                    "outputRegistryName": "valhelsia_structures:acacia_post"
+                },
+                {
+                    "name": "birch_post",
+                    "inputRegistryName": "minecraft:birch_logs",
+                    "outputRegistryName": "valhelsia_structures:birch_post"
+                },
+                {
+                    "name": "dark_oak_post",
+                    "inputRegistryName": "minecraft:dark_oak_logs",
+                    "outputRegistryName": "valhelsia_structures:dark_oak_post"
+                },
+                {
+                    "name": "jungle_post",
+                    "inputRegistryName": "minecraft:jungle_logs",
+                    "outputRegistryName": "valhelsia_structures:jungle_post"
+                },
+                {
+                    "name": "oak_post",
+                    "inputRegistryName": "minecraft:oak_logs",
+                    "outputRegistryName": "valhelsia_structures:oak_post"
+                },
+                {
+                    "name": "spruce_post",
+                    "inputRegistryName": "minecraft:spruce_logs",
+                    "outputRegistryName": "valhelsia_structures:spruce_post"
                 }
             ]
         }
