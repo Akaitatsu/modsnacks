@@ -26,6 +26,9 @@ function New-DirectoryStructure {
         [string]$rootPath,
         [string]$relativeDirectoryStructure
     )
+    if ($relativeDirectoryStructure -eq "") {
+        return $rootPath
+    }
     $directoryStructureParts = $relativeDirectoryStructure.Split('\')
     $newPath = $rootPath
     if ($newPath.EndsWith('\')) { $newPath = $newPath.Substring(0, $newPath.Length) }
