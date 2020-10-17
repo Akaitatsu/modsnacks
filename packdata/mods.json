@@ -87,14 +87,14 @@
         "name": "Archer's Paradox",
         "modid": "archers_paradox",
         "filenamePattern": "archers_paradox-1.15.2-%ver%",
-        "currentVersion": "0.4.0b",
+        "currentVersion": "0.7.0b",
         "firstInstance": "WFMS"
     },
     {
         "name": "Astral Sorcery",
         "modid": "astralsorcery",
         "filenamePattern": "AstralSorcery-1.15.2-%ver%",
-        "currentVersion": "1.12.6",
+        "currentVersion": "1.12.9",
         "firstInstance": "GWMS",
         "largeOreDepositsConfig": [
             {
@@ -308,7 +308,7 @@
         "name": "COFH Core",
         "modid": "cofh_core",
         "filenamePattern": "cofh_core-1.15.2-%ver%",
-        "currentVersion": "0.4.0b",
+        "currentVersion": "0.7.0b",
         "firstInstance": "WFMS"
     },
     {
@@ -455,7 +455,7 @@
         "name": "Druidcraft",
         "modid": "druidcraft",
         "filenamePattern": "Druidcraft-1.15-%ver%",
-        "currentVersion": "0.4.31",
+        "currentVersion": "0.4.41",
         "firstInstance": "LCMS",
         "largeOreDepositsConfig": [
             {
@@ -545,7 +545,7 @@
         "name": "Ensorcellation",
         "modid": "ensorcellation",
         "filenamePattern": "Ensorcellation-1.15.2-%ver%",
-        "currentVersion": "0.4.1b",
+        "currentVersion": "0.7.0b",
         "firstInstance": "GWMS"
     },
     {
@@ -796,7 +796,7 @@
         "name": "Just Enough Items (JEI)",
         "modid": "jei",
         "filenamePattern": "jei-1.15.2-%ver%",
-        "currentVersion": "6.0.2.12",
+        "currentVersion": "6.0.3.15",
         "firstInstance": "LCMS"
     },
     {
@@ -954,7 +954,7 @@
         "name": "McJtyLib",
         "modid": "mcjtylib",
         "filenamePattern": "mcjtylib-1.15-%ver%",
-        "currentVersion": "4.1.3-beta",
+        "currentVersion": "4.1.10",
         "firstInstance": "WFMS"
     },
     {
@@ -1250,7 +1250,7 @@
         "name": "One Probe, The",
         "modid": "theoneprobe",
         "filenamePattern": "theoneprobe-1.15-%ver%",
-        "currentVersion": "2.0.6",
+        "currentVersion": "2.0.7",
         "firstInstance": "LCMS"
     },
     {
@@ -1457,7 +1457,7 @@
         "name": "Reliquary v1.3",
         "modid": "xreliquary",
         "filenamePattern": "Reliquary-1.15.2-%ver%",
-        "currentVersion": "1.3.4.995",
+        "currentVersion": "1.3.4.1018",
         "firstInstance": "WFMS"
     },
     {
@@ -1471,42 +1471,42 @@
         "name": "RFTools Base",
         "modid": "rftoolsbase",
         "filenamePattern": "rftoolsbase-1.15-%ver%",
-        "currentVersion": "1.1.3-beta",
+        "currentVersion": "1.1.7",
         "firstInstance": "WFMS"
     },
     {
         "name": "RFTools Builder",
         "modid": "rftoolsbuilder",
         "filenamePattern": "rftoolsbuilder-1.15-%ver%",
-        "currentVersion": "2.1.5-beta",
+        "currentVersion": "2.1.11",
         "firstInstance": "WFMS"
     },
     {
         "name": "RFTools Control",
         "modid": "rftoolscontrol",
         "filenamePattern": "rftoolscontrol-1.15-%ver%",
-        "currentVersion": "3.0.3-beta",
+        "currentVersion": "3.0.8",
         "firstInstance": "GWMS"
     },
     {
         "name": "RFTools Power",
         "modid": "rftoolspower",
         "filenamePattern": "rftoolspower-1.15-%ver%",
-        "currentVersion": "2.2.0-beta",
+        "currentVersion": "2.2.5",
         "firstInstance": "WFMS"
     },
     {
         "name": "RFTools Storage",
         "modid": "rftoolsstorage",
         "filenamePattern": "rftoolsstorage-1.15-%ver%",
-        "currentVersion": "1.1.6-beta",
+        "currentVersion": "1.1.10",
         "firstInstance": "WFMS"
     },
     {
         "name": "RFTools Utility",
         "modid": "rftoolsutility",
         "filenamePattern": "rftoolsutility-1.15-%ver%",
-        "currentVersion": "2.1.5-beta",
+        "currentVersion": "2.1.11",
         "firstInstance": "WFMS"
     },
     {
@@ -1835,7 +1835,7 @@
             },
             {
                 "blockRegistryName": "moonstone_ore",
-                "rarity": 4500,
+                "rarity": 2500,
                 "maxHeight": 64,
                 "minHeight": 48,
                 "maxVeinSize": 100,
@@ -2223,7 +2223,7 @@
         "name": "TerraForged",
         "modid": "terraforged",
         "filenamePattern": "TerraForged-1.15.2-%ver%",
-        "currentVersion": "0.1.1",
+        "currentVersion": "0.1.3",
         "firstInstance": "LCMS"
     },
     {
@@ -2349,7 +2349,7 @@
         "name": "Xnet",
         "modid": "xnet",
         "filenamePattern": "Xnet-1.15-%ver%",
-        "currentVersion": "2.1.7-beta",
+        "currentVersion": "2.1.11",
         "firstInstance": "WFMS"
     },
     {
