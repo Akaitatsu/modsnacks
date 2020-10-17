@@ -2314,7 +2314,7 @@
         "name": "V-Tweaks",
         "modid": "vtweaks",
         "filenamePattern": "VTweaks-1.15.2-%ver%",
-        "currentVersion": "3.1.7",
+        "currentVersion": "3.1.9",
         "firstInstance": "LCMS"
     },
     {
@@ -2335,14 +2335,14 @@
         "name": "Xaero's Minimap",
         "modid": "xaerominimap",
         "filenamePattern": "Xaeros_Minimap_%ver%_Forge_1.15.2",
-        "currentVersion": "20.20.0",
+        "currentVersion": "20.25.1",
         "firstInstance": "LCMS"
     },
     {
         "name": "Xaero's World Map",
         "modid": "xaeroworldmap",
         "filenamePattern": "XaerosWorldMap_%ver%_Forge_1.15.2",
-        "currentVersion": "1.10.0",
+        "currentVersion": "1.11.0",
         "firstInstance": "LCMS"
     },
     {
