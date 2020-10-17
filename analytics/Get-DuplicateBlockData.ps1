@@ -11,4 +11,10 @@ if (-not (Test-Path $blockstatsPath)) {
     Exit 1
 }
 $blockStats = Get-ChildItem $blockstatsPath | Sort-Object LastWriteTime | Select-Object -last 1 | Get-Content | ConvertFrom-Csv
-$blockStats
+$duplicates = $blockStats | Group-Object -Property "Display name" | Where-Object { $_.Count -gt 1 } | Sort-Object -Property "Name"
+foreach ($duplicate in $duplicates) {
+    Write-Host $duplicate.Name -ForegroundColor Cyan
+    foreach ($blockEntry in $duplicate.Group) {
+        Write-Host "  $($blockEntry.PSObject.Properties['Registry name'].Value) ($($blockEntry.PSObject.Properties['Count'].Value))"
+    }
+}
