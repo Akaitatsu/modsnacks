@@ -1,3 +1,5 @@
+Import-Module .\dynamicconfig\Create.psm1 -Force
+
 function New-LodDepositConfig {
     param (
         [string]$modId,
@@ -88,4 +90,12 @@ function Copy-ModConfig {
 
     # Create deposit configs for Large Ore Deposits
     New-LodDepositConfigsForMod -modObject $modObject -configPath $destinationPath
+}
+
+function New-DynamicConfigs {
+    param (
+        $instance,
+        [string[]]$modList,
+        [string]$openloaderPath
+    )
 }

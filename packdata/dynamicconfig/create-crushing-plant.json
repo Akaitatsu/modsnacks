@@ -1,0 +1,221 @@
+{
+    "template": {
+        "type": "create:crushing",
+        "ingredients": [
+            {
+                "item": "**inputRegistryName**"
+            }
+        ],
+        "results": [
+            {
+                "item": "**guaranteedOutputRegistryName**",
+                "count": 2
+            },
+            {
+                "item": "**bonusOutputRegistryName**",
+                "count": 1,
+                "chance": 0.2
+            }
+        ],
+        "processingTime": 50
+    },
+    "modGroups": [
+        {
+            "mods": [
+                "atmospheric"
+            ],
+            "recipes": [
+                {
+                    "name": "barrel_cactus",
+                    "inputRegistryName": "atmospheric:barrel_cactus",
+                    "guaranteedOutputRegistryName": "minecraft:orange_dye",
+                    "bonusOutputRegistryName": "minecraft:green_dye"
+                },
+                {
+                    "name": "gilia",
+                    "inputRegistryName": "atmospheric:gilia",
+                    "guaranteedOutputRegistryName": "minecraft:purple_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "monkey_brush",
+                    "inputRegistryName": "atmospheric:monkey_brush",
+                    "guaranteedOutputRegistryName": "minecraft:orange_dye",
+                    "bonusOutputRegistryName": "minecraft:red_dye"
+                },
+                {
+                    "name": "scalding_monkey_brush",
+                    "inputRegistryName": "atmospheric:scalding_monkey_brush",
+                    "guaranteedOutputRegistryName": "minecraft:red_dye",
+                    "bonusOutputRegistryName": "minecraft:orange_dye"
+                },
+                {
+                    "name": "warm_monkey_brush",
+                    "inputRegistryName": "atmospheric:warm_monkey_brush",
+                    "guaranteedOutputRegistryName": "minecraft:yellow_dye",
+                    "bonusOutputRegistryName": "minecraft:orange_dye"
+                },
+                {
+                    "name": "yucca_flower",
+                    "inputRegistryName": "atmospheric:yucca_flower",
+                    "guaranteedOutputRegistryName": "minecraft:light_gray_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                }
+            ]
+        },
+        {
+            "mods": [
+                "buzzierbees"
+            ],
+            "recipes": [
+                {
+                    "name": "bird_of_paradise",
+                    "inputRegistryName": "buzzierbees:bird_of_paradise",
+                    "guaranteedOutputRegistryName": "minecraft:orange_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "bluebell",
+                    "inputRegistryName": "buzzierbees:bluebell",
+                    "guaranteedOutputRegistryName": "minecraft:blue_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "cartwheel",
+                    "inputRegistryName": "buzzierbees:cartwheel",
+                    "guaranteedOutputRegistryName": "minecraft:pink_dye",
+                    "bonusOutputRegistryName": "minecraft:yellow_dye"
+                },
+                {
+                    "name": "columbine",
+                    "inputRegistryName": "buzzierbees:columbine",
+                    "guaranteedOutputRegistryName": "minecraft:purple_dye",
+                    "bonusOutputRegistryName": "minecraft:light_blue_dye"
+                },
+                {
+                    "name": "daybloom",
+                    "inputRegistryName": "buzzierbees:daybloom",
+                    "guaranteedOutputRegistryName": "minecraft:yellow_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "jolyce",
+                    "inputRegistryName": "buzzierbees:jolyce",
+                    "guaranteedOutputRegistryName": "minecraft:green_dye",
+                    "bonusOutputRegistryName": "minecraft:green_dye"
+                },
+                {
+                    "name": "magenta_hibiscus",
+                    "inputRegistryName": "buzzierbees:magenta_hibiscus",
+                    "guaranteedOutputRegistryName": "minecraft:magenta_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "orange_hibiscus",
+                    "inputRegistryName": "buzzierbees:orange_hibiscus",
+                    "guaranteedOutputRegistryName": "minecraft:orange_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "pink_clover",
+                    "inputRegistryName": "buzzierbees:pink_clover",
+                    "guaranteedOutputRegistryName": "minecraft:pink_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "pink_hibiscus",
+                    "inputRegistryName": "buzzierbees:pink_hibiscus",
+                    "guaranteedOutputRegistryName": "minecraft:pink_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "purple_hibiscus",
+                    "inputRegistryName": "buzzierbees:purple_hibiscus",
+                    "guaranteedOutputRegistryName": "minecraft:purple_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "red_hibiscus",
+                    "inputRegistryName": "buzzierbees:red_hibiscus",
+                    "guaranteedOutputRegistryName": "minecraft:red_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "violet",
+                    "inputRegistryName": "buzzierbees:violet",
+                    "guaranteedOutputRegistryName": "minecraft:purple_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "white_clover",
+                    "inputRegistryName": "buzzierbees:white_clover",
+                    "guaranteedOutputRegistryName": "minecraft:white_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                }
+            ]
+        },
+        {
+            "mods": [
+                "autumnity"
+            ],
+            "recipes": [
+                {
+                    "name": "autumn_crocus",
+                    "inputRegistryName": "autumnity:autumn_crocus",
+                    "guaranteedOutputRegistryName": "minecraft:magenta_dye",
+                    "bonusOutputRegistryName": "minecraft:purple_dye"
+                }
+            ]
+        },
+        {
+            "mods": [
+                "druidcraft"
+            ],
+            "recipes": [
+                {
+                    "name": "lavender",
+                    "inputRegistryName": "druidcraft:lavender",
+                    "guaranteedOutputRegistryName": "minecraft:purple_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                }
+            ]
+        },
+        {
+            "mods": [
+                "upgrade_aquatic"
+            ],
+            "recipes": [
+                {
+                    "name": "flowering_rush",
+                    "inputRegistryName": "upgrade_aquatic:flowering_rush",
+                    "guaranteedOutputRegistryName": "minecraft:pink_dye",
+                    "bonusOutputRegistryName": "minecraft:pink_dye"
+                },
+                {
+                    "name": "pickerel_weed_blue",
+                    "inputRegistryName": "upgrade_aquatic:pickerel_weed_blue",
+                    "guaranteedOutputRegistryName": "minecraft:cyan_dye",
+                    "bonusOutputRegistryName": "minecraft:blue_dye"
+                },
+                {
+                    "name": "pickerel_weed_purple",
+                    "inputRegistryName": "upgrade_aquatic:pickerel_weed_purple",
+                    "guaranteedOutputRegistryName": "minecraft:purple_dye",
+                    "bonusOutputRegistryName": "minecraft:green_dye"
+                },
+                {
+                    "name": "searocket_pink",
+                    "inputRegistryName": "upgrade_aquatic:searocket_pink",
+                    "guaranteedOutputRegistryName": "minecraft:pink_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                },
+                {
+                    "name": "searocket_white",
+                    "inputRegistryName": "upgrade_aquatic:searocket_white",
+                    "guaranteedOutputRegistryName": "minecraft:white_dye",
+                    "bonusOutputRegistryName": "minecraft:lime_dye"
+                }
+            ]
+        }
+    ]
+}
