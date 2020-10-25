@@ -10,7 +10,7 @@
         "name": "Absent by Design",
         "modid": "absentbydesign",
         "filenamePattern": "AbsentbyDesign-1.15.2-%ver%",
-        "currentVersion": "1.1.0",
+        "currentVersion": "1.1.1",
         "firstInstance": "WFMS"
     },
     {
@@ -59,7 +59,7 @@
         "name": "Apotheosis",
         "modid": "apotheosis",
         "filenamePattern": "Apotheosis-1.15.2-%ver%",
-        "currentVersion": "3.2.4",
+        "currentVersion": "3.3.8",
         "firstInstance": "WFMS"
     },
     {
@@ -72,15 +72,15 @@
     {
         "name": "Applied Energistics 2",
         "modid": "appliedenergistics2",
-        "filenamePattern": "appliedenergistics2-%ver%-beta.2",
-        "currentVersion": "7.0.0",
+        "filenamePattern": "appliedenergistics2-%ver%",
+        "currentVersion": "7.0.4",
         "firstInstance": "GWMS"
     },
     {
         "name": "Aquaculture",
         "modid": "aquaculture",
         "filenamePattern": "Aquaculture-1.15.2-%ver%",
-        "currentVersion": "2.0.16",
+        "currentVersion": "2.0.21",
         "firstInstance": "WFMS"
     },
     {
@@ -94,7 +94,7 @@
         "name": "Astral Sorcery",
         "modid": "astralsorcery",
         "filenamePattern": "AstralSorcery-1.15.2-%ver%",
-        "currentVersion": "1.12.9",
+        "currentVersion": "1.12.10",
         "firstInstance": "GWMS",
         "largeOreDepositsConfig": [
             {
@@ -259,7 +259,7 @@
         "name": "CC: Tweaked",
         "modid": "computercraft",
         "filenamePattern": "cc-tweaked-1.15.2-%ver%",
-        "currentVersion": "1.90.2",
+        "currentVersion": "1.93.1",
         "firstInstance": "GWMS"
     },
     {
@@ -455,7 +455,7 @@
         "name": "Druidcraft",
         "modid": "druidcraft",
         "filenamePattern": "Druidcraft-1.15-%ver%",
-        "currentVersion": "0.4.41",
+        "currentVersion": "0.4.42",
         "firstInstance": "LCMS",
         "largeOreDepositsConfig": [
             {
@@ -531,7 +531,7 @@
         "name": "Engineer's Decor",
         "modid": "engineersdecor",
         "filenamePattern": "EngineersDecor-1.15.2-%ver%",
-        "currentVersion": "1.1.2",
+        "currentVersion": "1.1.3",
         "firstInstance": "GWMS"
     },
     {
@@ -705,7 +705,7 @@
         "name": "Immersive Engineering",
         "modid": "immersiveengineering",
         "filenamePattern": "ImmersiveEngineering-1.15.2-%ver%",
-        "currentVersion": "3.1-111",
+        "currentVersion": "4.1.0-122",
         "firstInstance": "GWMS"
     },
     {
@@ -768,7 +768,7 @@
         "name": "JAOPCA",
         "modid": "jaopca",
         "filenamePattern": "JAOPCA-1.15.2-%ver%",
-        "currentVersion": "3.2.0.14",
+        "currentVersion": "3.2.0.15",
         "firstInstance": "LCMS"
     },
     {
@@ -852,7 +852,7 @@
         "name": "Light Overlay Forge",
         "modid": "lightoverlayforge",
         "filenamePattern": "light-overlay-%ver%",
-        "currentVersion": "4.7.0",
+        "currentVersion": "4.7.2",
         "firstInstance": "LCMS"
     },
     {
@@ -873,7 +873,7 @@
         "name": "Lost Cities",
         "modid": "lostcities",
         "filenamePattern": "lostcities-1.15-%ver%",
-        "currentVersion": "3.0.1-alpha",
+        "currentVersion": "3.0.2-alpha",
         "firstInstance": "GWMS"
     },
     {
@@ -894,8 +894,8 @@
     {
         "name": "Macaw's Doors",
         "modid": "mcwdoors",
-        "filenamePattern": "mcw-doors-%ver%-mc1.15.2",
-        "currentVersion": "1.0.0",
+        "filenamePattern": "mcw-doors-%ver%-mc1.15.1-2",
+        "currentVersion": "1.0.1fix",
         "firstInstance": "GWMS"
     },
     {
@@ -1108,7 +1108,7 @@
         "name": "Mixin Bootstrap",
         "modid": "mixinbootstrap",
         "filenamePattern": "MixinBootstrap-%ver%",
-        "currentVersion": "1.0.3",
+        "currentVersion": "1.0.5",
         "firstInstance": "LCMS"
     },
     {
@@ -1479,7 +1479,7 @@
         "name": "RFTools Builder",
         "modid": "rftoolsbuilder",
         "filenamePattern": "rftoolsbuilder-1.15-%ver%",
-        "currentVersion": "2.1.11",
+        "currentVersion": "2.1.12",
         "firstInstance": "WFMS"
     },
     {
@@ -1493,7 +1493,7 @@
         "name": "RFTools Power",
         "modid": "rftoolspower",
         "filenamePattern": "rftoolspower-1.15-%ver%",
-        "currentVersion": "2.2.5",
+        "currentVersion": "2.2.6",
         "firstInstance": "WFMS"
     },
     {
@@ -1507,7 +1507,7 @@
         "name": "RFTools Utility",
         "modid": "rftoolsutility",
         "filenamePattern": "rftoolsutility-1.15-%ver%",
-        "currentVersion": "2.1.11",
+        "currentVersion": "2.1.12",
         "firstInstance": "WFMS"
     },
     {
@@ -2210,7 +2210,7 @@
         "name": "SwingThroughGrass",
         "modid": "swingthroughgrass",
         "filenamePattern": "SwingThroughGrass-1.15.2-%ver%",
-        "currentVersion": "1.4.0",
+        "currentVersion": "1.4.1",
         "firstInstance": "LCMS"
     },
     {
@@ -2259,7 +2259,7 @@
         "name": "Tool Belt",
         "modid": "toolbelt",
         "filenamePattern": "ToolBelt-1.15.2-%ver%",
-        "currentVersion": "1.14.1",
+        "currentVersion": "1.14.2",
         "firstInstance": "LCMS"
     },
     {
@@ -2294,7 +2294,7 @@
         "name": "Useful Railroads",
         "modid": "usefulrailroads",
         "filenamePattern": "useful_railroads-1.15.2-%ver%",
-        "currentVersion": "1.4.0.23",
+        "currentVersion": "1.4.2.29",
         "firstInstance": "GWMS"
     },
     {
@@ -2336,7 +2336,7 @@
         "name": "Xaero's Minimap",
         "modid": "xaerominimap",
         "filenamePattern": "Xaeros_Minimap_%ver%_Forge_1.15.2",
-        "currentVersion": "20.25.1",
+        "currentVersion": "20.26.0",
         "firstInstance": "LCMS"
     },
     {
@@ -2371,7 +2371,7 @@
         "name": "YUNG's Better Mineshafts",
         "modid": "bettermineshafts",
         "filenamePattern": "BetterMineshaftsForge-1.15.2-%ver%",
-        "currentVersion": "1.3",
+        "currentVersion": "1.3.1",
         "firstInstance": "WFMS"
     }
 ]
