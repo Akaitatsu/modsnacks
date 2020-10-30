@@ -228,13 +228,6 @@
         "firstInstance": "WFMS"
     },
     {
-        "name": "Botania Tweaker",
-        "modid": "botaniatweaker",
-        "filenamePattern": "botaniatweaker-%ver%",
-        "currentVersion": "1.2b",
-        "firstInstance": "WFMS"
-    },
-    {
         "name": "Botany Pots",
         "modid": "botanypots",
         "filenamePattern": "BotanyPots-1.15.2-%ver%",
