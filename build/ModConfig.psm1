@@ -1,5 +1,3 @@
-Import-Module .\dynamicconfig\Create.psm1 -Force
-
 function New-LodDepositConfig {
     param (
         [string]$modId,
