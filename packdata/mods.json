@@ -80,7 +80,7 @@
         "name": "Aquaculture",
         "modid": "aquaculture",
         "filenamePattern": "Aquaculture-1.15.2-%ver%",
-        "currentVersion": "2.0.21",
+        "currentVersion": "2.0.22",
         "firstInstance": "WFMS"
     },
     {
@@ -608,7 +608,7 @@
         "name": "Fairy Lights",
         "modid": "fairylights",
         "filenamePattern": "fairylights-%ver%-1.15.2",
-        "currentVersion": "3.0.12",
+        "currentVersion": "3.0.13",
         "firstInstance": "GWMS"
     },
     {
@@ -1493,7 +1493,7 @@
         "name": "RFTools Control",
         "modid": "rftoolscontrol",
         "filenamePattern": "rftoolscontrol-1.15-%ver%",
-        "currentVersion": "3.0.8",
+        "currentVersion": "3.0.9",
         "firstInstance": "GWMS"
     },
     {
@@ -2357,7 +2357,7 @@
         "name": "Xnet",
         "modid": "xnet",
         "filenamePattern": "Xnet-1.15-%ver%",
-        "currentVersion": "2.1.11",
+        "currentVersion": "2.1.12",
         "firstInstance": "WFMS"
     },
     {
