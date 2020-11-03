@@ -73,7 +73,7 @@
         "name": "Applied Energistics 2",
         "modid": "appliedenergistics2",
         "filenamePattern": "appliedenergistics2-%ver%",
-        "currentVersion": "7.0.4",
+        "currentVersion": "7.0.5",
         "firstInstance": "GWMS"
     },
     {
@@ -87,7 +87,7 @@
         "name": "Archer's Paradox",
         "modid": "archers_paradox",
         "filenamePattern": "archers_paradox-1.15.2-%ver%",
-        "currentVersion": "0.7.0b",
+        "currentVersion": "1.0.0",
         "firstInstance": "WFMS"
     },
     {
@@ -315,7 +315,7 @@
         "name": "COFH Core",
         "modid": "cofh_core",
         "filenamePattern": "cofh_core-1.15.2-%ver%",
-        "currentVersion": "0.7.0b",
+        "currentVersion": "1.0.0",
         "firstInstance": "WFMS"
     },
     {
@@ -462,7 +462,7 @@
         "name": "Druidcraft",
         "modid": "druidcraft",
         "filenamePattern": "Druidcraft-1.15-%ver%",
-        "currentVersion": "0.4.42",
+        "currentVersion": "0.4.44",
         "firstInstance": "LCMS",
         "largeOreDepositsConfig": [
             {
@@ -552,7 +552,7 @@
         "name": "Ensorcellation",
         "modid": "ensorcellation",
         "filenamePattern": "Ensorcellation-1.15.2-%ver%",
-        "currentVersion": "0.7.0b",
+        "currentVersion": "1.0.0",
         "firstInstance": "GWMS"
     },
     {
@@ -712,7 +712,7 @@
         "name": "Immersive Engineering",
         "modid": "immersiveengineering",
         "filenamePattern": "ImmersiveEngineering-1.15.2-%ver%",
-        "currentVersion": "4.1.0-122",
+        "currentVersion": "4.1.1-125",
         "firstInstance": "GWMS"
     },
     {
@@ -962,7 +962,7 @@
         "name": "McJtyLib",
         "modid": "mcjtylib",
         "filenamePattern": "mcjtylib-1.15-%ver%",
-        "currentVersion": "4.1.10",
+        "currentVersion": "4.1.11",
         "firstInstance": "WFMS"
     },
     {
