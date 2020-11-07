@@ -1563,7 +1563,7 @@
         "name": "Silent Gear",
         "modid": "silentgear",
         "filenamePattern": "SilentGear-1.15.2-%ver%",
-        "currentVersion": "1.8.2+109",
+        "currentVersion": "1.11.3+160",
         "firstInstance": "LCMS"
     },
     {
@@ -1577,7 +1577,7 @@
         "name": "Silent's Gems",
         "modid": "silentgems",
         "filenamePattern": "SilentGems-1.15.2-%ver%",
-        "currentVersion": "3.5.5+88",
+        "currentVersion": "3.6.2+98",
         "firstInstance": "LCMS",
         "largeOreDepositsConfig": [
             {
