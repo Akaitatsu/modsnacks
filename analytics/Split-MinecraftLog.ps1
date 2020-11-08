@@ -321,6 +321,56 @@ function Test-LogEntry {
                 -or $LogMessage -match "[\w ]+localization file for language en_us[\w :]*"
                 )
         }
+        "kiwi" {
+            return -not (
+                $LogMessage -match "Invoking Mixin Connector" `
+                -or $LogMessage -match "Processing \d+ KiwiModule annotations" `
+                -or $LogMessage -match "(?:(?:Module )|(?:    )).+"
+                )
+        }
+        "kubejs" {
+            return -not (
+                $LogMessage -match "Loaded kubejs/client.properties" `
+                -or $LogMessage -match "Hello, World! \(You will only see this line once in console, during startup\)" `
+                -or $LogMessage -match "Loaded script startup:\w+.js" `
+                -or $LogMessage -match "Loaded \d+/\d+ KubeJS startup scripts"
+                )
+        }
+        "lostcities" {
+            return -not ($LogMessage -match "(?:(?:Creating standard)|(?:Reading existing)) profiles (?:(?:into)|(?:from)) 'config/lostcity_profiles'")
+        }
+        "maessentials" {
+            return -not ($LogMessage -match "maessentials Setup main")
+        }
+        "mapperbase" {
+            return -not (
+                $LogMessage -match "Mapper Base setup started!" `
+                -or $LogMessage -match "Bitumen ore blacklisted for biome minecraft:(?:(?:nether)|(?:the_end)) in the config\."
+                )
+        }
+        "mcjtylib" {
+            return -not (
+                $LogMessage -match "XNet Detected RFTools Control: enabling support" `
+                -or $LogMessage -match "Enabled support for The One Probe"
+                )
+        }
+        {@("mcwbridges","mcwdoors","mcwfurnitures","mcwwindows") -contains $_} {
+            return -not (
+                $LogMessage -match "[\w ]+ registered\.*" `
+                -or $LogMessage -match "Mod client setup completed"
+                )
+        }
+        "mekanism" {
+            return -not (
+                $LogMessage -match "Loaded '[\w :]+' module\." `
+                -or $LogMessage -match "Version \d+.\d+.\d+ initializing..." `
+                -or $LogMessage -match "Initialized HolidayManager." `
+                -or $LogMessage -match "Fake player readout: UUID = [0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}, name = \[Mekanism\]" `
+                -or $LogMessage -match "Loading complete." `
+                -or $LogMessage -match "Mod loaded." `
+                -or $LogMessage -match "Loaded 'Mekanism: Additions' module."
+                )
+        }
         "" {
             return -not ($LogMessage -match "")
         }
