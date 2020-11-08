@@ -431,7 +431,7 @@ function Test-LogEntry {
         "mixinbootstrap" {
             return -not (
                 $LogMessage -match "SpongePowered MIXIN Subsystem Version=\d+\.\d+\.\d+" `
-                -or $LogMessage -match "Successfully loaded Mixin Connector \[[\w.]+\]"
+                -or $LogMessage -match "Successfully loaded Mixin Connector \[[\w\.]+\]"
                 )
         }
         "mousetweaks" {
@@ -445,9 +445,55 @@ function Test-LogEntry {
         }
         "mysticalagriculture" {
             return -not (
-                $LogMessage -match "Registered plugin: [\w.]+" `
+                $LogMessage -match "Registered plugin: [\w\.]+" `
                 -or $LogMessage -match "Model replacement took \d+ ms"
                 )
+        }
+        "obfuscate" {
+            return -not (
+                $LogMessage -match "Starting to patch player models\.\.\." `
+                -or $LogMessage -match "Patched (?:(?:default)|(?:slim)) model successfully"
+                )
+        }
+        "occultism" {
+            return -not (
+                $LogMessage -match "Registered [\w ]+" `
+                -or $LogMessage -match "(?:(?:Block)|(?:Item)) color registration complete\." `
+                -or $LogMessage -match "(?:(?:Common)|(?:Client)) setup complete."
+                )
+        }
+        "paintings" {
+            return -not (
+                $LogMessage -match "loading json file and contents for paintings\." `
+                -or $LogMessage -match "Loaded json painting \w+ , \d+ x \d+" `
+                -or $LogMessage -match "registered painting net.minecraft.entity.item.PaintingType@[0-9a-f]+" `
+                -or $LogMessage -match "Registering Resource Reloading"
+                )
+        }
+        "performant" {
+            return -not (
+                $LogMessage -match "Performant configs loaded" `
+                -or $LogMessage -match "Not enabling mixin [\w\.]+ as config disables it\."
+                )
+        }
+        "powah" {
+            return -not (
+                $LogMessage -match "Added coolant fluid: \w+:\w+, with coldness of: \d+ per mb" `
+                -or $LogMessage -match "Added block: \w+:\w+, with heat of: \d+" `
+                -or $LogMessage -match "Added fluid: \w+:\w+, with heat of: \d+ per \d+ mb"
+                )
+        }
+        "projecte" {
+            return -not (
+                $LogMessage -match "Found and loaded (?:(?:EMC mapper)|(?:RecipeType Mapper)|(?:NBT Processor)): \w+, with priority [\d\-]+" `
+                -or $LogMessage -match "Receiving EMC data from server\."
+                )
+        }
+        "psi" {
+            return -not ($LogMessage -match "Initializing Psi shaders!")
+        }
+        "quark" {
+            return -not ($LogMessage -match "Loading Module [\w ]+")
         }
         "" {
             return -not ($LogMessage -match "")
