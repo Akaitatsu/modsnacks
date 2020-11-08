@@ -135,7 +135,7 @@ $modIdMapping = @{
     "tv.mapper.mapperbase.MapperBase" = "mapperbase";
     "tv.mapper.roadstuff.RoadStuff" = "roadstuff";
     "Waterworks" = "waterworks";
-    "wile.engineersdecor.ModEngineersDecor" = "modengineersdecor";
+    "wile.engineersdecor.ModEngineersDecor" = "engineersdecor";
     "yalter.mousetweaks.Logger:Log:6" = "mousetweaks"
 }
 function Get-ModId {
@@ -259,6 +259,17 @@ function Test-LogEntry {
         }
         "embellishcraftbop" {
             return -not ($LogMessage -match "(?:2\.\d- )*Embellish[Cc]raft-B[Oo]P: (?:(?:block registering)|(?:block listing)|(?:setup started))\.*")
+        }
+        "engineersdecor" {
+            return -not (
+                $LogMessage -match "Engineer's Decor GIT id #[0-9a-f]+." `
+                -or $LogMessage -match "[\w ]+] also installed \.\.\." `
+                -or $LogMessage -match "Registerd \d+ .+" `
+                -or $LogMessage -match "Config .+" `
+                -or $LogMessage -match "Opt-outs:\w+" `
+                -or $LogMessage -match "Registering recipe condition processor \.\.\." `
+                -or $LogMessage -match "Applying loaded config file\."
+                )
         }
         "equipmenttooltips" {
             return -not ($LogMessage -match "Detected Silent Gear!")
@@ -400,6 +411,42 @@ function Test-LogEntry {
                 -or $LogMessage -match "Loaded \d+ advancements" `
                 -or $LogMessage -match "\[CHAT\].*" `
                 -or $LogMessage -match "Stopping!"
+                )
+        }
+        "misc" {
+            return -not (
+                $LogMessage -match "ModLauncher running:.+" `
+                -or $LogMessage -match "ModLauncher [\d.\+]+master.[0-9a-f]+ starting:.+" `
+                -or $LogMessage -match "Launching target 'fmlclient' with arguments.+" `
+                -or $LogMessage -match "Scanning classes for \w+" `
+                -or $LogMessage -match "Found FeaturePluginInstance for class \w+ for plugin resources" `
+                -or $LogMessage -match "Mod \w+ is signed with a valid certificate\." `
+                -or $LogMessage -match "Added \w+ to Meson" `
+                -or $LogMessage -match "Queueing \w+:\w+" `
+                -or $LogMessage -match "Constructed class \w+ for plugin resources for mod \w+" `
+                -or $LogMessage -match "Executing phase CONSTRUCTION for plugin class \w+" `
+                -or $LogMessage -match "Registering to minecraft:\w+ - \w+:\w+"
+                )
+        }
+        "mixinbootstrap" {
+            return -not (
+                $LogMessage -match "SpongePowered MIXIN Subsystem Version=\d+\.\d+\.\d+" `
+                -or $LogMessage -match "Successfully loaded Mixin Connector \[[\w.]+\]"
+                )
+        }
+        "mousetweaks" {
+            return -not (
+                $LogMessage -match "\[Mouse Tweaks\] Main.initialize\(\)" `
+                -or $LogMessage -match "\[Mouse Tweaks\] Reflecting GuiContainer\.\.\." `
+                -or $LogMessage -match "\[Mouse Tweaks\] Detected obfuscation: FORGE\." `
+                -or $LogMessage -match "\[Mouse Tweaks\] Success\." `
+                -or $LogMessage -match "\[Mouse Tweaks\] Initialized\."
+                )
+        }
+        "mysticalagriculture" {
+            return -not (
+                $LogMessage -match "Registered plugin: [\w.]+" `
+                -or $LogMessage -match "Model replacement took \d+ ms"
                 )
         }
         "" {
