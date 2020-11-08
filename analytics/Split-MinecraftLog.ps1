@@ -510,6 +510,59 @@ function Test-LogEntry {
         "servertabinfo" {
             return -not ($LogMessage -match "Pre Initialization Complete!")
         }
+        "silentgear" {
+            return -not (
+                $LogMessage -match "Registered (?:condition )?serializer '\w+:\w+'" `
+                -or $LogMessage -match "IAOETool: Rebuilt ore block set, contains \d+ items" `
+                -or $LogMessage -match "Add [\w ]+ to \w+:\w+" `
+                -or $LogMessage -match "Read \d+ (?:(?:traits)|(?:parts)|(?:materials)) from server"
+                )
+        }
+        "silentgems" {
+            return -not (
+                $LogMessage -match "Detected Silent Gear!" `
+                -or $LogMessage -match "Register part type PartType{name='\w+:\w+'}" `
+                -or $LogMessage -match "ColorHandlers#on(?:(?:Block)|(?:Item))Colors: net.minecraft.client.renderer.color.(?:(?:Block)|(?:Item))Colors@[0-9a-f]+" `
+                -or $LogMessage -match "Your base biome seed is [\d\-]+" `
+                -or $LogMessage -match "(?:(?:RUBY)|(?:GARNET)|(?:TOPAZ)|(?:AMBER)|(?:HELIODOR)|(?:PERIDOT)|(?:GREEN_SAPPHIRE)|(?:PHOSPHOPHYLLITE)|(?:AQUAMARINE)|(?:SAPPHIRE)|(?:TANZANITE)|(?:AMETHYST)|(?:AGATE)|(?:MORGANITE)|(?:ONYX)|(?:OPAL)):(?: \w+:\w+,?)+" `
+                -or $LogMessage -match "Received \d+ (?:(?:soul info objects)|(?:chaos buffs)) from server" `
+                -or $LogMessage -match "Add (?:(?:gems)|(?:'rare' items)) to loot table minecraft:chests\/\w+(?: \(\d+ rolls\))?"
+                )
+        }
+        "silentlib" {
+            return -not ($LogMessage -match "Loading config file [\w:\\.]+(?:(?:silentgems-common)|(?:equipment-tooltips-client))\.toml")
+        }
+        "storagedrawers" {
+            return -not ($LogMessage -match "New compacting rule \d+ \w+ = \d+ \w+")
+        }
+        "strange" {
+            return -not (
+                $LogMessage -match "Creating config for module \w+" `
+                -or $LogMessage -match "Loading module \w+"
+                )
+        }
+        "structurize" {
+            return -not (
+                $LogMessage -match "Optifine not found\. Disabling compat\." `
+                -or $LogMessage -match "(?:file:)?[\w:\/\.]+mods\/(?:(?:minecolonies)|(?:structurize))-\d+\.\d+\.\d+\-RELEASE(?:-universal)?.jar" `
+                -or $LogMessage -match "\/assets\/(?:(?:minecolonies)|(?:structurize))" `
+                -or $LogMessage -match "Load huts or decorations from jar" `
+                -or $LogMessage -match "Load (?:(?:additional huts or decorations)|(?:cached schematic)) from [\w:\\\.]+(?:(?:structurize)|(?:minecolonies))\\[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}\/(?:(?:schematics)|(?:cache))"
+                )
+        }
+        "tellme" {
+            return -not ($LogMessage -match "Reloading the configs from file '[\w\\\.:]+config\\tellme.toml'")
+        }
+        "terraforged" {
+            return -not (
+                $LogMessage -match "Register(?:(?:ing)|(?:ed)) (?:(?:decorators)|(?:features)|(?:world type))" `
+                -or $LogMessage -match "Common setup" `
+                -or $LogMessage -match "Loading config: performance.conf" `
+                -or $LogMessage -match "Performance Settings \[default=false\]" `
+                -or $LogMessage -match " - [\w ]+: (?:(?:\d+)|(?:false))"`
+                -or $LogMessage -match "Tags Reloaded"
+                )
+        }
         "" {
             return -not ($LogMessage -match "")
         }
