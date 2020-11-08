@@ -182,41 +182,38 @@ function Test-LogEntry {
             return -not ($LogMessage -match "Endimation Data Manager has Loaded \d* Endimations")
         }
         "ambientsounds" {
-            return -not ($LogMessage -match "Successfully loaded sound engine. \d* dimension\(s\) and \d* region\(s\)")
+            return -not ($LogMessage -match "Successfully loaded sound engine\. \d* dimension\(s\) and \d* region\(s\)")
         }
         "appliedenergistics2" {
-            return -not ($LogMessage -match "Post Initialization.*")
+            return -not ($LogMessage -match "Post Initialization\.*")
         }
         "astralsorcery" {
             return -not (
                 $LogMessage -match "Built PerkTree with \d* perks!" `
                 -or $LogMessage -match "Client cache cleared!" `
-                -or $LogMessage -match "Patreon effect loading finished." `
+                -or $LogMessage -match "Patreon effect loading finished\." `
                 -or $LogMessage -match "Skipped \d* patreon effects during loading due to malformed data!" `
                 -or $LogMessage -match "\[AssetLibrary\] Refreshing and Invalidating Resources" `
-                -or $LogMessage -match "\[AssetLibrary\] Successfully reloaded library."
+                -or $LogMessage -match "\[AssetLibrary\] Successfully reloaded library\."
                 )
         }
         "attained_drops" {
             return -not ($LogMessage -match "Loaded config file!")
         }
         "bettercaves" {
-            return -not ($LogMessage -match "Replacing biome carvers with Better Caves carvers...")
+            return -not ($LogMessage -match "Replacing biome carvers with Better Caves carvers\.\.\.")
         }
         "bonsaitrees" {
             return -not (
-                $LogMessage -match "Found \d* tree models." `
+                $LogMessage -match "Found \d* tree models\." `
                 -or $LogMessage -match "Registering \d* saplings" `
                 -or $LogMessage -match "Updated soil compatibility"
                 )
         }
-        "bettercaves" {
-            return -not ($LogMessage -match "Replacing biome carvers with Better Caves carvers...")
-        }
         "bookshelf" {
             return -not (
-                $LogMessage -match "Registering \d* .* serializers." `
-                -or $LogMessage -match "Registering \d* .* types."
+                $LogMessage -match "Registering \d* .* serializers\." `
+                -or $LogMessage -match "Registering \d* .* types\."
                 )
         }
     }
