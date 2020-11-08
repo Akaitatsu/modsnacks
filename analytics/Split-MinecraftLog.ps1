@@ -363,12 +363,43 @@ function Test-LogEntry {
         "mekanism" {
             return -not (
                 $LogMessage -match "Loaded '[\w :]+' module\." `
-                -or $LogMessage -match "Version \d+.\d+.\d+ initializing..." `
-                -or $LogMessage -match "Initialized HolidayManager." `
+                -or $LogMessage -match "Version \d+.\d+.\d+ initializing\.\.\." `
+                -or $LogMessage -match "Initialized HolidayManager\." `
                 -or $LogMessage -match "Fake player readout: UUID = [0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}, name = \[Mekanism\]" `
-                -or $LogMessage -match "Loading complete." `
-                -or $LogMessage -match "Mod loaded." `
-                -or $LogMessage -match "Loaded 'Mekanism: Additions' module."
+                -or $LogMessage -match "Loading complete\." `
+                -or $LogMessage -match "Mod loaded\." `
+                -or $LogMessage -match "Loaded 'Mekanism: Additions' module\."
+                )
+        }
+        "mgui" {
+            return -not ($LogMessage -match "(?:(?:constructing mod)|(?:setup event))")
+        }
+        "minecolonies" {
+            return -not (
+                $LogMessage -match "FMLLoadCompleteEvent" `
+                -or $LogMessage -match "Updated logging config. RS Debug logging enabled: false" `
+                -or $LogMessage -match "Register mappings" `
+                -or $LogMessage -match "Finished discovering [\w ]+" `
+                -or $LogMessage -match "Removed all colony views" `
+                -or $LogMessage -match "Finished initiating sifter config"
+                )
+        }
+        "minecraft" {
+            return -not (
+                $LogMessage -match "Setting user: \w+" `
+                -or $LogMessage -match "Backend library: LWJGL version [\d.]+ build \d+" `
+                -or $LogMessage -match "No data fixer registered for entity[\w :]+" `
+                -or $LogMessage -match "Narrator library for x64 successfully loaded" `
+                -or $LogMessage -match "Reloading ResourceManager: Default, Mod Resources, KubeJS Resource Pack" `
+                -or $LogMessage -match "Performant loaded, lag begone!" `
+                -or $LogMessage -match "OpenAL initialized\." `
+                -or $LogMessage -match "Sound engine started" `
+                -or $LogMessage -match "Created: (?:(?:256x128x0)|(?:4096x4096x3)|(?:256x256x3)|(?:512x512x3)|(?:1024x1024x3)|(?:512x256x3)|(?:512x512x0)) \w+:textures/atlas/\w+.png-atlas" `
+                -or $LogMessage -match "Connecting to \d+.\d+.\d+.\d+, \d+" `
+                -or $LogMessage -match "Reloading ResourceManager:.+" `
+                -or $LogMessage -match "Loaded \d+ advancements" `
+                -or $LogMessage -match "\[CHAT\].*" `
+                -or $LogMessage -match "Stopping!"
                 )
         }
         "" {
