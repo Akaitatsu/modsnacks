@@ -276,8 +276,19 @@ function Test-LogEntry {
                 -or $LogMessage -match "FLUX NETWORKS INIT"
                 )
         }
-        "" {
-            return -not ($LogMessage -match "")
+        "forge" {
+            return -not (
+                $LogMessage -match "Add(?:(?:ing)|(?:ed)) '\w*' ASM patch(?:(?:\.\.\.)|(?:!))" `
+                -or $LogMessage -match "Inserted arm angle callback" `
+                -or $LogMessage -match "Forge mod loading, version 31.2.\d+, for MC 1.15.2 with MCP \d+\.\d+" `
+                -or $LogMessage -match "MinecraftForge v31.2.\d+ Initialized" `
+                -or $LogMessage -match "Synchronous work queue completed in [\d\.:]+" `
+                -or $LogMessage -match "Dispatching synchronous work after (?:(?:COMMON_SETUP)|(?:SIDED_SETUP)|(?:COMPLETE)): \d+ jobs" `
+                -or $LogMessage -match "Connected to a modded server." `
+                -or $LogMessage -match "Inserted [\w -]+ callback" `
+                -or $LogMessage -match "Added Lets Encrypt root certificates as additional trust" `
+                -or $LogMessage -match "Registered dimension [\w:]+ of type [\w:]+ and id \d+"
+            )
         }
     }
     return $true
