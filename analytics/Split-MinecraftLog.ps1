@@ -213,6 +213,24 @@ function Test-LogEntry {
         "bookshelf" {
             return -not ($LogMessage -match "Registering \d*.*\.")
         }
+        "botanypots" {
+            return -not ($LogMessage -match "Registering \d*.*\.")
+        }
+        "bountiful" {
+            return -not (
+                $LogMessage -match "Loading Bountiful listeners\.\." `
+                -or $LogMessage -match "Registering to: minecraft:((?:block)|(?:item)), class net\.minecraft\.((?:block)|(?:item))\.((?:Block)|(?:Item))"
+                )
+        }
+        "charm" {
+            return -not ($LogMessage -match "((?:Creating config for)|(?:Loading)) module .*")
+        }
+        "covalent" {
+            return -not ($LogMessage -match "((?:Creating config for)|(?:Loading)) module .*")
+        }
+        "craftingtweaks" {
+            return -not ($LogMessage -match "\w* has registered [\w\.]* for CraftingTweaks")
+        }
     }
     return $true
 }
@@ -228,9 +246,11 @@ $cgMessage = 6
 
 $textStream = New-Object System.IO.StreamReader -Arg $LogFilePath
 $currentModId = "forge"
-
+$lineCount = 0
+$startTime = Get-Date
 while (-not ($textStream.EndOfStream)) {
     $line = $textStream.ReadLine()
+    $lineCount++
     # Check for new section
     if ($line -match $regEx) {
         # New section - get mod name
@@ -242,4 +262,7 @@ while (-not ($textStream.EndOfStream)) {
     }
 }
 $textStream.Close()
+$endTime = Get-Date
 $modIdMapping.GetEnumerator() | Select-Object -Property Key,Value | Export-Csv -Path "$DestinationDirectory\!modlist.log" -NoTypeInformation -Encoding ascii
+$duration = New-TimeSpan -Start $startTime -End $endTime
+"Processed {0:n0} lines in {1:g}" -f $lineCount, $duration
