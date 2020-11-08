@@ -563,8 +563,40 @@ function Test-LogEntry {
                 -or $LogMessage -match "Tags Reloaded"
                 )
         }
-        "" {
-            return -not ($LogMessage -match "")
+        "tetra" {
+            return -not (
+                $LogMessage -match "Loaded[ ]{1,3}\d+ (?:(?:tweaks)|(?:improvements)|(?:modules)|(?:enchantments)|(?:synergies)|(?:replacements)|(?:schemas)|(?:repairs)|(?:predicatus)|(?:actions)|(?:destabilization)|(?:structures))" `
+                -or $LogMessage -match "Clearing item model cache, let's get bakin'" `
+                -or $LogMessage -match "Loaded 259 schemas"
+                )
+        }
+        "tombstone" {
+            return -not ($LogMessage -match "Integration TOP")
+        }
+        "torchslabsmod" {
+            return -not ($LogMessage -match "[\w ]+ Mod DETECTED AND LOADED TORCHSLAB COMPAT")
+        }
+        "vtweaks" {
+            return -not ($LogMessage -match "V-Tweaks capability attached for minecraft:overworld")
+        }
+        "waterworks" {
+            return -not (
+                $LogMessage -match "Waterworks (?:Client )?Setup (?:(?:starting)|(?:complete))" `
+                -or $LogMessage -match "Waterworks IMC to other mods (?:(?:starting)|(?:complete))" `
+                -or $LogMessage -match "Enabled support for The One Probe"
+                )
+        }
+        "xaero" {
+            return -not (
+                $LogMessage -match "Loading Xaero's (?:(?:World Map)|(?:Minimap)) - Stage [12]/2" `
+                -or $LogMessage -match "Waterworks IMC to other mods (?:(?:starting)|(?:complete))" `
+                -or $LogMessage -match "Xaero's (?:(?:WorldMap Mod)|(?:Minimap)): (?:(?:World Map)|(?:Xaero's minimap)) found!" `
+                -or $LogMessage -match "No Optifine!" `
+                -or $LogMessage -match "New (?:(?:world map)|(?:minimap)) session initialized!" `
+                -or $LogMessage -match "Minimap updated server level id: [\d\-]+ for world \d+" `
+                -or $LogMessage -match "(?:(?:World map)|(?:Minimap)) session finalized\." `
+                -or $LogMessage -match "World map cleaned normally!"
+                )
         }
     }
     return $true
