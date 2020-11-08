@@ -211,10 +211,7 @@ function Test-LogEntry {
                 )
         }
         "bookshelf" {
-            return -not (
-                $LogMessage -match "Registering \d* .* serializers\." `
-                -or $LogMessage -match "Registering \d* .* types\."
-                )
+            return -not ($LogMessage -match "Registering \d*.*\.")
         }
     }
     return $true
