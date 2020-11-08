@@ -219,17 +219,49 @@ function Test-LogEntry {
         "bountiful" {
             return -not (
                 $LogMessage -match "Loading Bountiful listeners\.\." `
-                -or $LogMessage -match "Registering to: minecraft:((?:block)|(?:item)), class net\.minecraft\.((?:block)|(?:item))\.((?:Block)|(?:Item))"
+                -or $LogMessage -match "Registering to: minecraft:(?:(?:block)|(?:item)), class net\.minecraft\.(?:(?:block)|(?:item))\.(?:(?:Block)|(?:Item))"
                 )
         }
         "charm" {
-            return -not ($LogMessage -match "((?:Creating config for)|(?:Loading)) module .*")
+            return -not ($LogMessage -match "(?:(?:Creating config for)|(?:Loading)) module .*")
         }
         "covalent" {
-            return -not ($LogMessage -match "((?:Creating config for)|(?:Loading)) module .*")
+            return -not ($LogMessage -match "(?:(?:Creating config for)|(?:Loading)) module .*")
         }
         "craftingtweaks" {
             return -not ($LogMessage -match "\w* has registered [\w\.]* for CraftingTweaks")
+        }
+        "cucumber" {
+            return -not ($LogMessage -match "Loaded cucumber-tags.json in \d* ms")
+        }
+        "darkpaintings" {
+            return -not ($LogMessage -match "Registering \d* paintings.")
+        }
+        "darkutils" {
+            return -not ($LogMessage -match "Registering \d* .*\.")
+        }
+        "doubleslabs" {
+            return -not ($LogMessage -match "Loaded \d* [\w ]* support classes")
+        }
+        "druidcraft" {
+            return -not (
+                $LogMessage -match "\w* Config: [\w\:\\\.]*druidcraft-(?:(?:server)|(?:client)).toml" `
+                -or $LogMessage -match "[\w ]* registered\." `
+                -or $LogMessage -match "Textures stitched\."
+                )
+        }
+        "embellishcraft" {
+            return -not (
+                $LogMessage -match "1\.\d- EmbellishCraft: (?:(?:block)|(?:TE)) (?:(?:registering)|(?:listing))\." `
+                -or $LogMessage -match "EmbellishCraft: (?:(?:setup started)|(?:BoP addon detected))\." `
+                -or $LogMessage -match "\w* blacklisted for biome minecraft:(?:(?:nether)|(?:the_end)) in the config\."
+                )
+        }
+        "embellishcraftbop" {
+            return -not ($LogMessage -match "(?:2\.\d- )*Embellish[Cc]raft-B[Oo]P: (?:(?:block registering)|(?:block listing)|(?:setup started))\.*")
+        }
+        "" {
+            return -not ($LogMessage -match "")
         }
     }
     return $true
