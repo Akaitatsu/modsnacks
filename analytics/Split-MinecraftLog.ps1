@@ -171,6 +171,58 @@ function Get-ModId {
     return "unknown"
 }
 
+function Test-LogEntry {
+    param (
+        [string]$ModId,
+        [string]$LogMessage
+    )
+
+    switch ($ModId) {
+        "abnormalscore" {
+            return -not ($LogMessage -match "Endimation Data Manager has Loaded \d* Endimations")
+        }
+        "ambientsounds" {
+            return -not ($LogMessage -match "Successfully loaded sound engine. \d* dimension\(s\) and \d* region\(s\)")
+        }
+        "appliedenergistics2" {
+            return -not ($LogMessage -match "Post Initialization.*")
+        }
+        "astralsorcery" {
+            return -not (
+                $LogMessage -match "Built PerkTree with \d* perks!" `
+                -or $LogMessage -match "Client cache cleared!" `
+                -or $LogMessage -match "Patreon effect loading finished." `
+                -or $LogMessage -match "Skipped \d* patreon effects during loading due to malformed data!" `
+                -or $LogMessage -match "\[AssetLibrary\] Refreshing and Invalidating Resources" `
+                -or $LogMessage -match "\[AssetLibrary\] Successfully reloaded library."
+                )
+        }
+        "attained_drops" {
+            return -not ($LogMessage -match "Loaded config file!")
+        }
+        "bettercaves" {
+            return -not ($LogMessage -match "Replacing biome carvers with Better Caves carvers...")
+        }
+        "bonsaitrees" {
+            return -not (
+                $LogMessage -match "Found \d* tree models." `
+                -or $LogMessage -match "Registering \d* saplings" `
+                -or $LogMessage -match "Updated soil compatibility"
+                )
+        }
+        "bettercaves" {
+            return -not ($LogMessage -match "Replacing biome carvers with Better Caves carvers...")
+        }
+        "bookshelf" {
+            return -not (
+                $LogMessage -match "Registering \d* .* serializers." `
+                -or $LogMessage -match "Registering \d* .* types."
+                )
+        }
+    }
+    return $true
+}
+
 $regEx = "\[(\d{2}\w{3}\d{4} \d{2}:\d{2}:\d{2}\.\d{3})\] \[([^/]*)\/([^\]]*)\] (?:\[STDERR\/\]: )?(?:\[STDOUT\/\]: )?\[([^/]*)\/?([^\]]*)?\]: (.*)"
 # Capture Group Positions (Some may not be used but are available if needed and for additional documentation)
 $cgTimestamp = 1
@@ -181,16 +233,19 @@ $cgLogName = 5
 $cgMessage = 6
 
 $textStream = New-Object System.IO.StreamReader -Arg $LogFilePath
-$currentModName = "forge"
+$currentModId = "forge"
 
 while (-not ($textStream.EndOfStream)) {
     $line = $textStream.ReadLine()
     # Check for new section
     if ($line -match $regEx) {
         # New section - get mod name
-        $currentModName = Get-ModId $Matches[$cgModName]
+        $currentModId = Get-ModId $Matches[$cgModName]
     }
-    $line | Out-File "$DestinationDirectory\$currentModName.log" -Encoding ascii -Append
+    $message = $Matches[$cgMessage]
+    if (Test-LogEntry $currentModId $message) {
+        $line | Out-File "$DestinationDirectory\$currentModId.log" -Encoding ascii -Append
+    }
 }
 $textStream.Close()
 $modIdMapping.GetEnumerator() | Select-Object -Property Key,Value | Export-Csv -Path "$DestinationDirectory\!modlist.log" -NoTypeInformation -Encoding ascii
