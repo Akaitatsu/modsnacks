@@ -495,6 +495,21 @@ function Test-LogEntry {
         "quark" {
             return -not ($LogMessage -match "Loading Module [\w ]+")
         }
+        "refinedstorage" {
+            return -not (
+                $LogMessage -match "Found \d+ RS API injection point" `
+                -or $LogMessage -match "Injected RS API in com.refinedmods.refinedstorageaddons.RSAddons RSAPI"
+                )
+        }
+        "roadstuff" {
+            return -not ($LogMessage -match "RoadStuff setup started!")
+        }
+        "serverconfigupdater" {
+            return -not ($LogMessage -match "Attempting to delete \d+ files/folders defined in config")
+        }
+        "servertabinfo" {
+            return -not ($LogMessage -match "Pre Initialization Complete!")
+        }
         "" {
             return -not ($LogMessage -match "")
         }
