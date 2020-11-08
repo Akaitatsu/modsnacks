@@ -290,6 +290,40 @@ function Test-LogEntry {
                 -or $LogMessage -match "Registered dimension [\w:]+ of type [\w:]+ and id \d+"
             )
         }
+        "immersiveengineering" {
+            return -not (
+                $LogMessage -match "Attempting to download [\w ]+ from GitHub" `
+                -or $LogMessage -match "Stitching \w+ Textures!" `
+                -or $LogMessage -match "Finished recipe profiler for [\w ]+, took \d+ milliseconds"`
+                -or $LogMessage -match "Adding recipes to JEI!!"
+                )
+        }
+        "incontrol" {
+            return -not (
+                $LogMessage -match "Enabling support for Lost Cities" `
+                -or $LogMessage -match "Reading spawn rules from \w+\.json"
+                )
+        }
+        "inspirations" {
+            return -not (
+                $LogMessage -match "Loading replacements config file\.\.\." `
+                -or $LogMessage -match "Config loaded\."
+                )
+        }
+        "inventoryhud" {
+            return -not ($LogMessage -match "clientRegistries method registred")
+        }
+        "jaopca" {
+            return -not (
+                $LogMessage -match "Found \d+ unique defined (?:(?:tags)|(?:recipes)|(?:loot tables)|(?:advancements))" `
+                -or $LogMessage -match "Module thelm\.jaopca\.compat\.(?:(?:wtbwmachines)|(?:uselessmod)|(?:usefulmachinery)|(?:thermalexpansion)|(?:omegacraft)|(?:indreb)|(?:flux)|(?:crossroads))\.\w+ has missing mod dependencies, skipping" `
+                -or $LogMessage -match "Added \d+ materials" `
+                -or $LogMessage -match "[\w ]+localization file for language en_us[\w :]*"
+                )
+        }
+        "" {
+            return -not ($LogMessage -match "")
+        }
     }
     return $true
 }
