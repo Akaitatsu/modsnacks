@@ -278,11 +278,12 @@ $cgMessage = 6
 
 $textStream = New-Object System.IO.StreamReader -Arg $LogFilePath
 $currentModId = "forge"
-$lineCount = 0
+$processedLineCount = 0
+$writtenLineCount = 0
 $startTime = Get-Date
 while (-not ($textStream.EndOfStream)) {
     $line = $textStream.ReadLine()
-    $lineCount++
+    $processedLineCount++
     # Check for new section
     if ($line -match $regEx) {
         # New section - get mod name
@@ -291,10 +292,11 @@ while (-not ($textStream.EndOfStream)) {
     $message = $Matches[$cgMessage]
     if (Test-LogEntry $currentModId $message) {
         $line | Out-File "$DestinationDirectory\$currentModId.log" -Encoding ascii -Append
+        $writtenLineCount++
     }
 }
 $textStream.Close()
 $endTime = Get-Date
 $modIdMapping.GetEnumerator() | Select-Object -Property Key,Value | Export-Csv -Path "$DestinationDirectory\!modlist.log" -NoTypeInformation -Encoding ascii
 $duration = New-TimeSpan -Start $startTime -End $endTime
-"Processed {0:n0} lines in {1:g}" -f $lineCount, $duration
+"Processed {0:n0} lines and wrote {1:n0} lines in {2:g}" -f $processedLineCount, $writtenLineCount, $duration
