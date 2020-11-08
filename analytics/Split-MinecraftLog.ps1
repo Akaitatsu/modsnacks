@@ -260,6 +260,22 @@ function Test-LogEntry {
         "embellishcraftbop" {
             return -not ($LogMessage -match "(?:2\.\d- )*Embellish[Cc]raft-B[Oo]P: (?:(?:block registering)|(?:block listing)|(?:setup started))\.*")
         }
+        "equipmenttooltips" {
+            return -not ($LogMessage -match "Detected Silent Gear!")
+        }
+        "extlights" {
+            return -not (
+                $LogMessage -match ".*H(?:(?:ello)|(?:ELLO)).*" `
+                -or $LogMessage -match "DIRT BLOCK >> minecraft:dirt" `
+                -or $LogMessage -match "Got game settings net.minecraft.client.GameSettings@.*"
+                )
+        }
+        "fluxnetworks" {
+            return -not (
+                $LogMessage -match "(?:(?:Started)|(?:Starting)|(?:Finished)|(?:Registering)|(?:LOADING)|(?:LOADED))[\w ]*" `
+                -or $LogMessage -match "FLUX NETWORKS INIT"
+                )
+        }
         "" {
             return -not ($LogMessage -match "")
         }
@@ -289,6 +305,7 @@ while (-not ($textStream.EndOfStream)) {
         # New section - get mod name
         $currentModId = Get-ModId $Matches[$cgModName]
     }
+    # Capture message before $Matches gets overwritten in Test-LogEntry
     $message = $Matches[$cgMessage]
     if (Test-LogEntry $currentModId $message) {
         $line | Out-File "$DestinationDirectory\$currentModId.log" -Encoding ascii -Append
