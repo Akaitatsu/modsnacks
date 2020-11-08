@@ -1,1 +1,5 @@
+# Ignore jar files in the modcache
 /modcache/**/*.jar
+# Ignore files other than README.md in the splitlogs directory
+/analytics/splitlogs/**/*
+!/analytics/splitlogs/**/README.md
