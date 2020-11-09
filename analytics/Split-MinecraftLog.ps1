@@ -412,10 +412,7 @@ function Test-LogEntry {
         }
         "kubejs" {
             return -not (
-                $LogMessage -match "Loaded kubejs/client.properties" `
-                -or $LogMessage -match "Hello, World! \(You will only see this line once in console, during startup\)" `
-                -or $LogMessage -match "Loaded script startup:\w+.js" `
-                -or $LogMessage -match "Loaded \d+/\d+ KubeJS startup scripts"
+                $LogMessage -match "Loaded kubejs/client.properties"
                 )
         }
         "lostcities" {
