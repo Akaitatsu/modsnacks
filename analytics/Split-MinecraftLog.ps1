@@ -509,7 +509,7 @@ function Test-LogEntry {
             return -not (
                 $LogMessage -match "ModLauncher running:.+" `
                 -or $LogMessage -match "ModLauncher [\d.\+]+master.[0-9a-f]+ starting:.+" `
-                -or $LogMessage -match "Launching target 'fmlclient' with arguments.+" `
+                -or $LogMessage -match "Launching target '(?:(?:fmlclient)|(?:fmlserver))' with arguments.+" `
                 -or $LogMessage -match "Scanning classes for \w+" `
                 -or $LogMessage -match "Found FeaturePluginInstance for class \w+ for plugin resources" `
                 -or $LogMessage -match "Mod \w+ is signed with a valid certificate\." `
@@ -532,7 +532,8 @@ function Test-LogEntry {
                 -or $LogMessage -match "\[Mouse Tweaks\] Reflecting GuiContainer\.\.\." `
                 -or $LogMessage -match "\[Mouse Tweaks\] Detected obfuscation: FORGE\." `
                 -or $LogMessage -match "\[Mouse Tweaks\] Success\." `
-                -or $LogMessage -match "\[Mouse Tweaks\] Initialized\."
+                -or $LogMessage -match "\[Mouse Tweaks\] Initialized\."`
+                -or $LogMessage -match "\[Mouse Tweaks\] Disabled because not running on the client\."
                 )
         }
         "mysticalagriculture" {
@@ -551,7 +552,7 @@ function Test-LogEntry {
             return -not (
                 $LogMessage -match "Registered [\w ]+" `
                 -or $LogMessage -match "(?:(?:Block)|(?:Item)) color registration complete\." `
-                -or $LogMessage -match "(?:(?:Common)|(?:Client)) setup complete."
+                -or $LogMessage -match "(?:(?:Common)|(?:Client)|(?:Dedicated server)) setup complete."
                 )
         }
         "paintings" {
@@ -568,6 +569,13 @@ function Test-LogEntry {
                 -or $LogMessage -match "Not enabling mixin [\w\.]+ as config disables it\."
                 )
         }
+        "placebo" {
+            return -not (
+                $LogMessage -match "Registered \d+ additional (?:(?:recipes)|(?:loot tables))\." `
+                -or $LogMessage -match "Beginning replacement of all shapeless recipes\.\.\." `
+                -or $LogMessage -match "Successfully replaced \d+ recipes with fast recipes\."
+                )
+        }
         "powah" {
             return -not (
                 $LogMessage -match "Added coolant fluid: \w+:\w+, with coldness of: \d+ per mb" `
@@ -578,7 +586,9 @@ function Test-LogEntry {
         "projecte" {
             return -not (
                 $LogMessage -match "Found and loaded (?:(?:EMC mapper)|(?:RecipeType Mapper)|(?:NBT Processor)): \w+, with priority [\d\-]+" `
-                -or $LogMessage -match "Receiving EMC data from server\."
+                -or $LogMessage -match "Receiving EMC data from server\." `
+                -or $LogMessage -match "Considering file projecte:pe_custom_conversions\/(?:(?:defaults)|(?:metals))\.json, ID projecte:(?:(?:defaults)|(?:metals))" `
+                -or $LogMessage -match "Registered \d+ EMC values\. \(took \d+ ms\)"
                 )
         }
         "psi" {
