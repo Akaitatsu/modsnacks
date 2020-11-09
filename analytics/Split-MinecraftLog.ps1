@@ -1,5 +1,5 @@
 param (
-    [string]$LogFilePath = "D:\MultiMC\instances\GWMS\.minecraft\logs\latest.log",
+    [Parameter(Mandatory=$True)][string]$LogFilePath,
     [string]$DestinationDirectory = ""
 )
 
@@ -17,15 +17,19 @@ if (Test-Path "$DestinationDirectory\*.log") {
 #Populate known mod name/id mappings
 $modIdMapping = @{
     "AE2:C" = "appliedenergistics2";
+    "AE2:S" = "appliedenergistics2";
     "ambientsounds" = "ambientsounds";
     "Apotheosis : Enchantment" = "apotheosis";
+    "Apotheosis : Deadly" = "apotheosis";
     "Astral Sorcery" = "astralsorcery";
     "attained_drops" = "attained_drops";
     "bettercaves" = "bettercaves";
+    "biomesoplenty" = "biomesoplenty";
     "BonsaiTrees2" = "bonsaitrees";
     "Bookshelf" = "bookshelf";
     "Botany Pots" = "botanypots";
     "charm" = "charm";
+    "codechicken.lib.config.ConfigSyncManager" = "codechickenlib";
     "com.black_dog20.servertabinfo.ServerTabInfo" = "servertabinfo";
     "com.darkere.serverconfigupdater.ServerConfigUpdater" = "serverconfigupdater";
     "com.jaquadro.minecraft.storagedrawers.StorageDrawers" = "storagedrawers";
@@ -35,6 +39,7 @@ $modIdMapping = @{
     "com.performant.coremod.Performant" = "performant";
     "com.polyvalord.extlights.Extlights" = "extlights";
     "com.refinedmods.refinedstorage.apiimpl.API" = "refinedstorage";
+    "com.stal111.forbidden_arcanus.gui.forbiddenmicon.ForbiddenmiconPageLoadListener" = "forbidden_arcanus";
     "com.teamabnormals.abnormals_core.core.AbnormalsCore" = "abnormalscore";
     "covalent" = "covalent";
     "cpw.mods.modlauncher.Launcher" = "misc";
@@ -46,6 +51,7 @@ $modIdMapping = @{
     "druidcraft" = "druidcraft";
     "Equipment Tooltips" = "equipmenttooltips";
     "FluxNetworks" = "fluxnetworks";
+    "FTB Utilities Backups" = "ftbbackups";
     "immersiveengineering" = "immersiveengineering";
     "incontrol" = "incontrol";
     "inspirations" = "inspirations";
@@ -54,14 +60,17 @@ $modIdMapping = @{
     "jeresources" = "jeresources";
     "Kiwi" = "kiwi";
     "KubeJS" = "kubejs";
+    "KubeJS Server" = "kubejs";
     "KubeJS Startup" = "kubejs";
     "lostcities" = "lostcities";
     "mcjtylib" = "mcjtylib";
+    "mcjty.theoneprobe.TheOneProbe" = "theoneprobe";
     "mcwbridges" = "mcwbridges";
     "mcwdoors" = "mcwdoors";
     "mcwfurnitures" = "mcwfurnitures";
     "mcwwindows" = "mcwwindows";
     "Mekanism" = "mekanism";
+    "Mekanism ChunkManager" = "mekanism";
     "Meson" = "misc";
     "mezz.jei.ingredients.IngredientManager" = "jei";
     "mezz.jei.load.PluginCaller" = "jei";
@@ -75,6 +84,7 @@ $modIdMapping = @{
     "Mystical Agriculture" = "mysticalagriculture";
     "net.blay09.mods.craftingtweaks.CraftingTweaks" = "craftingtweaks";
     "net.minecraft.advancements.AdvancementList" = "minecraft";
+    "net.minecraft.advancements.AdvancementManager" = "minecraft";
     "net.minecraft.client.audio.SoundEngine" = "minecraft";
     "net.minecraft.client.audio.SoundHandler" = "minecraft";
     "net.minecraft.client.audio.SoundSystem" = "minecraft";
@@ -84,12 +94,28 @@ $modIdMapping = @{
     "net.minecraft.client.network.play.ClientPlayNetHandler" = "minecraft";
     "net.minecraft.client.renderer.model.ModelBakery" = "minecraft";
     "net.minecraft.client.renderer.texture.AtlasTexture" = "minecraft";
+    "net.minecraft.client.resources.JsonReloadListener" = "minecraft";
     "net.minecraft.command.arguments.ArgumentTypes" = "minecraft";
+    "net.minecraft.command.Commands" = "minecraft";
     "net.minecraft.entity.EntityType" = "minecraft";
     "net.minecraft.network.datasync.EntityDataManager" = "minecraft";
+    "net.minecraft.network.login.ServerLoginNetHandler" = "minecraft";
+    "net.minecraft.network.NetworkSystem" = "minecraft";
+    "net.minecraft.network.play.ServerPlayNetHandler" = "minecraft";
+    "net.minecraft.resources.ResourcePackInfo" = "minecraft"
     "net.minecraft.resources.SimpleReloadableResourceManager" = "minecraft";
+    "net.minecraft.world.server.ChunkManager" = "minecraft";
+    "net.minecraft.server.dedicated.DedicatedServer" = "minecraft";
+    "net.minecraft.server.management.PlayerList" = "minecraft";
+    "net.minecraft.server.MinecraftServer" = "minecraft";
+    "net.minecraft.tags.TagCollection" = "minecraft";
+    "net.minecraft.util.concurrent.ThreadTaskExecutor" = "minecraft"
     "net.minecraft.world.biome.Biome" = "minecraft";
+    "net.minecraft.world.chunk.Chunk" = "minecraft";
+    "net.minecraft.world.gen.feature.structure.Structures" = "minecraft";
+    "net.minecraft.world.chunk.listener.LoggingChunkStatusListener" = "minecraft"
     "net.minecraft.world.storage.loot.LootTableManager" = "minecraft";
+    "net.minecraftforge.common.AdvancementLoadFix" = "forge";
     "net.minecraftforge.common.BiomeDictionary" = "forge";
     "net.minecraftforge.common.DimensionManager" = "forge";
     "net.minecraftforge.common.ForgeConfigSpec" = "forge";
@@ -101,23 +127,30 @@ $modIdMapping = @{
     "net.minecraftforge.eventbus.EventBus" = "forge";
     "net.minecraftforge.fml.DeferredWorkQueue" = "forge";
     "net.minecraftforge.fml.loading.FixSSL" = "forge";
+    "net.minecraftforge.fml.loading.RuntimeDistCleaner" = "forge";
     "net.minecraftforge.fml.network.FMLHandshakeHandler" = "forge";
     "net.minecraftforge.fml.network.NetworkHooks" = "forge";
+    "net.minecraftforge.fml.server.ServerLifecycleHooks" = "forge";
     "net.minecraftforge.fml.VersionChecker" = "forge";
     "net.minecraftforge.registries.ForgeRegistry" = "forge";
     "net.minecraftforge.registries.GameData" = "forge";
     "net.silentchaos512.utils.config.ConfigSpecWrapper" = "silentlib";
     "Obfuscate" = "obfuscate";
     "occultism" = "occultism";
+    "Open Loader" = "openloader";
     "paintings" = "paintings";
+    "pam.pamhc2crops.Pamhc2crops" = "harvestcraft";
     "patchouli" = "patchouli";
+    "placebo" = "placebo";
     "PluginManager" = "misc";
     "powah" = "powah";
     "projecte" = "projecte";
     "psi" = "psi";
     "quark" = "quark";
+    "ReAuth" = "reath";
     "se.mickelus.tetra.client.model.ModularModelLoader" = "tetra";
     "se.mickelus.tetra.data.DataStore" = "tetra";
+    "se.mickelus.tetra.data.DataManager" = "tetra";
     "se.mickelus.tetra.data.MergingDataStore" = "tetra";
     "Silent Gear" = "silentgear";
     "Silent's Gems" = "silentgems";
@@ -125,11 +158,14 @@ $modIdMapping = @{
     "structurize" = "structurize";
     "tellme" = "tellme";
     "TerraForged" = "terraforged";
+    "thelm.jaopca.compat.create.recipes.PressingRecipeSupplier" = "jaopca";
     "thelm.jaopca.data.DataCollector" = "jaopca";
+    "thelm.jaopca.data.DataInjector" = "jaopca";
     "thelm.jaopca.localization.LocalizationRepoHandler" = "jaopca";
     "thelm.jaopca.materials.MaterialHandler" = "jaopca";
     "thelm.jaopca.modules.ModuleHandler" = "jaopca";
     "tombstone" = "tombstone";
+    "toastcontrol" = "toastcontrol";
     "tv.mapper.embellishcraft.EmbellishCraft" = "embellishcraft";
     "tv.mapper.embellishcraftbop.EmbellishCraftBOP" = "embellishcraftbop";
     "tv.mapper.mapperbase.MapperBase" = "mapperbase";
@@ -154,7 +190,9 @@ function Get-ModId {
         $modIdMapping.Add($ModName, "bountiful");
         return "bountiful"
     }
-    if ($ModName.StartsWith("org.antlr.v4.runtime.")) {
+    if ($ModName.StartsWith("org.antlr.v4.runtime.") `
+        -or $ModName.StartsWith("java.lang.ThreadGroup:uncaughtException")
+        ) {
         $modIdMapping.Add($ModName, "misc");
         return "misc"
     }
@@ -184,6 +222,12 @@ function Test-LogEntry {
         "ambientsounds" {
             return -not ($LogMessage -match "Successfully loaded sound engine\. \d* dimension\(s\) and \d* region\(s\)")
         }
+        "apotheosis" {
+            return -not (
+                $LogMessage -match "Loaded \d+ affix loot entries from resources\." `
+                -or $LogMessage -match "Registered \d+ (?:(boss gear sets)|(?:blocks with enchanting stats))\."
+                )
+        }
         "appliedenergistics2" {
             return -not ($LogMessage -match "Post Initialization\.*")
         }
@@ -192,9 +236,10 @@ function Test-LogEntry {
                 $LogMessage -match "Built PerkTree with \d* perks!" `
                 -or $LogMessage -match "Client cache cleared!" `
                 -or $LogMessage -match "Patreon effect loading finished\." `
-                -or $LogMessage -match "Skipped \d* patreon effects during loading due to malformed data!" `
+                -or $LogMessage -match "Skipped \d+ patreon effects during loading due to malformed data!" `
                 -or $LogMessage -match "\[AssetLibrary\] Refreshing and Invalidating Resources" `
-                -or $LogMessage -match "\[AssetLibrary\] Successfully reloaded library\."
+                -or $LogMessage -match "\[AssetLibrary\] Successfully reloaded library\." `
+                -or $LogMessage -match "Loaded PerkTree!"
                 )
         }
         "attained_drops" {
@@ -205,7 +250,7 @@ function Test-LogEntry {
         }
         "bonsaitrees" {
             return -not (
-                $LogMessage -match "Found \d* tree models\." `
+                $LogMessage -match "Found \d+ tree models\." `
                 -or $LogMessage -match "Registering \d* saplings" `
                 -or $LogMessage -match "Updated soil compatibility"
                 )
