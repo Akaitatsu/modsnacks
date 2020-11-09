@@ -217,10 +217,10 @@ function Test-LogEntry {
 
     switch ($ModId) {
         "abnormalscore" {
-            return -not ($LogMessage -match "Endimation Data Manager has Loaded \d* Endimations")
+            return -not ($LogMessage -match "Endimation Data Manager has Loaded \d+ Endimations")
         }
         "ambientsounds" {
-            return -not ($LogMessage -match "Successfully loaded sound engine\. \d* dimension\(s\) and \d* region\(s\)")
+            return -not ($LogMessage -match "Successfully loaded sound engine\. \d+ dimension\(s\) and \d+ region\(s\)")
         }
         "apotheosis" {
             return -not (
@@ -233,7 +233,7 @@ function Test-LogEntry {
         }
         "astralsorcery" {
             return -not (
-                $LogMessage -match "Built PerkTree with \d* perks!" `
+                $LogMessage -match "Built PerkTree with \d+ perks!" `
                 -or $LogMessage -match "Client cache cleared!" `
                 -or $LogMessage -match "Patreon effect loading finished\." `
                 -or $LogMessage -match "Skipped \d+ patreon effects during loading due to malformed data!" `
@@ -248,11 +248,15 @@ function Test-LogEntry {
         "bettercaves" {
             return -not ($LogMessage -match "Replacing biome carvers with Better Caves carvers\.\.\.")
         }
+        "biomesoplenty" {
+            return -not ($LogMessage -match "Registering BoP commands\.\.\.")
+        }
         "bonsaitrees" {
             return -not (
                 $LogMessage -match "Found \d+ tree models\." `
-                -or $LogMessage -match "Registering \d* saplings" `
-                -or $LogMessage -match "Updated soil compatibility"
+                -or $LogMessage -match "Registering \d+ saplings" `
+                -or $LogMessage -match "Updated soil compatibility" `
+                -or $LogMessage -match "Loaded \d+ bonsai types and \d+ soil types"
                 )
         }
         "bookshelf" {
@@ -268,31 +272,32 @@ function Test-LogEntry {
                 )
         }
         "charm" {
-            return -not ($LogMessage -match "(?:(?:Creating config for)|(?:Loading)) module .*")
+            return -not ($LogMessage -match "(?:(?:Creating config for)|(?:Loading)) module.+")
         }
         "covalent" {
-            return -not ($LogMessage -match "(?:(?:Creating config for)|(?:Loading)) module .*")
+            return -not ($LogMessage -match "(?:(?:Creating config for)|(?:Loading)) module.+")
         }
         "craftingtweaks" {
-            return -not ($LogMessage -match "\w* has registered [\w\.]* for CraftingTweaks")
+            return -not ($LogMessage -match "\w+ has registered [\w\.]+ for CraftingTweaks")
         }
         "cucumber" {
-            return -not ($LogMessage -match "Loaded cucumber-tags.json in \d* ms")
+            return -not ($LogMessage -match "Loaded cucumber-tags.json in \d+ ms")
         }
         "darkpaintings" {
-            return -not ($LogMessage -match "Registering \d* paintings.")
+            return -not ($LogMessage -match "Registering \d+ paintings.")
         }
         "darkutils" {
-            return -not ($LogMessage -match "Registering \d* .*\.")
+            return -not ($LogMessage -match "Registering \d+.+\.")
         }
         "doubleslabs" {
-            return -not ($LogMessage -match "Loaded \d* [\w ]* support classes")
+            return -not ($LogMessage -match "Loaded \d+ [\w ]+ support classes")
         }
         "druidcraft" {
             return -not (
-                $LogMessage -match "\w* Config: [\w\:\\\.]*druidcraft-(?:(?:server)|(?:client)).toml" `
-                -or $LogMessage -match "[\w ]* registered\." `
-                -or $LogMessage -match "Textures stitched\."
+                $LogMessage -match "\w+ Config: [\w\:\\\.]+druidcraft-(?:(?:server)|(?:client)).toml" `
+                -or $LogMessage -match "[\w ]+ registered\." `
+                -or $LogMessage -match "Textures stitched\." `
+                -or $LogMessage -match "HELLO from server starting"
                 )
         }
         "embellishcraft" {
