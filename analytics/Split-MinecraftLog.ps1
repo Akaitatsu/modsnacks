@@ -686,6 +686,9 @@ function Test-LogEntry {
                 -or $LogMessage -match "Sending data to client: [\w\d]+"
                 )
         }
+        "theoneprobe" {
+            return -not ($LogMessage -match "theoneprobe config just got changed on the file system!")
+        }
         "tombstone" {
             return -not ($LogMessage -match "Integration TOP")
         }
@@ -693,7 +696,10 @@ function Test-LogEntry {
             return -not ($LogMessage -match "[\w ]+ Mod DETECTED AND LOADED TORCHSLAB COMPAT")
         }
         "vtweaks" {
-            return -not ($LogMessage -match "V-Tweaks capability attached for minecraft:overworld")
+            return -not (
+                $LogMessage -match "V-Tweaks capability attached for minecraft:overworld" `
+                -or $LogMessage -match "V-Tweaks capability attached for \w+:\w+"
+                )
         }
         "waterworks" {
             return -not (
