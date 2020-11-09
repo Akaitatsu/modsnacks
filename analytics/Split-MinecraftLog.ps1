@@ -419,7 +419,10 @@ function Test-LogEntry {
             return -not ($LogMessage -match "(?:(?:Creating standard)|(?:Reading existing)) profiles (?:(?:into)|(?:from)) 'config/lostcity_profiles'")
         }
         "maessentials" {
-            return -not ($LogMessage -match "maessentials Setup main")
+            return -not (
+                $LogMessage -match "maessentials Setup (?:(?:main)|(?:world))" `
+                -or $LogMessage -match "maessentials (?:(?:Mod is running on server)|(?:Loading data)|(?:Data loaded))"
+                )
         }
         "mapperbase" {
             return -not (
@@ -447,7 +450,8 @@ function Test-LogEntry {
                 -or $LogMessage -match "Fake player readout: UUID = [0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}, name = \[Mekanism\]" `
                 -or $LogMessage -match "Loading complete\." `
                 -or $LogMessage -match "Mod loaded\." `
-                -or $LogMessage -match "Loaded 'Mekanism: Additions' module\."
+                -or $LogMessage -match "Loaded 'Mekanism: Additions' module\." `
+                -or $LogMessage -match "Loading \d+ chunks for dimension \w+:\w+"
                 )
         }
         "mgui" {
@@ -460,7 +464,8 @@ function Test-LogEntry {
                 -or $LogMessage -match "Register mappings" `
                 -or $LogMessage -match "Finished discovering [\w ]+" `
                 -or $LogMessage -match "Removed all colony views" `
-                -or $LogMessage -match "Finished initiating sifter config"
+                -or $LogMessage -match "Finished initiating sifter config" `
+                -or $LogMessage -match "Server UUID [0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}"
                 )
         }
         "minecraft" {
@@ -478,7 +483,26 @@ function Test-LogEntry {
                 -or $LogMessage -match "Reloading ResourceManager:.+" `
                 -or $LogMessage -match "Loaded \d+ advancements" `
                 -or $LogMessage -match "\[CHAT\].*" `
-                -or $LogMessage -match "Stopping!"
+                -or $LogMessage -match "Stopping!" `
+                -or $LogMessage -match "Starting minecraft server version 1\.\d{2}\.\d" `
+                -or $LogMessage -match "Loading properties" `
+                -or $LogMessage -match "Default game type: SURVIVAL" `
+                -or $LogMessage -match "Generating keypair" `
+                -or $LogMessage -match "Starting Minecraft server on \d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}:\d{1,5}" `
+                -or $LogMessage -match "Using default channel type" `
+                -or $LogMessage -match "Preparing level ""[\w ]+""" `
+                -or $LogMessage -match "Preparing start region for dimension minecraft:\w+" `
+                -or $LogMessage -match "Preparing spawn area: \d{1,3}%" `
+                -or $LogMessage -match "Time elapsed: \d+ ms" `
+                -or $LogMessage -match "Done (\d+\.\d+s)! For help, type ""help""" `
+                -or $LogMessage -match "ThreadedAnvilChunkStorage \([\w\d\-]+\): All chunks are saved" `
+                -or $LogMessage -match "UUID of player [\w\d]+ is [0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}" `
+                -or $LogMessage -match "[\w\d]+\[\/\d{1,3}.\d{1,3}.\d{1,3}.\d{1,3}:\d{1,5}\] logged in with entity id \d+ at \(\d+.\d+, \d+.\d+, \-?\d+.\d+\)" `
+                -or $LogMessage -match "[\w\d]+ (?:(?:joined)|(?:left)) the game" `
+                -or $LogMessage -match "[\w\d]+ lost connection: Disconnected" `
+                -or $LogMessage -match "Stopping (?:the )?server" `
+                -or $LogMessage -match "Saving (?:(?:players)|(?:worlds)|(?:chunks for level '[\w ]+'/minecraft:\w+))" `
+                -or $LogMessage -match "ftbbackups.lang.end_2"
                 )
         }
         "misc" {
