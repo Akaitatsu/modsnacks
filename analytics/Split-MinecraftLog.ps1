@@ -260,19 +260,24 @@ function Test-LogEntry {
                 )
         }
         "bookshelf" {
-            return -not ($LogMessage -match "Registering \d*.*\.")
+            return -not ($LogMessage -match "Registering \d+.+\.")
         }
         "botanypots" {
-            return -not ($LogMessage -match "Registering \d*.*\.")
+            return -not ($LogMessage -match "Registering \d+.+\.")
         }
         "bountiful" {
             return -not (
                 $LogMessage -match "Loading Bountiful listeners\.\." `
-                -or $LogMessage -match "Registering to: minecraft:(?:(?:block)|(?:item)), class net\.minecraft\.(?:(?:block)|(?:item))\.(?:(?:Block)|(?:Item))"
+                -or $LogMessage -match "Registering to: minecraft:(?:(?:block)|(?:item)), class net\.minecraft\.(?:(?:block)|(?:item))\.(?:(?:Block)|(?:Item))" `
+                -or $LogMessage -match "Bountiful (?:(?:listening for resource reloads\.\.)|(?:reloading resources! :D))" `
+                -or $LogMessage -match "Loading BR\{bountiful\/(?:(?:decrees\/bountiful)|(?:pools\/[\w]+))\}"
                 )
         }
         "charm" {
             return -not ($LogMessage -match "(?:(?:Creating config for)|(?:Loading)) module.+")
+        }
+        "codechickenlib" {
+            return -not ($LogMessage -match "Skipping config sync, No mods have registered a syncable config\.")
         }
         "covalent" {
             return -not ($LogMessage -match "(?:(?:Creating config for)|(?:Loading)) module.+")
@@ -304,7 +309,8 @@ function Test-LogEntry {
             return -not (
                 $LogMessage -match "1\.\d- EmbellishCraft: (?:(?:block)|(?:TE)) (?:(?:registering)|(?:listing))\." `
                 -or $LogMessage -match "EmbellishCraft: (?:(?:setup started)|(?:BoP addon detected))\." `
-                -or $LogMessage -match "\w* blacklisted for biome minecraft:(?:(?:nether)|(?:the_end)) in the config\."
+                -or $LogMessage -match "\w+ blacklisted for biome minecraft:(?:(?:nether)|(?:the_end)) in the config\." `
+                -or $LogMessage -match "EmbellishCraft: if this line crashes please report to.+"
                 )
         }
         "embellishcraftbop" {
@@ -313,8 +319,8 @@ function Test-LogEntry {
         "engineersdecor" {
             return -not (
                 $LogMessage -match "Engineer's Decor GIT id #[0-9a-f]+." `
-                -or $LogMessage -match "[\w ]+] also installed \.\.\." `
-                -or $LogMessage -match "Registerd \d+ .+" `
+                -or $LogMessage -match "[\w ]+ also installed \.\.\." `
+                -or $LogMessage -match "Registered \d+ .+" `
                 -or $LogMessage -match "Config .+" `
                 -or $LogMessage -match "Opt-outs:\w+" `
                 -or $LogMessage -match "Registering recipe condition processor \.\.\." `
@@ -337,6 +343,9 @@ function Test-LogEntry {
                 -or $LogMessage -match "FLUX NETWORKS INIT"
                 )
         }
+        "forbidden_arcanus" {
+            return -not ($LogMessage -match "Loaded \d+ recipes")
+        }
         "forge" {
             return -not (
                 $LogMessage -match "Add(?:(?:ing)|(?:ed)) '\w*' ASM patch(?:(?:\.\.\.)|(?:!))" `
@@ -351,12 +360,23 @@ function Test-LogEntry {
                 -or $LogMessage -match "Registered dimension [\w:]+ of type [\w:]+ and id \d+"
             )
         }
+        "ftbbackups" {
+            return -not (
+                $LogMessage -match "Backups folder - [\w:\\\.]+backups" `
+                -or $LogMessage -match "[\w ]+ also installed \.\.\." `
+                -or $LogMessage -match "ftbbackups.lang.start" `
+                -or $LogMessage -match "(?:(?:Backing up)|(?:Compressing)) \d+ files\.\.\." `
+                -or $LogMessage -match "Done compressing in \d{2}:\d{2} seconds \(\d+.\dMB\)!" `
+                -or $LogMessage -match "Created [\w:\\\.\d\-]+zip from [\w:\\\.]+"
+                )
+        }
         "immersiveengineering" {
             return -not (
                 $LogMessage -match "Attempting to download [\w ]+ from GitHub" `
                 -or $LogMessage -match "Stitching \w+ Textures!" `
-                -or $LogMessage -match "Finished recipe profiler for [\w ]+, took \d+ milliseconds"`
-                -or $LogMessage -match "Adding recipes to JEI!!"
+                -or $LogMessage -match "Finished recipe profiler for [\w ]+, took \d+ milliseconds" `
+                -or $LogMessage -match "Adding recipes to JEI!!" `
+                -or $LogMessage -match "Recipes for potions:(?: \w+:\w+,?)+"
                 )
         }
         "incontrol" {
@@ -379,7 +399,8 @@ function Test-LogEntry {
                 $LogMessage -match "Found \d+ unique defined (?:(?:tags)|(?:recipes)|(?:loot tables)|(?:advancements))" `
                 -or $LogMessage -match "Module thelm\.jaopca\.compat\.(?:(?:wtbwmachines)|(?:uselessmod)|(?:usefulmachinery)|(?:thermalexpansion)|(?:omegacraft)|(?:indreb)|(?:flux)|(?:crossroads))\.\w+ has missing mod dependencies, skipping" `
                 -or $LogMessage -match "Added \d+ materials" `
-                -or $LogMessage -match "[\w ]+localization file for language en_us[\w :]*"
+                -or $LogMessage -match "[\w ]+localization file for language en_us[\w :]*" `
+                -or $LogMessage -match "Injected \d+ recipes, \d+ recipes total"
                 )
         }
         "kiwi" {
