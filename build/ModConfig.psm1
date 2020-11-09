@@ -77,14 +77,21 @@ function New-LodDepositConfigsForMod {
 function Copy-ModConfig {
     param (
         $modObject,
-        [Parameter(Mandatory=$True)][string]$MinecraftPath,
-        [Parameter(Mandatory=$True)][string]$DestinationPath
+        [Parameter(Mandatory=$True)][string]$MinecraftPath
     )
     # Copy mod config files
     $sourceFolder = "..\packdata\config\$($modObject.modid)"
     $sourcePath = "$sourceFolder\*"
+    $destinationConfigPath = "$MinecraftPath\config"
     if (Test-Path $sourceFolder -PathType Container) {
-        Copy-Item -Path $sourcePath -Destination $DestinationPath -Recurse -Force | Out-Null
+        Copy-Item -Path $sourcePath -Destination $destinationConfigPath -Recurse -Force | Out-Null
+    }
+    # Copy mod defaultconfigs files
+    $sourceFolder = "..\packdata\defaultconfigs\$($modObject.modid)"
+    $sourcePath = "$sourceFolder\*"
+    $destinationDefaultConfigsPath = "$MinecraftPath\defaultconfigs"
+    if (Test-Path $sourceFolder -PathType Container) {
+        Copy-Item -Path $sourcePath -Destination $destinationDefaultConfigsPath -Recurse -Force | Out-Null
     }
     # Copy non-standard configuration files
     if ($null -ne $modObject.specialConfigurationTargetPath) {
@@ -94,5 +101,5 @@ function Copy-ModConfig {
     }
 
     # Create deposit configs for Large Ore Deposits
-    New-LodDepositConfigsForMod -modObject $modObject -configPath $destinationPath
+    New-LodDepositConfigsForMod -modObject $modObject -configPath $destinationConfigPath
 }

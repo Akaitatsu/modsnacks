@@ -17,7 +17,7 @@
 		offset = 5
 		#Chance of generating in an allowed chunk
 		#Range: 0.0 ~ 1.0
-		probability = 1.0
+		probability = .5
 
 	[common.farlander_village]
 		#Spacing between structures
@@ -28,5 +28,5 @@
 		offset = 15
 		#Chance of generating in an allowed chunk
 		#Range: 0.0 ~ 1.0
-		probability = 0.7
+		probability = 0.1
 
