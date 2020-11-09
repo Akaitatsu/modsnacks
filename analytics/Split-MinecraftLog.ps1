@@ -532,8 +532,7 @@ function Test-LogEntry {
                 -or $LogMessage -match "\[Mouse Tweaks\] Reflecting GuiContainer\.\.\." `
                 -or $LogMessage -match "\[Mouse Tweaks\] Detected obfuscation: FORGE\." `
                 -or $LogMessage -match "\[Mouse Tweaks\] Success\." `
-                -or $LogMessage -match "\[Mouse Tweaks\] Initialized\."`
-                -or $LogMessage -match "\[Mouse Tweaks\] Disabled because not running on the client\."
+                -or $LogMessage -match "\[Mouse Tweaks\] Initialized\."
                 )
         }
         "mysticalagriculture" {
