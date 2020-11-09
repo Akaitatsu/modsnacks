@@ -71,7 +71,7 @@ $modIdMapping = @{
     "mcwwindows" = "mcwwindows";
     "Mekanism" = "mekanism";
     "Mekanism ChunkManager" = "mekanism";
-    "Meson" = "misc";
+    "Meson" = "strange";
     "mezz.jei.ingredients.IngredientManager" = "jei";
     "mezz.jei.load.PluginCaller" = "jei";
     "mezz.jei.load.registration.AdvancedRegistration" = "jei";
@@ -513,11 +513,8 @@ function Test-LogEntry {
                 -or $LogMessage -match "Scanning classes for \w+" `
                 -or $LogMessage -match "Found FeaturePluginInstance for class \w+ for plugin resources" `
                 -or $LogMessage -match "Mod \w+ is signed with a valid certificate\." `
-                -or $LogMessage -match "Added \w+ to Meson" `
-                -or $LogMessage -match "Queueing \w+:\w+" `
                 -or $LogMessage -match "Constructed class \w+ for plugin resources for mod \w+" `
-                -or $LogMessage -match "Executing phase CONSTRUCTION for plugin class \w+" `
-                -or $LogMessage -match "Registering to minecraft:\w+ - \w+:\w+"
+                -or $LogMessage -match "Executing phase CONSTRUCTION for plugin class \w+"
                 )
         }
         "mixinbootstrap" {
@@ -644,7 +641,10 @@ function Test-LogEntry {
         "strange" {
             return -not (
                 $LogMessage -match "Creating config for module \w+" `
-                -or $LogMessage -match "Loading module \w+"
+                -or $LogMessage -match "Added \w+ to Meson" `
+                -or $LogMessage -match "Queueing \w+:\w+" `
+                -or $LogMessage -match "Loading module \w+" `
+                -or $LogMessage -match "Registering to minecraft:\w+ - \w+:\w+"
                 )
         }
         "structurize" {
