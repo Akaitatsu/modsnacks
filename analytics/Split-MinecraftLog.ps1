@@ -616,7 +616,10 @@ function Test-LogEntry {
                 $LogMessage -match "Registered (?:condition )?serializer '\w+:\w+'" `
                 -or $LogMessage -match "IAOETool: Rebuilt ore block set, contains \d+ items" `
                 -or $LogMessage -match "Add [\w ]+ to \w+:\w+" `
-                -or $LogMessage -match "Read \d+ (?:(?:traits)|(?:parts)|(?:materials)) from server"
+                -or $LogMessage -match "Read \d+ (?:(?:traits)|(?:parts)|(?:materials)) from server" `
+                -or $LogMessage -match "Reloading (?:(?:trait)|(?:material)|(?:part)) files" `
+                -or $LogMessage -match "Registered \d+ (?:(?:traits)|(?:parts)|(?:materials))" `
+                -or $LogMessage -match "(?:(?:Traits)|(?:Parts)|(?:Materials)) loaded: \d+"
                 )
         }
         "silentgems" {
@@ -627,7 +630,9 @@ function Test-LogEntry {
                 -or $LogMessage -match "Your base biome seed is [\d\-]+" `
                 -or $LogMessage -match "(?:(?:RUBY)|(?:GARNET)|(?:TOPAZ)|(?:AMBER)|(?:HELIODOR)|(?:PERIDOT)|(?:GREEN_SAPPHIRE)|(?:PHOSPHOPHYLLITE)|(?:AQUAMARINE)|(?:SAPPHIRE)|(?:TANZANITE)|(?:AMETHYST)|(?:AGATE)|(?:MORGANITE)|(?:ONYX)|(?:OPAL)):(?: \w+:\w+,?)+" `
                 -or $LogMessage -match "Received \d+ (?:(?:soul info objects)|(?:chaos buffs)) from server" `
-                -or $LogMessage -match "Add (?:(?:gems)|(?:'rare' items)) to loot table minecraft:chests\/\w+(?: \(\d+ rolls\))?"
+                -or $LogMessage -match "Add (?:(?:gems)|(?:'rare' items)) to loot table minecraft:chests\/\w+(?: \(\d+ rolls\))?" `
+                -or $LogMessage -match "Reloading chaos buff files" `
+                -or $LogMessage -match "Finished! Registered \d+ chaos buffs"
                 )
         }
         "silentlib" {
@@ -648,7 +653,9 @@ function Test-LogEntry {
                 -or $LogMessage -match "(?:file:)?[\w:\/\.]+mods\/(?:(?:minecolonies)|(?:structurize))-\d+\.\d+\.\d+\-RELEASE(?:-universal)?.jar" `
                 -or $LogMessage -match "\/assets\/(?:(?:minecolonies)|(?:structurize))" `
                 -or $LogMessage -match "Load huts or decorations from jar" `
-                -or $LogMessage -match "Load (?:(?:additional huts or decorations)|(?:cached schematic)) from [\w:\\\.]+(?:(?:structurize)|(?:minecolonies))\\[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}\/(?:(?:schematics)|(?:cache))"
+                -or $LogMessage -match "Load (?:(?:additional huts or decorations)|(?:cached schematic)) from [\w:\\\.]+(?:(?:structurize)|(?:minecolonies))(?:\\[0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12})?\/(?:(?:schematics)|(?:cache))" `
+                -or $LogMessage -match "FMLServerStartedEvent" `
+                -or $LogMessage -match "New Server UUID [0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}"
                 )
         }
         "tellme" {
@@ -660,15 +667,23 @@ function Test-LogEntry {
                 -or $LogMessage -match "Common setup" `
                 -or $LogMessage -match "Loading config: performance.conf" `
                 -or $LogMessage -match "Performance Settings \[default=false\]" `
-                -or $LogMessage -match " - [\w ]+: (?:(?:\d+)|(?:false))"`
-                -or $LogMessage -match "Tags Reloaded"
+                -or $LogMessage -match " - [\w ]+: (?:(?:\d+)|(?:false))" `
+                -or $LogMessage -match "Tags Reloaded" `
+                -or $LogMessage -match "Adding DataPackFinder" `
+                -or $LogMessage -match "Found \d+ datapacks" `
+                -or $LogMessage -match "Loading generator settings from level\.dat" `
+                -or $LogMessage -match "Loading config: biome_weights\.conf" `
+                -or $LogMessage -match " - [\w ]+ decorator enabled" `
+                -or $LogMessage -match "Registering \/terra command"
                 )
         }
         "tetra" {
             return -not (
                 $LogMessage -match "Loaded[ ]{1,3}\d+ (?:(?:tweaks)|(?:improvements)|(?:modules)|(?:enchantments)|(?:synergies)|(?:replacements)|(?:schemas)|(?:repairs)|(?:predicatus)|(?:actions)|(?:destabilization)|(?:structures))" `
                 -or $LogMessage -match "Clearing item model cache, let's get bakin'" `
-                -or $LogMessage -match "Loaded 259 schemas"
+                -or $LogMessage -match "Loaded \d+ schemas" `
+                -or $LogMessage -match "Setting up data reload listeners" `
+                -or $LogMessage -match "Sending data to client: [\w\d]+"
                 )
         }
         "tombstone" {
