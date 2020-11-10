@@ -35,6 +35,7 @@ $modIdMapping = @{
     "com.jaquadro.minecraft.storagedrawers.StorageDrawers" = "storagedrawers";
     "com.maciej916.maessentials.common.util.LogUtils" = "maessentials";
     "com.mojang.text2speech.NarratorWindows" = "minecraft";
+    "com.mushroom.midnight.Midnight" = "midnight";
     "com.oitsjustjose.vtweaks.VTweaks" = "vtweaks";
     "com.performant.coremod.Performant" = "performant";
     "com.polyvalord.extlights.Extlights" = "extlights";
@@ -51,6 +52,7 @@ $modIdMapping = @{
     "druidcraft" = "druidcraft";
     "Equipment Tooltips" = "equipmenttooltips";
     "FluxNetworks" = "fluxnetworks";
+    "forgeendertech" = "forgeendertech";
     "FTB Utilities Backups" = "ftbbackups";
     "immersiveengineering" = "immersiveengineering";
     "incontrol" = "incontrol";
@@ -82,9 +84,11 @@ $modIdMapping = @{
     "minecolonies.requestsystem" = "minecolonies";
     "mixin" = "mixinbootstrap";
     "Mystical Agriculture" = "mysticalagriculture";
+    "Mystical Customization" = "mysticalcustomization";
     "net.blay09.mods.craftingtweaks.CraftingTweaks" = "craftingtweaks";
     "net.minecraft.advancements.AdvancementList" = "minecraft";
     "net.minecraft.advancements.AdvancementManager" = "minecraft";
+    "net.minecraft.advancements.PlayerAdvancements" = "minecraft";
     "net.minecraft.client.audio.SoundEngine" = "minecraft";
     "net.minecraft.client.audio.SoundHandler" = "minecraft";
     "net.minecraft.client.audio.SoundSystem" = "minecraft";
@@ -106,6 +110,7 @@ $modIdMapping = @{
     "net.minecraft.resources.SimpleReloadableResourceManager" = "minecraft";
     "net.minecraft.world.server.ChunkManager" = "minecraft";
     "net.minecraft.server.dedicated.DedicatedServer" = "minecraft";
+    "net.minecraft.server.integrated.IntegratedServer" = "minecraft";
     "net.minecraft.server.management.PlayerList" = "minecraft";
     "net.minecraft.server.MinecraftServer" = "minecraft";
     "net.minecraft.tags.TagCollection" = "minecraft";
@@ -115,6 +120,7 @@ $modIdMapping = @{
     "net.minecraft.world.gen.feature.structure.Structures" = "minecraft";
     "net.minecraft.world.chunk.listener.LoggingChunkStatusListener" = "minecraft"
     "net.minecraft.world.storage.loot.LootTableManager" = "minecraft";
+    "net.minecraft.world.storage.SaveFormat" = "minecraft";
     "net.minecraftforge.common.AdvancementLoadFix" = "forge";
     "net.minecraftforge.common.BiomeDictionary" = "forge";
     "net.minecraftforge.common.DimensionManager" = "forge";
@@ -126,7 +132,9 @@ $modIdMapping = @{
     "net.minecraftforge.coremod.CoreMod.observerlib" = "forge";
     "net.minecraftforge.eventbus.EventBus" = "forge";
     "net.minecraftforge.fml.DeferredWorkQueue" = "forge";
+    "net.minecraftforge.fml.FMLWorldPersistenceHook" = "forge";
     "net.minecraftforge.fml.loading.FixSSL" = "forge";
+    "net.minecraftforge.fml.loading.FMLConfig" = "forge";
     "net.minecraftforge.fml.loading.RuntimeDistCleaner" = "forge";
     "net.minecraftforge.fml.network.FMLHandshakeHandler" = "forge";
     "net.minecraftforge.fml.network.NetworkHooks" = "forge";
@@ -249,7 +257,10 @@ function Test-LogEntry {
             return -not ($LogMessage -match "Loaded config file!")
         }
         "bettercaves" {
-            return -not ($LogMessage -match "Replacing biome carvers with Better Caves carvers\.\.\.")
+            return -not (
+                $LogMessage -match "Replacing biome carvers with Better Caves carvers\.\.\." `
+                -or $LogMessage -match "Creating directory for dimension-specific Better Caves configs at [\w:\\\.]+bettercaves-1_\d+_\d+"
+                )
         }
         "biomesoplenty" {
             return -not ($LogMessage -match "Registering BoP commands\.\.\.")
