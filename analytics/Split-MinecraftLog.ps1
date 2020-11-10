@@ -224,7 +224,10 @@ function Test-LogEntry {
         }
         "apotheosis" {
             return -not (
-                $LogMessage -match "Loaded \d+ affix loot entries from resources\." `
+                # Only ignore the following method for enchantments from Strange since they aren't intended to be attainable
+                # through enchanting
+                $LogMessage -match "Enchantment strange:\w+ has min\/max power \d+\/\d+ at level \d+, making this level unobtainable\." `
+                -or $LogMessage -match "Loaded \d+ affix loot entries from resources\." `
                 -or $LogMessage -match "Registered \d+ (?:(boss gear sets)|(?:blocks with enchanting stats))\."
                 )
         }
