@@ -1392,13 +1392,6 @@
         "firstInstance": "GWMS"
     },
     {
-        "name": "ProjectE",
-        "modid": "projecte",
-        "filenamePattern": "ProjectE-1.15.2-PE%ver%",
-        "currentVersion": "1.0.4",
-        "firstInstance": "GWMS"
-    },
-    {
         "name": "Psi",
         "modid": "psi",
         "filenamePattern": "Psi+%ver%",
