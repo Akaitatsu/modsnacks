@@ -462,7 +462,7 @@
         "name": "Druidcraft",
         "modid": "druidcraft",
         "filenamePattern": "Druidcraft-1.15-%ver%",
-        "currentVersion": "0.4.44",
+        "currentVersion": "0.4.45",
         "firstInstance": "LCMS",
         "largeOreDepositsConfig": [
             {
@@ -754,7 +754,7 @@
         "name": "Inventory HUD+",
         "modid": "inventoryhud",
         "filenamePattern": "InventoryHud_1.15.2.forge-%ver%",
-        "currentVersion": "3.1.3",
+        "currentVersion": "3.1.4",
         "firstInstance": "LCMS"
     },
     {
@@ -817,7 +817,7 @@
         "name": "Kiwi",
         "modid": "kiwi",
         "filenamePattern": "Kiwi-1.15.2-%ver%",
-        "currentVersion": "2.8.2",
+        "currentVersion": "2.8.5",
         "firstInstance": "GWMS"
     },
     {
@@ -831,7 +831,7 @@
         "name": "KubeJS",
         "modid": "kubejs",
         "filenamePattern": "kubejs-%ver%",
-        "currentVersion": "1502.2.7.18",
+        "currentVersion": "1502.3.0.19",
         "firstInstance": "LCMS"
     },
     {
@@ -1516,6 +1516,13 @@
         "filenamePattern": "rftoolsutility-1.15-%ver%",
         "currentVersion": "2.1.12",
         "firstInstance": "WFMS"
+    },
+    {
+        "name": "Rhino",
+        "modid": "rhino",
+        "filenamePattern": "rhino-%ver%",
+        "currentVersion": "1.7.13.8",
+        "firstInstance": "LCMS"
     },
     {
         "name": "Road Stuff",
