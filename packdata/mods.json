@@ -80,7 +80,7 @@
         "name": "Aquaculture",
         "modid": "aquaculture",
         "filenamePattern": "Aquaculture-1.15.2-%ver%",
-        "currentVersion": "2.0.22",
+        "currentVersion": "2.0.23",
         "firstInstance": "WFMS"
     },
     {
@@ -94,7 +94,7 @@
         "name": "Astral Sorcery",
         "modid": "astralsorcery",
         "filenamePattern": "AstralSorcery-1.15.2-%ver%",
-        "currentVersion": "1.12.10",
+        "currentVersion": "1.12.11",
         "firstInstance": "GWMS",
         "largeOreDepositsConfig": [
             {
@@ -266,7 +266,7 @@
         "name": "CC: Tweaked",
         "modid": "computercraft",
         "filenamePattern": "cc-tweaked-1.15.2-%ver%",
-        "currentVersion": "1.93.1",
+        "currentVersion": "1.94.0",
         "firstInstance": "GWMS"
     },
     {
@@ -315,7 +315,7 @@
         "name": "COFH Core",
         "modid": "cofh_core",
         "filenamePattern": "cofh_core-1.15.2-%ver%",
-        "currentVersion": "1.0.0",
+        "currentVersion": "1.0.2",
         "firstInstance": "WFMS"
     },
     {
@@ -427,7 +427,7 @@
         "name": "Dark Utilities",
         "modid": "darkutils",
         "filenamePattern": "DarkUtilities-1.15.2-%ver%",
-        "currentVersion": "3.1.8",
+        "currentVersion": "3.1.9",
         "firstInstance": "GWMS"
     },
     {
@@ -462,7 +462,7 @@
         "name": "Druidcraft",
         "modid": "druidcraft",
         "filenamePattern": "Druidcraft-1.15-%ver%",
-        "currentVersion": "0.4.44",
+        "currentVersion": "0.4.45",
         "firstInstance": "LCMS",
         "largeOreDepositsConfig": [
             {
@@ -754,7 +754,7 @@
         "name": "Inventory HUD+",
         "modid": "inventoryhud",
         "filenamePattern": "InventoryHud_1.15.2.forge-%ver%",
-        "currentVersion": "3.1.3",
+        "currentVersion": "3.1.4",
         "firstInstance": "LCMS"
     },
     {
@@ -817,7 +817,7 @@
         "name": "Kiwi",
         "modid": "kiwi",
         "filenamePattern": "Kiwi-1.15.2-%ver%",
-        "currentVersion": "2.8.2",
+        "currentVersion": "2.8.5",
         "firstInstance": "GWMS"
     },
     {
@@ -831,7 +831,7 @@
         "name": "KubeJS",
         "modid": "kubejs",
         "filenamePattern": "kubejs-%ver%",
-        "currentVersion": "1502.2.7.18",
+        "currentVersion": "1502.3.0.19",
         "firstInstance": "LCMS"
     },
     {
@@ -918,6 +918,13 @@
         "filenamePattern": "mcws-roofs-1.15.2-%ver%",
         "currentVersion": "v2.0.0",
         "firstInstance": "LCMS"
+    },
+    {
+        "name": "Macaw's Trapdoors",
+        "modid": "mcwtrpdoors",
+        "filenamePattern": "mcw-trapdors-%ver%-mc1.15.2",
+        "currentVersion": "1.0.0fix",
+        "firstInstance": "WFMS"
     },
     {
         "name": "Macaw's Windows",
@@ -1014,15 +1021,15 @@
     {
         "name": "Midnight, The",
         "modid": "midnight",
-        "filenamePattern": "themidnight-%ver%",
-        "currentVersion": "0.5.9",
+        "filenamePattern": "midnight-%ver%",
+        "currentVersion": "0.5.10",
         "firstInstance": "GWMS"
     },
     {
         "name": "MineColonies",
         "modid": "minecolonies",
         "filenamePattern": "minecolonies-%ver%-universal",
-        "currentVersion": "0.13.81-RELEASE",
+        "currentVersion": "0.13.436-RELEASE",
         "firstInstance": "GWMS"
     },
     {
@@ -1244,7 +1251,7 @@
         "name": "ObserverLib",
         "modid": "observerlib",
         "filenamePattern": "ObserverLib-1.15.2-%ver%",
-        "currentVersion": "1.2.1",
+        "currentVersion": "1.3.1",
         "firstInstance": "GWMS"
     },
     {
@@ -1500,15 +1507,22 @@
         "name": "RFTools Storage",
         "modid": "rftoolsstorage",
         "filenamePattern": "rftoolsstorage-1.15-%ver%",
-        "currentVersion": "1.1.10",
+        "currentVersion": "1.1.11",
         "firstInstance": "WFMS"
     },
     {
         "name": "RFTools Utility",
         "modid": "rftoolsutility",
         "filenamePattern": "rftoolsutility-1.15-%ver%",
-        "currentVersion": "2.1.12",
+        "currentVersion": "2.1.15",
         "firstInstance": "WFMS"
+    },
+    {
+        "name": "Rhino",
+        "modid": "rhino",
+        "filenamePattern": "rhino-%ver%",
+        "currentVersion": "1.7.13.8",
+        "firstInstance": "LCMS"
     },
     {
         "name": "Road Stuff",
@@ -2196,7 +2210,7 @@
         "name": "Structurize",
         "modid": "structurize",
         "filenamePattern": "structurize-%ver%",
-        "currentVersion": "0.13.31-RELEASE",
+        "currentVersion": "0.13.94-ALPHA-universal",
         "firstInstance": "GWMS"
     },
     {
@@ -2336,7 +2350,7 @@
         "name": "Xaero's Minimap",
         "modid": "xaerominimap",
         "filenamePattern": "Xaeros_Minimap_%ver%_Forge_1.15.2",
-        "currentVersion": "20.26.0",
+        "currentVersion": "20.27.2",
         "firstInstance": "LCMS"
     },
     {
