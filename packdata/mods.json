@@ -1021,15 +1021,15 @@
     {
         "name": "Midnight, The",
         "modid": "midnight",
-        "filenamePattern": "themidnight-%ver%",
-        "currentVersion": "0.5.9",
+        "filenamePattern": "midnight-%ver%",
+        "currentVersion": "0.5.10",
         "firstInstance": "GWMS"
     },
     {
         "name": "MineColonies",
         "modid": "minecolonies",
         "filenamePattern": "minecolonies-%ver%-universal",
-        "currentVersion": "0.13.81-RELEASE",
+        "currentVersion": "0.13.436-RELEASE",
         "firstInstance": "GWMS"
     },
     {
@@ -1507,14 +1507,14 @@
         "name": "RFTools Storage",
         "modid": "rftoolsstorage",
         "filenamePattern": "rftoolsstorage-1.15-%ver%",
-        "currentVersion": "1.1.10",
+        "currentVersion": "1.1.11",
         "firstInstance": "WFMS"
     },
     {
         "name": "RFTools Utility",
         "modid": "rftoolsutility",
         "filenamePattern": "rftoolsutility-1.15-%ver%",
-        "currentVersion": "2.1.12",
+        "currentVersion": "2.1.15",
         "firstInstance": "WFMS"
     },
     {
@@ -2210,7 +2210,7 @@
         "name": "Structurize",
         "modid": "structurize",
         "filenamePattern": "structurize-%ver%",
-        "currentVersion": "0.13.31-RELEASE",
+        "currentVersion": "0.13.94-ALPHA-universal",
         "firstInstance": "GWMS"
     },
     {
@@ -2350,7 +2350,7 @@
         "name": "Xaero's Minimap",
         "modid": "xaerominimap",
         "filenamePattern": "Xaeros_Minimap_%ver%_Forge_1.15.2",
-        "currentVersion": "20.26.0",
+        "currentVersion": "20.27.2",
         "firstInstance": "LCMS"
     },
     {
