@@ -371,7 +371,8 @@ function Test-LogEntry {
                 -or $LogMessage -match "Connected to a modded server." `
                 -or $LogMessage -match "Inserted [\w -]+ callback" `
                 -or $LogMessage -match "Added Lets Encrypt root certificates as additional trust" `
-                -or $LogMessage -match "Registered dimension [\w:]+ of type [\w:]+ and id \d+"
+                -or $LogMessage -match "Registered dimension [\w:]+ of type [\w:]+ and id \d+" `
+                -or $LogMessage -match "Using new advancement loading for net\.minecraft\.advancements\.PlayerAdvancements@[0-9a-f]+"
             )
         }
         "ftbbackups" {
@@ -381,7 +382,9 @@ function Test-LogEntry {
                 -or $LogMessage -match "ftbbackups.lang.start" `
                 -or $LogMessage -match "(?:(?:Backing up)|(?:Compressing)) \d+ files\.\.\." `
                 -or $LogMessage -match "Done compressing in \d{2}:\d{2} seconds \(\d+.\dMB\)!" `
-                -or $LogMessage -match "Created [\w:\\\.\d\-]+zip from [\w:\\\.]+"
+                -or $LogMessage -match "Created [\w:\\\.\d\-]+zip from [\w:\\\.]+" `
+                -or $LogMessage -match "Server Backup started!" `
+                -or $LogMessage -match "Deleting old backup: \d\d\d\d\-\d\d\-\d\d\-\d\d\-\d\d\-\d\d\.zip"
                 )
         }
         "immersiveengineering" {
@@ -435,7 +438,7 @@ function Test-LogEntry {
         "maessentials" {
             return -not (
                 $LogMessage -match "maessentials Setup (?:(?:main)|(?:world))" `
-                -or $LogMessage -match "maessentials (?:(?:Mod is running on server)|(?:Loading data)|(?:Data loaded))"
+                -or $LogMessage -match "maessentials (?:(?:Mod is running on (?:(?:server)|(?:client)))|(?:Loading data)|(?:Data loaded))"
                 )
         }
         "mapperbase" {
@@ -628,9 +631,12 @@ function Test-LogEntry {
                 -or $LogMessage -match "IAOETool: Rebuilt ore block set, contains \d+ items" `
                 -or $LogMessage -match "Add [\w ]+ to \w+:\w+" `
                 -or $LogMessage -match "Read \d+ (?:(?:traits)|(?:parts)|(?:materials)) from server" `
-                -or $LogMessage -match "Reloading (?:(?:trait)|(?:material)|(?:part)) files" `
+                -or $LogMessage -match "Reloading (?:(?:trait)|(?:material)|(?:material display)|(?:part)) files" `
                 -or $LogMessage -match "Registered \d+ (?:(?:traits)|(?:parts)|(?:materials))" `
-                -or $LogMessage -match "(?:(?:Traits)|(?:Parts)|(?:Materials)) loaded: \d+"
+                -or $LogMessage -match "(?:(?:Traits)|(?:Parts)|(?:Materials)) loaded: \d+" `
+                -or $LogMessage -match "Trying to create adapter materials\.\.\." `
+                -or $LogMessage -match "Added part '\w+:\w+\/\w+' to adapter material '\w+:\w+'" `
+                -or $LogMessage -match "- (?:(?:Simple\/Legacy)|(?:Compound)|(?:Standard)|(?:Adapter)): \d+"
                 )
         }
         "silentgems" {
