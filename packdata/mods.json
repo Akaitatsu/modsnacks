@@ -80,7 +80,7 @@
         "name": "Aquaculture",
         "modid": "aquaculture",
         "filenamePattern": "Aquaculture-1.15.2-%ver%",
-        "currentVersion": "2.0.22",
+        "currentVersion": "2.0.23",
         "firstInstance": "WFMS"
     },
     {
@@ -94,7 +94,7 @@
         "name": "Astral Sorcery",
         "modid": "astralsorcery",
         "filenamePattern": "AstralSorcery-1.15.2-%ver%",
-        "currentVersion": "1.12.10",
+        "currentVersion": "1.12.11",
         "firstInstance": "GWMS",
         "largeOreDepositsConfig": [
             {
@@ -266,7 +266,7 @@
         "name": "CC: Tweaked",
         "modid": "computercraft",
         "filenamePattern": "cc-tweaked-1.15.2-%ver%",
-        "currentVersion": "1.93.1",
+        "currentVersion": "1.94.0",
         "firstInstance": "GWMS"
     },
     {
@@ -315,7 +315,7 @@
         "name": "COFH Core",
         "modid": "cofh_core",
         "filenamePattern": "cofh_core-1.15.2-%ver%",
-        "currentVersion": "1.0.0",
+        "currentVersion": "1.0.2",
         "firstInstance": "WFMS"
     },
     {
@@ -427,7 +427,7 @@
         "name": "Dark Utilities",
         "modid": "darkutils",
         "filenamePattern": "DarkUtilities-1.15.2-%ver%",
-        "currentVersion": "3.1.8",
+        "currentVersion": "3.1.9",
         "firstInstance": "GWMS"
     },
     {
@@ -1251,7 +1251,7 @@
         "name": "ObserverLib",
         "modid": "observerlib",
         "filenamePattern": "ObserverLib-1.15.2-%ver%",
-        "currentVersion": "1.2.1",
+        "currentVersion": "1.3.1",
         "firstInstance": "GWMS"
     },
     {
