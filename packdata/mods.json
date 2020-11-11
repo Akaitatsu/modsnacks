@@ -921,7 +921,7 @@
     },
     {
         "name": "Macaw's Trapdoors",
-        "modid": "mcwtrapdoors",
+        "modid": "mcwtrpdoors",
         "filenamePattern": "mcw-trapdors-%ver%-mc1.15.2",
         "currentVersion": "1.0.0fix",
         "firstInstance": "WFMS"

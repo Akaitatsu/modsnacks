@@ -70,6 +70,7 @@ $modIdMapping = @{
     "mcwbridges" = "mcwbridges";
     "mcwdoors" = "mcwdoors";
     "mcwfurnitures" = "mcwfurnitures";
+    "mcwtrpdoors" = "mcwtrpdoors";
     "mcwwindows" = "mcwwindows";
     "Mekanism" = "mekanism";
     "Mekanism ChunkManager" = "mekanism";
@@ -453,7 +454,7 @@ function Test-LogEntry {
                 -or $LogMessage -match "Enabled support for The One Probe"
                 )
         }
-        {@("mcwbridges","mcwdoors","mcwfurnitures","mcwwindows") -contains $_} {
+        {@("mcwbridges","mcwdoors","mcwfurnitures","mcwtrpdoors","mcwwindows") -contains $_} {
             return -not (
                 $LogMessage -match "[\w ]+ registered\.*" `
                 -or $LogMessage -match "Mod client setup completed"
@@ -474,6 +475,14 @@ function Test-LogEntry {
         "mgui" {
             return -not ($LogMessage -match "(?:(?:constructing mod)|(?:setup event))")
         }
+        "midnight" {
+            return -not (
+                $LogMessage -match "Initializing The Midnight" `
+                -or $LogMessage -match " \- Version: \d+\.\d+\.\d+" `
+                -or $LogMessage -match " \- Dist: CLIENT" `
+                -or $LogMessage -match "Initializing The Midnight's JEI Integration\."
+                )
+        }
         "minecolonies" {
             return -not (
                 $LogMessage -match "FMLLoadCompleteEvent" `
@@ -482,7 +491,12 @@ function Test-LogEntry {
                 -or $LogMessage -match "Finished discovering [\w ]+" `
                 -or $LogMessage -match "Removed all colony views" `
                 -or $LogMessage -match "Finished initiating sifter config" `
-                -or $LogMessage -match "Server UUID [0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}"
+                -or $LogMessage -match "Server UUID [0-9a-f]{8}-([0-9a-f]{4}-){3}[0-9a-f]{12}" `
+                -or $LogMessage -match "Beginning load of custom recipes for colony workers" `
+                -or $LogMessage -match "Loaded \d+ recipes for \d+ crafters" `
+                -or $LogMessage -match "Tags Loaded" `
+                -or $LogMessage -match "Loading Minecolonies Data" `
+                -or $LogMessage -match "Load Complete"
                 )
         }
         "minecraft" {
@@ -495,7 +509,7 @@ function Test-LogEntry {
                 -or $LogMessage -match "Performant loaded, lag begone!" `
                 -or $LogMessage -match "OpenAL initialized\." `
                 -or $LogMessage -match "Sound engine started" `
-                -or $LogMessage -match "Created: (?:(?:256x128x0)|(?:4096x4096x3)|(?:256x256x3)|(?:512x512x3)|(?:1024x1024x3)|(?:512x256x3)|(?:512x512x0)) \w+:textures/atlas/\w+.png-atlas" `
+                -or $LogMessage -match "Created: (?:(?:256x128x0)|(?:4096x4096x3)|(?:256x256x3)|(?:512x512x3)|(?:1024x1024x3)|(?:512x256x3)|(?:512x512x0)) \w+:(?:(?:textures/atlas/\w+.png)|(?:spell_pieces))\-atlas" `
                 -or $LogMessage -match "Connecting to \d+.\d+.\d+.\d+, \d+" `
                 -or $LogMessage -match "Reloading ResourceManager:.+" `
                 -or $LogMessage -match "Loaded \d+ advancements" `
@@ -519,7 +533,11 @@ function Test-LogEntry {
                 -or $LogMessage -match "[\w\d]+ lost connection: Disconnected" `
                 -or $LogMessage -match "Stopping (?:the )?server" `
                 -or $LogMessage -match "Saving (?:(?:players)|(?:worlds)|(?:chunks for level '[\w ]+'/minecraft:\w+))" `
-                -or $LogMessage -match "ftbbackups.lang.end_2"
+                -or $LogMessage -match "ftbbackups.lang.end_2" `
+                -or $LogMessage -match "Saving and pausing game\.\.\." `
+                -or $LogMessage -match "Stopping singleplayer server as player logged out" `
+                -or $LogMessage -match "Server backup done in \d\d:\d\d! \(\d+.\dMB \| \d+.\dMB\)" `
+                -or $LogMessage -match "Starting integrated minecraft server version 1.\d\d.\d"
                 )
         }
         "misc" {
