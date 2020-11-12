@@ -1,15 +1,16 @@
 param (
-    [Parameter(Mandatory=$True)][string]$LogFilePath,
-    [string]$DestinationDirectory = ""
+    [Parameter(Mandatory=$True)][string]$LogFilePath
 )
+
+Set-Location $PSScriptRoot
+
+Import-Module .\Analytics.psm1 -Force
 
 if (-not (Test-Path $LogFilePath)) {
     Write-Host "Specified file does not exist." -ForegroundColor Red
     Write-Host "  $LogFilePath" -ForegroundColor Red
 }
-if ("" -eq $DestinationDirectory) {
-    $DestinationDirectory = "$PSScriptRoot\splitlogs"
-}
+$DestinationDirectory = Get-SplitLogsDirectory
 if (Test-Path "$DestinationDirectory\*.log") {
     Remove-Item "$DestinationDirectory\*.log" -Force
 }
