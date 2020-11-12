@@ -104,6 +104,53 @@
 		#The dimensions that this ore should spawn in as a list (default [0], overworld)
 		dimensions = [0]
 
+#Feature Spawn Configuration
+[feature_spawns]
+
+	#dead_tree spawn config.
+	[feature_spawns.dead_tree_spawn]
+		#List of biome types to spawn.
+		biomes = "SAVANNA,DEAD,FOREST,SANDY,WASTELAND,"
+		#Percent chance to spawn (set to 0 to disable) per chunk.
+		#Range: 0.0 ~ 1.0
+		spawnChance = 0.04
+
+#Hat Configuration
+[hat_config]
+	#How frequency (1 in X per melee hit) Spirit Beetles should be spawned (-1 for not at all)
+	#Range: > -1
+	mask_chance = 4
+	#How much durability damage should be done (-1 for none) per beetle spawned
+	#Range: > -1
+	mask_durability = 1
+	#How much a Spirit Deer should heal for
+	#Range: 0.5 ~ 1.7976931348623157E308
+	antler_healing = 2.0
+	#How much of a damage to bonus should be provided by the mask (-1 for none)
+	#Range: -1.0 ~ 1.7976931348623157E308
+	mask_bonus_damage = 0.3
+	#How long a duration Regeneration should be applied for
+	#Range: > 1
+	antler_regen_duration = 130
+	#What amplifier should be applied to the Regeneration effect (0 = I, 1 = II, etc)
+	#Range: > 0
+	antler_regen_amplifier = 1
+	#How much damage to the antler hat spawning a spirit deer causes (-1 for no damage)
+	#Range: > -1
+	antler_damage = 1
+	#Spawn frequency (1 in X chances per tick while spawn conditions are met, -1 for not at all)
+	#Range: > 0
+	antler_frequency = 50
+	#How much of a health bonus wearing the hat should give (-1 for no bonus, 2 for a single heart, 4 for two hearts, etc
+	#Range: 0.5 ~ 1.7976931348623157E308
+	antler_health_bonus = 4.0
+	#How much damage Spirit Beetles should do
+	#Range: > 1
+	mask_damage = 1
+	#How many hearts under maximum health the player needs to be for a deer to spawn (-1 for any value under maximum health
+	#Range: > -1
+	antler_threshold = -1
+
 #Mob Spawn Configuration
 [mob_spawns]
 
@@ -134,6 +181,23 @@
 		#Chance to spawn (set to 0 to disable).
 		#Range: 0 ~ 256
 		spawnChance = 1
+
+	#Hell Sprout spawn config.
+	[mob_spawns."Hell Sprout_spawn"]
+		#Min to spawn in a group.
+		#Range: 0 ~ 256
+		min = 1
+		#how often a hell sprout should attempt to plant nether wart (1 in X, 0 for never)
+		#Range: > 0
+		chance = 100
+		#Max to spawn in a group.
+		#Range: 0 ~ 256
+		max = 3
+		#List of biome types to spawn.
+		biomes = "NETHER,"
+		#Chance to spawn (set to 0 to disable).
+		#Range: 0 ~ 256
+		spawnChance = 8
 
 	#Frog spawn config.
 	[mob_spawns.Frog_spawn]
