@@ -223,8 +223,8 @@ function Convert-StringToLogEntry {
         }
     }
     else {
-        Write-Host "Log string could not be parsed." -ForegroundColor Red
-        Write-Host $LogString -ForegroundColor Red
+        #Write-Console "Log string could not be parsed." -ForegroundColor Red
+        #Write-Console $LogString -ForegroundColor Red
         return $null
     }
 }

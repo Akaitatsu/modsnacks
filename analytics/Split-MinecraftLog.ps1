@@ -559,15 +559,6 @@ function Test-LogEntry {
     return $true
 }
 
-$regEx = "\[(\d{2}\w{3}\d{4} \d{2}:\d{2}:\d{2}\.\d{3})\] \[([^/]*)\/([^\]]*)\] (?:\[STDERR\/\]: )?(?:\[STDOUT\/\]: )?\[([^/]*)\/?([^\]]*)?\]: (.*)"
-# Capture Group Positions (Some may not be used but are available if needed and for additional documentation)
-$cgTimestamp = 1
-$cgThreadName = 2
-$cgSeverity = 3
-$cgModName = 4
-$cgLogName = 5
-$cgMessage = 6
-
 $textStream = New-Object System.IO.StreamReader -Arg $LogFilePath
 $currentModId = "forge"
 $processedLineCount = 0
@@ -576,15 +567,17 @@ $startTime = Get-Date
 while (-not ($textStream.EndOfStream)) {
     $line = $textStream.ReadLine()
     $processedLineCount++
-    # Check for new section
-    if ($line -match $regEx) {
-        # New section - get mod name
+    if ("" -ne $line) {
         $entry = Convert-StringToLogEntry $line
-        $currentModId = $entry.ModName
-    }
-    if (Test-LogEntry $currentModId $entry.Message) {
-        $line | Out-File "$DestinationDirectory\$currentModId.log" -Encoding ascii -Append
-        $writtenLineCount++
+        # Check for new section
+        if ($null -eq $entry) {
+            # New section - get mod name
+            $currentModId = $entry.ModName
+        }
+        if (($null -eq $entry) -or (Test-LogEntry $currentModId $entry.Message)) {
+            $line | Out-File "$DestinationDirectory\$currentModId.log" -Encoding ascii -Append
+            $writtenLineCount++
+        }
     }
 }
 $textStream.Close()
