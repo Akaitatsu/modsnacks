@@ -26,3 +26,4 @@ while (-not ($textStream.EndOfStream)) {
         }
     }
 }
+$textStream.Close()
