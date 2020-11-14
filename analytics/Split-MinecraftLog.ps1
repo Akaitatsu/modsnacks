@@ -568,9 +568,9 @@ while (-not ($textStream.EndOfStream)) {
     $line = $textStream.ReadLine()
     $processedLineCount++
     if ("" -ne $line) {
-        $entry = Convert-StringToLogEntry $line
+        $entry = Convert-StringToLogEntry -LogString $line
         # Check for new section
-        if ($null -eq $entry) {
+        if ($null -ne $entry) {
             # New section - get mod name
             $currentModId = $entry.ModName
         }
