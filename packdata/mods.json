@@ -94,7 +94,7 @@
         "name": "Astral Sorcery",
         "modid": "astralsorcery",
         "filenamePattern": "AstralSorcery-1.15.2-%ver%",
-        "currentVersion": "1.12.11",
+        "currentVersion": "1.12.12",
         "firstInstance": "GWMS",
         "largeOreDepositsConfig": [
             {
@@ -608,7 +608,7 @@
         "name": "Fairy Lights",
         "modid": "fairylights",
         "filenamePattern": "fairylights-%ver%-1.15.2",
-        "currentVersion": "3.0.13",
+        "currentVersion": "3.0.14",
         "firstInstance": "GWMS"
     },
     {
@@ -1328,7 +1328,7 @@
         "name": "Performant",
         "modid": "performant",
         "filenamePattern": "performant-1.15-%ver%",
-        "currentVersion": "3.11m",
+        "currentVersion": "3.12m",
         "firstInstance": "LCMS"
     },
     {
@@ -1486,7 +1486,7 @@
         "name": "RFTools Builder",
         "modid": "rftoolsbuilder",
         "filenamePattern": "rftoolsbuilder-1.15-%ver%",
-        "currentVersion": "2.1.12",
+        "currentVersion": "2.1.13",
         "firstInstance": "WFMS"
     },
     {
@@ -1514,7 +1514,7 @@
         "name": "RFTools Utility",
         "modid": "rftoolsutility",
         "filenamePattern": "rftoolsutility-1.15-%ver%",
-        "currentVersion": "2.1.15",
+        "currentVersion": "2.1.16",
         "firstInstance": "WFMS"
     },
     {
@@ -2350,21 +2350,21 @@
         "name": "Xaero's Minimap",
         "modid": "xaerominimap",
         "filenamePattern": "Xaeros_Minimap_%ver%_Forge_1.15.2",
-        "currentVersion": "20.27.2",
+        "currentVersion": "20.27.3",
         "firstInstance": "LCMS"
     },
     {
         "name": "Xaero's World Map",
         "modid": "xaeroworldmap",
         "filenamePattern": "XaerosWorldMap_%ver%_Forge_1.15.2",
-        "currentVersion": "1.11.0",
+        "currentVersion": "1.11.1",
         "firstInstance": "LCMS"
     },
     {
         "name": "Xnet",
         "modid": "xnet",
         "filenamePattern": "Xnet-1.15-%ver%",
-        "currentVersion": "2.1.12",
+        "currentVersion": "2.1.13",
         "firstInstance": "WFMS"
     },
     {
