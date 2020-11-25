@@ -94,7 +94,7 @@
         "name": "Astral Sorcery",
         "modid": "astralsorcery",
         "filenamePattern": "AstralSorcery-1.15.2-%ver%",
-        "currentVersion": "1.12.12",
+        "currentVersion": "1.12.13",
         "firstInstance": "GWMS",
         "largeOreDepositsConfig": [
             {
@@ -379,7 +379,18 @@
         "modid": "create",
         "filenamePattern": "create-mc1.15.2_v%ver%",
         "currentVersion": "0.2.4e",
-        "firstInstance": "WFMS"
+        "firstInstance": "WFMS",
+        "largeOreDepositsConfig": [
+            {
+                "blockRegistryName": "zinc_ore",
+                "rarity": 1200,
+                "maxHeight": 50,
+                "minHeight": 30,
+                "maxVeinSize": 1500,
+                "minVeinSize": 750,
+                "indicationFlowerRegistryId": "buzzierbees:jolyce"
+            }
+        ]
     },
     {
         "name": "Cucumber",
@@ -713,7 +724,45 @@
         "modid": "immersiveengineering",
         "filenamePattern": "ImmersiveEngineering-1.15.2-%ver%",
         "currentVersion": "4.1.1-125",
-        "firstInstance": "GWMS"
+        "firstInstance": "GWMS",
+        "largeOreDepositsConfig": [
+            {
+                "blockRegistryName": "ore_aluminum",
+                "rarity": 1150,
+                "maxHeight": 40,
+                "minHeight": 25,
+                "maxVeinSize": 1000,
+                "minVeinSize": 500,
+                "indicationFlowerRegistryId": "minecraft:lily_of_the_valley"
+            },
+            {
+                "blockRegistryName": "ore_lead",
+                "rarity": 1140,
+                "maxHeight": 25,
+                "minHeight": 5,
+                "maxVeinSize": 1200,
+                "minVeinSize": 600,
+                "indicationFlowerRegistryId": "inspirations:cyan_flower"
+            },
+            {
+                "blockRegistryName": "ore_nickel",
+                "rarity": 2000,
+                "maxHeight": 24,
+                "minHeight": 2,
+                "maxVeinSize": 1000,
+                "minVeinSize": 500,
+                "indicationFlowerRegistryId": "buzzierbees:bluebell"
+            },
+            {
+                "blockRegistryName": "ore_uranium",
+                "rarity": 3600,
+                "maxHeight": 18,
+                "minHeight": 2,
+                "maxVeinSize": 500,
+                "minVeinSize": 250,
+                "indicationFlowerRegistryId": "minecraft:azure_bluet"
+            }
+        ]
     },
     {
         "name": "Immersive Posts",
@@ -969,7 +1018,7 @@
         "name": "McJtyLib",
         "modid": "mcjtylib",
         "filenamePattern": "mcjtylib-1.15-%ver%",
-        "currentVersion": "4.1.11",
+        "currentVersion": "4.1.12",
         "firstInstance": "WFMS"
     },
     {
@@ -980,6 +1029,15 @@
         "firstInstance": "LCMS",
         "largeOreDepositsConfig": [
             {
+                "blockRegistryName": "copper_ore",
+                "rarity": 1450,
+                "maxHeight": 48,
+                "minHeight": 32,
+                "maxVeinSize": 1200,
+                "minVeinSize": 600,
+                "indicationFlowerRegistryId": "buzzierbees:orange_hibiscus"
+            },
+            {
                 "blockRegistryName": "osmium_ore",
                 "rarity": 1000,
                 "maxHeight": 30,
@@ -987,6 +1045,15 @@
                 "maxVeinSize": 1200,
                 "minVeinSize": 600,
                 "indicationFlowerRegistryId": "atmospheric:yucca_flower"
+            },
+            {
+                "blockRegistryName": "tin_ore",
+                "rarity": 2500,
+                "maxHeight": 65,
+                "minHeight": 35,
+                "maxVeinSize": 1600,
+                "minVeinSize": 800,
+                "indicationFlowerRegistryId": "inspirations:syringa"
             }
         ]
     },
@@ -1001,13 +1068,6 @@
         "name": "Mekanism Generators",
         "modid": "mekanismgenerators",
         "filenamePattern": "MekanismGenerators-1.15.2-%ver%",
-        "currentVersion": "9.10.9.422",
-        "firstInstance": "LCMS"
-    },
-    {
-        "name": "Mekanism Tools",
-        "modid": "mekanismtools",
-        "filenamePattern": "MekanismTools-1.15.2-%ver%",
         "currentVersion": "9.10.9.422",
         "firstInstance": "LCMS"
     },
@@ -1328,7 +1388,7 @@
         "name": "Performant",
         "modid": "performant",
         "filenamePattern": "performant-1.15-%ver%",
-        "currentVersion": "3.12m",
+        "currentVersion": "3.13m",
         "firstInstance": "LCMS"
     },
     {
@@ -1479,14 +1539,14 @@
         "name": "RFTools Base",
         "modid": "rftoolsbase",
         "filenamePattern": "rftoolsbase-1.15-%ver%",
-        "currentVersion": "1.1.7",
+        "currentVersion": "1.1.8",
         "firstInstance": "WFMS"
     },
     {
         "name": "RFTools Builder",
         "modid": "rftoolsbuilder",
         "filenamePattern": "rftoolsbuilder-1.15-%ver%",
-        "currentVersion": "2.1.13",
+        "currentVersion": "2.1.14",
         "firstInstance": "WFMS"
     },
     {
@@ -1514,7 +1574,7 @@
         "name": "RFTools Utility",
         "modid": "rftoolsutility",
         "filenamePattern": "rftoolsutility-1.15-%ver%",
-        "currentVersion": "2.1.16",
+        "currentVersion": "2.1.17",
         "firstInstance": "WFMS"
     },
     {
@@ -1948,6 +2008,15 @@
                 "indicationFlowerRegistryId": "silentgems:sapphire_glowrose"
             },
             {
+                "blockRegistryName": "silver_ore",
+                "rarity": 1250,
+                "maxHeight": 25,
+                "minHeight": 10,
+                "maxVeinSize": 1200,
+                "minVeinSize": 600,
+                "indicationFlowerRegistryId": "inspirations:paeonia"
+            },
+            {
                 "blockRegistryName": "sodalite_ore",
                 "rarity": 4500,
                 "maxHeight": 8,
@@ -2029,112 +2098,6 @@
                 "indicationFlowerRegistryId": "silentgems:zircon_glowrose"
             }
         ]
-    },
-    {
-        "name": "Silent's Mechanisms",
-        "modid": "silents_mechanisms",
-        "filenamePattern": "SilentMechanisms-1.15.2-%ver%",
-        "currentVersion": "0.8.0+59",
-        "firstInstance": "LCMS",
-        "largeOreDepositsConfig": [
-            {
-                "blockRegistryName": "bauxite_ore",
-                "rarity": 1150,
-                "maxHeight": 40,
-                "minHeight": 25,
-                "maxVeinSize": 1000,
-                "minVeinSize": 500,
-                "indicationFlowerRegistryId": "minecraft:lily_of_the_valley"
-            },
-            {
-                "blockRegistryName": "bismuth_ore",
-                "rarity": 1450,
-                "maxHeight": 70,
-                "minHeight": 40,
-                "maxVeinSize": 1000,
-                "minVeinSize": 500,
-                "indicationFlowerRegistryId": "buzzierbees:magenta_hibiscus"
-            },
-            {
-                "blockRegistryName": "copper_ore",
-                "rarity": 1450,
-                "maxHeight": 48,
-                "minHeight": 32,
-                "maxVeinSize": 1200,
-                "minVeinSize": 600,
-                "indicationFlowerRegistryId": "buzzierbees:orange_hibiscus"
-            },
-            {
-                "blockRegistryName": "lead_ore",
-                "rarity": 1140,
-                "maxHeight": 25,
-                "minHeight": 5,
-                "maxVeinSize": 1200,
-                "minVeinSize": 600,
-                "indicationFlowerRegistryId": "inspirations:cyan_flower"
-            },
-            {
-                "blockRegistryName": "nickel_ore",
-                "rarity": 2000,
-                "maxHeight": 24,
-                "minHeight": 2,
-                "maxVeinSize": 1000,
-                "minVeinSize": 500,
-                "indicationFlowerRegistryId": "buzzierbees:bluebell"
-            },
-            {
-                "blockRegistryName": "platinum_ore",
-                "rarity": 2600,
-                "maxHeight": 20,
-                "minHeight": 5,
-                "maxVeinSize": 800,
-                "minVeinSize": 400,
-                "indicationFlowerRegistryId": "buzzierbees:columbine"
-            },
-            {
-                "blockRegistryName": "silver_ore",
-                "rarity": 1250,
-                "maxHeight": 25,
-                "minHeight": 10,
-                "maxVeinSize": 1200,
-                "minVeinSize": 600,
-                "indicationFlowerRegistryId": "inspirations:paeonia"
-            },
-            {
-                "blockRegistryName": "tin_ore",
-                "rarity": 2500,
-                "maxHeight": 65,
-                "minHeight": 35,
-                "maxVeinSize": 1600,
-                "minVeinSize": 800,
-                "indicationFlowerRegistryId": "inspirations:syringa"
-            },
-            {
-                "blockRegistryName": "uranium_ore",
-                "rarity": 3600,
-                "maxHeight": 18,
-                "minHeight": 2,
-                "maxVeinSize": 500,
-                "minVeinSize": 250,
-                "indicationFlowerRegistryId": "minecraft:azure_bluet"
-            },
-            {
-                "blockRegistryName": "zinc_ore",
-                "rarity": 1200,
-                "maxHeight": 50,
-                "minHeight": 30,
-                "maxVeinSize": 1500,
-                "minVeinSize": 750,
-                "indicationFlowerRegistryId": "buzzierbees:jolyce"
-            }
-        ]
-    },
-    {
-        "name": "Simple Farming",
-        "modid": "simplefarming",
-        "filenamePattern": "SimpleFarming-1.15.2-%ver%",
-        "currentVersion": "1.3.3",
-        "firstInstance": "GWMS"
     },
     {
         "name": "Simple Storage Network",
