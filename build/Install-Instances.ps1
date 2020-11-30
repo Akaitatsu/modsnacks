@@ -1,10 +1,13 @@
 param (
-    [bool]$SkipModCopy = $false
+    [bool]$SkipModCopy = $false,
+    [bool]$SkipClearConfigs = $false
 )
+Set-Location $PSScriptRoot
+
 Import-Module .\Utilities.psm1 -Force
 Import-Module .\ModCache.psm1 -Force
 Clear-Host
-Set-Location $PSScriptRoot
+
 $modSnackInfo = Get-JsonAsPSCustomObject -Path ..\packdata\modsnacks.json
 $instances = Get-JsonAsPSCustomObject -Path ..\packdata\instances.json
 Write-Host "Verifying Mod Cache"
@@ -24,7 +27,7 @@ foreach ($instance in $instances) {
     $minecraftPath = "..\..\MultiMC\instances\$($instance.shortName)\.minecraft"
     $configPath = "$minecraftPath\config"
     if (-not $SkipModCopy) {
-        .\Copy-Mods.ps1 -InstanceObject $instance -InstanceMods $instanceMods -MinecraftPath $minecraftPath
+        .\Copy-Mods.ps1 -InstanceObject $instance -InstanceMods $instanceMods -MinecraftPath $minecraftPath -SkipClearConfigs $SkipClearConfigs
     }
     Write-Host "  Generating dynamic configuration files"
     # Prep openloader folder

@@ -699,6 +699,13 @@
         ]
     },
     {
+        "name": "Forge",
+        "modid": "forge",
+        "filenamePattern": "NA",
+        "currentVersion": "31.2.45",
+        "firstInstance": "LCMS"
+    },
+    {
         "name": "ForgeEndertech",
         "modid": "forgeendertech",
         "filenamePattern": "ForgeEndertech-1.15.2-%ver%",

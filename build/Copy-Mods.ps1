@@ -1,7 +1,8 @@
 param (
     [Parameter(Mandatory=$True)]$InstanceObject,
     [Parameter(Mandatory=$True)]$InstanceMods,
-    [Parameter(Mandatory=$True)][string]$MinecraftPath
+    [Parameter(Mandatory=$True)][string]$MinecraftPath,
+    [Parameter(Mandatory=$True)][bool]$SkipClearConfigs
 )
 Import-Module .\ModCache.psm1 -Force
 Import-Module .\Utilities.psm1 -Force
@@ -27,12 +28,14 @@ Write-Host "  Copying Mods"
 $targetModsPath = New-DirectoryStructure $MinecraftPath "mods"
 Remove-Item ($targetModsPath + "\*.jar")
 # Prep config folder
-$targetConfigPath = New-DirectoryStructure $MinecraftPath "config"
-Remove-Item ($targetConfigPath + "\*") -Recurse
-Get-ChildItem $targetConfigPath -Directory | Remove-Item -Force -Confirm:$false
-$targetDefaultConfigsPath = New-DirectoryStructure $MinecraftPath "defaultconfigs"
-Remove-Item ($targetDefaultConfigsPath + "\*") -Recurse
-Get-ChildItem $targetDefaultConfigsPath -Directory | Remove-Item -Force -Confirm:$false
+if (-not $SkipClearConfigs) {
+    $targetConfigPath = New-DirectoryStructure $MinecraftPath "config"
+    Remove-Item ($targetConfigPath + "\*") -Recurse
+    Get-ChildItem $targetConfigPath -Directory | Remove-Item -Force -Confirm:$false
+    $targetDefaultConfigsPath = New-DirectoryStructure $MinecraftPath "defaultconfigs"
+    Remove-Item ($targetDefaultConfigsPath + "\*") -Recurse
+    Get-ChildItem $targetDefaultConfigsPath -Directory | Remove-Item -Force -Confirm:$false
+}
 # Copy mods and configs
 Copy-ModsInList $InstanceMods $MinecraftPath $targetModsPath
 Write-Host "  Copied Mods"
