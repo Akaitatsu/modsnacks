@@ -76,7 +76,7 @@
 	#Range: 0 ~ 255
 	jadeMaxHeight = 120
 	#Generate jade in the world [true / false]
-	jadeGeneration = true
+	jadeGeneration = false
 	#Minimal height for jade pocket generation, [0-255, default: 50]
 	#Range: 0 ~ 255
 	jadeMinHeight = 50
