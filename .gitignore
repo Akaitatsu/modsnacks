@@ -3,3 +3,5 @@
 # Ignore files other than README.md in the splitlogs directory
 /analytics/splitlogs/**/*
 !/analytics/splitlogs/**/README.md
+/analytics/working/**/*
+!/analytics/working/**/README.md
