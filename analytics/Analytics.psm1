@@ -2,6 +2,10 @@ function Get-SplitLogsDirectory {
     return "$PSScriptRoot\splitlogs"
 }
 
+function Get-AnalyticsWorkingDirectory {
+    return "$PSScriptRoot\working"
+}
+
 function Get-CrafterDumperOutputPath {
     param ([Parameter(Mandatory=$true)][ValidateSet('LCMS','WFMS','GWMS')][string]$InstanceShortName)
 
