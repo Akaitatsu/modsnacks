@@ -6,7 +6,7 @@ function New-LodDepositConfig {
     )
     
     $templatePath = "$PSScriptRoot\configtemplates\lod_deposit_template.cfg"
-    $filename = $lodConfig.blockRegistryName.Replace("_ore", "")
+    $filename = $lodConfig.blockRegistryName.Replace("_ore", "").Replace("ore_", "")
     $newConfigPath = "$configPath\adlods\Deposits\$filename.cfg"
     $templateContent = Get-Content $templatePath
     $section = ""
@@ -92,6 +92,7 @@ function Copy-ModConfig {
     $destinationDefaultConfigsPath = "$MinecraftPath\defaultconfigs"
     if (Test-Path $sourceFolder -PathType Container) {
         Copy-Item -Path $sourcePath -Destination $destinationDefaultConfigsPath -Recurse -Force | Out-Null
+        Copy-Item -Path $sourcePath -Destination $destinationConfigPath -Recurse -Force | Out-Null
     }
     # Copy non-standard configuration files
     if ($null -ne $modObject.specialConfigurationTargetPath) {

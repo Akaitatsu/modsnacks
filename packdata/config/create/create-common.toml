@@ -48,7 +48,7 @@
 		[worldgen.v1.zinc_ore]
 			#
 			#Whether to spawn this in your World
-			enable = false
+			enable = true
 			#
 			#Range: > 0
 			clusterSize = 14

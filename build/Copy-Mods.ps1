@@ -25,16 +25,12 @@ function Copy-ModsInList {
 
 Write-Host "  Copying Mods"
 # Prep mods folder
-$targetModsPath = New-DirectoryStructure $MinecraftPath "mods"
+$targetModsPath = New-DirectoryStructure -RootPath $MinecraftPath -RelativeDirectoryStructure "mods" -ClearContents
 Remove-Item ($targetModsPath + "\*.jar")
 # Prep config folder
 if (-not $SkipClearConfigs) {
-    $targetConfigPath = New-DirectoryStructure $MinecraftPath "config"
-    Remove-Item ($targetConfigPath + "\*") -Recurse
-    Get-ChildItem $targetConfigPath -Directory | Remove-Item -Force -Confirm:$false
-    $targetDefaultConfigsPath = New-DirectoryStructure $MinecraftPath "defaultconfigs"
-    Remove-Item ($targetDefaultConfigsPath + "\*") -Recurse
-    Get-ChildItem $targetDefaultConfigsPath -Directory | Remove-Item -Force -Confirm:$false
+    New-DirectoryStructure -RootPath $MinecraftPath -RelativeDirectoryStructure "config" -ClearContents | Out-Null
+    New-DirectoryStructure -RootPath $MinecraftPath -RelativeDirectoryStructure "defaultconfigs" -ClearContents | Out-Null
 }
 # Copy mods and configs
 Copy-ModsInList $InstanceMods $MinecraftPath $targetModsPath

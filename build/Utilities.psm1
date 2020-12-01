@@ -23,18 +23,23 @@ function Test-AllModsInList {
 
 function New-DirectoryStructure {
     param (
-        [string]$rootPath,
-        [string]$relativeDirectoryStructure
+        [string]$RootPath,
+        [string]$RelativeDirectoryStructure,
+        [switch]$ClearContents = $false
     )
-    if ($relativeDirectoryStructure -eq "") {
-        return $rootPath
+    if ($RelativeDirectoryStructure -eq "") {
+        return $RootPath
     }
-    $directoryStructureParts = $relativeDirectoryStructure.Split('\')
-    $newPath = $rootPath
+    $directoryStructureParts = $RelativeDirectoryStructure.Split('\')
+    $newPath = $RootPath
     if ($newPath.EndsWith('\')) { $newPath = $newPath.Substring(0, $newPath.Length) }
     foreach ($directory in $directoryStructureParts) {
         $newPath = "$newPath\$directory"
         if (-not (Test-Path $newPath)) { New-Item -Path $newPath -ItemType Directory | Out-Null }
+    }
+    if ($ClearContents) {
+        Remove-Item ($newPath + "\*") -Recurse
+        Get-ChildItem $newPath -Directory | Remove-Item -Force -Confirm:$false
     }
     return $newPath
 }

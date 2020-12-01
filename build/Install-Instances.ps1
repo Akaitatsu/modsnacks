@@ -18,6 +18,7 @@ if (-not (Test-ModCache)) {
 Write-Host "Verified Mod Cache"
 Import-Module .\dynamicconfig\Create.psm1 -Force
 Import-Module .\dynamicconfig\Druidcraft.psm1 -Force
+Import-Module .\dynamicconfig\KubeJS.psm1 -Force
 Import-Module .\dynamicconfig\RandomPatches.psm1 -Force
 foreach ($instance in $instances) {
     Write-Host ("Installing Instance {0} ({1})" -f $instance.name, $instance.shortName)
@@ -31,12 +32,12 @@ foreach ($instance in $instances) {
     }
     Write-Host "  Generating dynamic configuration files"
     # Prep openloader folder
-    $targetOpenLoaderPath = New-DirectoryStructure $minecraftPath "openloader\data\$($instance.shortName)\data"
-    Remove-Item ($targetOpenLoaderPath + "\*") -Recurse
+    $targetOpenLoaderPath = New-DirectoryStructure -RootPath $minecraftPath -RelativeDirectoryStructure "openloader\data\$($instance.shortName)\data" -ClearContents
     "`{`"pack`":`{`"pack_format`":5,`"description`":`"Recipes and such for $($instance.name)`"`}`}" | Out-File -FilePath "$targetOpenLoaderPath\..\pack.mcmeta" -Encoding ascii
     $modList = $instanceMods.modid
     New-CreateConfig -modList $modList -openloaderPath $targetOpenLoaderPath
     New-DruidcraftConfig -modList $modList -openloaderPath $targetOpenLoaderPath
+    New-KubeJSDynamicScripts -instanceObject $instance -modList $modList -minecraftPath $minecraftPath
     New-RandomPatchesConfig -ModSnackVersion $modSnackInfo.modSnackVersion -InstanceInfo $instance -ConfigPath $configPath
     Write-Host "  Generated dynamic configuration files"
     Write-Host ("Installed Instance {0} ({1})" -f $instance.name, $instance.shortName)

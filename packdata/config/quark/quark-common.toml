@@ -565,7 +565,7 @@
 			Rarity = 4
 			"Min Y Level" = 20
 			"Horizontal Variation" = 9
-			Enabled = true
+			Enabled = false
 			"Max Y Level" = 80
 			"Vertical Size" = 14
 			"Vertical Variation" = 9
@@ -753,7 +753,7 @@
 
 	[world.new_stone_types]
 		"Enable Marble" = true
-		"Enable Jasper" = true
+		"Enable Jasper" = false
 		"Enable Basalt" = true
 		"Enable Slate" = true
 		"Enable Limestone" = true
