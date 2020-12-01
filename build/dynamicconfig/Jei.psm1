@@ -1,10 +1,10 @@
 function New-JeiHideItemScript {
     param (
         [string[]]$modList,
-        [string]$kubejsScriptsPath
+        [string]$kubejsStartupPath
     )
 
-    $jeiHideScriptPath = "$kubejsScriptsPath\jeihideitems.js"
+    $jeiHideScriptPath = "$kubejsStartupPath\jeihideitems.js"
     $configData = Get-JsonAsPSCustomObject -Path "$PSScriptRoot\..\..\packdata\dynamicconfig\duplicateitemhandling.json" | Where-Object { $modList.Contains($_.modid) }
 
     # Write script header

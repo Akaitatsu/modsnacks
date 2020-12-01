@@ -7,6 +7,8 @@ function New-KubeJSDynamicScripts {
         [string[]]$modList,
         [string]$minecraftPath
     )
-    $kubejsScriptPath = New-DirectoryStructure $minecraftPath "\kubejs\data\$($instanceObject.shortName)"
-    New-JeiHideItemScript -modList $modList -kubejsScriptsPath $kubejsScriptPath
+    $kubejsScriptPath = New-DirectoryStructure $minecraftPath "kubejs"
+    $kubejsStartupPath = New-DirectoryStructure $kubejsScriptPath "startup"
+    $kubejsModSnackPath = New-DirectoryStructure $kubejsScriptPath "data\$($instanceObject.shortName)"
+    New-JeiHideItemScript -modList $modList -kubejsStartupPath $kubejsStartupPath
 }
