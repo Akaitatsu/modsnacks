@@ -4,6 +4,7 @@ param (
 Push-Location
 Set-Location $PSScriptRoot
 Import-Module .\Analytics.psm1 -Force
+Import-Module ..\build\Utilities.psm1 -Force
 
 $crafterDumperOutputPath = Get-CrafterDumperOutputPath $InstanceShortName
 $workingDirectory = Get-AnalyticsWorkingDirectory
@@ -31,6 +32,8 @@ foreach ($duplicateItem in $duplicateGroups) {
     }
 }
 $duplicateGroups = $null
+$startCount = $duplicateItems.Count
+Write-Host ("Found {0:n0} duplicate items based on Display Name." -f $startCount) -ForegroundColor Cyan
 # Remove duplicates where all the items belong to the same mod
 $duplicateGroups = $duplicateItems | Group-Object -Property DisplayName
 [Collections.Generic.List[string]]$itemsToDelete = @()
@@ -39,13 +42,26 @@ foreach ($duplicateItem in $duplicateGroups) {
         $itemsToDelete.Add($duplicateItem.Group[0].DisplayName) | Out-Null
     }
 }
-$duplicateItems.Count
 for ($i = $duplicateItems.Count - 1; $i -ge 0; $i--) {
     if ($itemsToDelete.Contains($duplicateItems[$i].DisplayName)) {
         $duplicateItems.RemoveAt($i)
     }
 }
-$duplicateItems.Count
+Write-Host ("Removed {0:n0} duplicates where all items were in the same mod." -f ($startCount - $duplicateItems.Count)) -ForegroundColor Cyan
+$startCount = $duplicateItems.Count
+# Remove duplicates accounted for in configuration
+$duplicateItemHandling = Get-JsonAsPSCustomObject "..\packdata\dynamicconfig\duplicateitemhandling.json"
+foreach ($modHandler in $duplicateItemHandling) {
+    foreach ($itemHandler in $modHandler.items) {
+        #$handledItems = $duplicateItems | Where-Object {$_.ModID -eq $itemHandler.modid -and $_.ItemID -eq $itemHandler.itemid}
+        $handledItems = $duplicateItems.Where( {($_.ModID -eq $modHandler.modid) -and ($_.ItemID -eq $itemHandler.itemid)} )
+        foreach ($handledItem in $handledItems) {
+            $duplicateItems.Remove($handledItem)
+        }
+    }
+}
+Write-Host ("Removed {0:n0} duplicates that are handled in the pack configuration." -f ($startCount - $duplicateItems.Count)) -ForegroundColor Cyan
 $duplicateItems | ConvertTo-Csv -NoTypeInformation | Out-File $duplicatesFilePath -Encoding ascii
+Write-Host ("{0:n0} duplicates remaining. See {1}" -f $duplicateItems.Count, $duplicatesFilePath) -ForegroundColor Cyan
 #if (Test-Path $duplicatesFilePath) { Remove-Item $duplicatesFilePath -Force }
 Pop-Location

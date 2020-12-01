@@ -1,0 +1,222 @@
+[
+    {
+        "modid": "druidcraft",
+        "items": [
+            {
+                "itemid": "amber",
+                "action": "remove",
+                "comment": "silentgens:amber"
+            },
+            {
+                "itemid": "amber_ore",
+                "action": "remove",
+                "comment": "silentgens:amber_ore"
+            },
+            {
+                "itemid": "black_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "blue_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "brown_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "cyan_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "gray_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "green_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "light_blue_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "light_gray_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "lime_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "magenta_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "orange_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "pink_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "purple_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "red_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "white_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "yellow_bedroll",
+                "action": "ignore",
+                "comment": "master"
+            }
+        ]
+    },
+    {
+        "modid": "mysticalworld",
+        "items": [
+            {
+                "itemid": "amethyst",
+                "action": "remove",
+                "comment": "silentgens:amethyst"
+            },
+            {
+                "itemid": "amethyst_ore",
+                "action": "remove",
+                "comment": "silentgens:amethyst_ore"
+            }
+        ]
+    },
+    {
+        "modid": "silentgems",
+        "items": [
+            {
+                "itemid": "amber",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "amber_ore",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "amethyst",
+                "action": "ignore",
+                "comment": "master"
+            },
+            {
+                "itemid": "amethyst_ore",
+                "action": "ignore",
+                "comment": "master"
+            }
+        ]
+    },
+    {
+        "modid": "upgrade_aquatic",
+        "items": [
+            {
+                "itemid": "bedroll_black",
+                "action": "remove",
+                "comment": "druidcraft:black_bedroll"
+            },
+            {
+                "itemid": "bedroll_blue",
+                "action": "remove",
+                "comment": "druidcraft:blue_bedroll"
+            },
+            {
+                "itemid": "bedroll_brown",
+                "action": "remove",
+                "comment": "druidcraft:brown_bedroll"
+            },
+            {
+                "itemid": "bedroll_cyan",
+                "action": "remove",
+                "comment": "druidcraft:cyan_bedroll"
+            },
+            {
+                "itemid": "bedroll_gray",
+                "action": "remove",
+                "comment": "druidcraft:gray_bedroll"
+            },
+            {
+                "itemid": "bedroll_green",
+                "action": "remove",
+                "comment": "druidcraft:green_bedroll"
+            },
+            {
+                "itemid": "bedroll_light_blue",
+                "action": "remove",
+                "comment": "druidcraft:light_blue_bedroll"
+            },
+            {
+                "itemid": "bedroll_light_gray",
+                "action": "remove",
+                "comment": "druidcraft:light_gray_bedroll"
+            },
+            {
+                "itemid": "bedroll_lime",
+                "action": "remove",
+                "comment": "druidcraft:lime_bedroll"
+            },
+            {
+                "itemid": "bedroll_magenta",
+                "action": "remove",
+                "comment": "druidcraft:magenta_bedroll"
+            },
+            {
+                "itemid": "bedroll_orange",
+                "action": "remove",
+                "comment": "druidcraft:orange_bedroll"
+            },
+            {
+                "itemid": "bedroll_pink",
+                "action": "remove",
+                "comment": "druidcraft:pink_bedroll"
+            },
+            {
+                "itemid": "bedroll_purple",
+                "action": "remove",
+                "comment": "druidcraft:purple_bedroll"
+            },
+            {
+                "itemid": "bedroll_red",
+                "action": "remove",
+                "comment": "druidcraft:red_bedroll"
+            },
+            {
+                "itemid": "bedroll_white",
+                "action": "remove",
+                "comment": "druidcraft:white_bedroll"
+            },
+            {
+                "itemid": "bedroll_yellow",
+                "action": "remove",
+                "comment": "druidcraft:yellow_bedroll"
+            }
+        ]
+    }
+]
