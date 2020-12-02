@@ -85,12 +85,17 @@
             {
                 "itemid": "amber",
                 "action": "remove",
-                "replacement": "silentgems:Amber"
+                "replacement": "silentgems:amber"
             },
             {
                 "itemid": "amber_ore",
                 "action": "remove",
-                "replacement": "silentgems:Amber Ore"
+                "replacement": "silentgems:amber_ore"
+            },
+            {
+                "itemid": "amber_block",
+                "action": "remove",
+                "replacement": "silentgems:amber_block"
             },
             {
                 "itemid": "black_bedroll",
