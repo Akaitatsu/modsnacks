@@ -5,17 +5,17 @@
             {
                 "itemid": "flour",
                 "action": "remove",
-                "comment": "pamhc2foodcore:flouritem"
+                "replacement": "pamhc2foodcore:flouritem"
             },
             {
                 "itemid": "gold_dust",
                 "action": "remove",
-                "comment": "mekanism:dust_gold"
+                "replacement": "mekanism:dust_gold"
             },
             {
                 "itemid": "iron_dust",
                 "action": "remove",
-                "comment": "mekanism:dust_iron"
+                "replacement": "mekanism:dust_iron"
             }
         ]
     },
@@ -25,7 +25,7 @@
             {
                 "itemid": "jellyfish_bucket",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             }
         ]
     },
@@ -35,7 +35,7 @@
             {
                 "itemid": "ectoplasm",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             }
         ]
     },
@@ -45,7 +45,7 @@
             {
                 "itemid": "ectoplasm",
                 "action": "remove",
-                "comment": "atum:extoplasm"
+                "replacement": "atum:extoplasm"
             }
         ]
     },
@@ -55,27 +55,27 @@
             {
                 "itemid": "copper_block",
                 "action": "remove",
-                "comment": "mekanism:copper_block"
+                "replacement": "mekanism:copper_block"
             },
             {
                 "itemid": "copper_ingot",
                 "action": "remove",
-                "comment": "mekanism:ingot_copper"
+                "replacement": "mekanism:ingot_copper"
             },
             {
                 "itemid": "copper_nugget",
                 "action": "remove",
-                "comment": "mekanism:nugget_copper"
+                "replacement": "mekanism:nugget_copper"
             },
             {
                 "itemid": "copper_ore",
                 "action": "remove",
-                "comment": "mekanism:copper_ore"
+                "replacement": "mekanism:copper_ore"
             },
             {
                 "itemid": "dough",
                 "action": "remove",
-                "comment": "pamhc2foodcore:doughitem"
+                "replacement": "pamhc2foodcore:doughitem"
             }
         ]
     },
@@ -85,102 +85,102 @@
             {
                 "itemid": "amber",
                 "action": "remove",
-                "comment": "silentgems:Amber"
+                "replacement": "silentgems:Amber"
             },
             {
                 "itemid": "amber_ore",
                 "action": "remove",
-                "comment": "silentgems:Amber Ore"
+                "replacement": "silentgems:Amber Ore"
             },
             {
                 "itemid": "black_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "blue_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "brown_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "cyan_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "gray_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "green_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "light_blue_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "light_gray_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "lime_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "magenta_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "moonstone",
                 "action": "remove",
-                "comment": "silentgems:moonstone"
+                "replacement": "silentgems:moonstone"
             },
             {
                 "itemid": "moonstone_ore",
                 "action": "remove",
-                "comment": "silentgems:moonstone_ore"
+                "replacement": "silentgems:moonstone_ore"
             },
             {
                 "itemid": "orange_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "pink_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "purple_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "red_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "white_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "yellow_bedroll",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             }
         ]
     },
@@ -190,12 +190,12 @@
             {
                 "itemid": "jade",
                 "action": "remove",
-                "comment": "silentgems:jade"
+                "replacement": "silentgems:jade"
             },
             {
                 "itemid": "jade_bricks",
                 "action": "remove",
-                "comment": "silentgems:jade_bricks"
+                "replacement": "silentgems:jade_bricks"
             }
         ]
     },
@@ -205,92 +205,92 @@
             {
                 "itemid": "ingot_copper",
                 "action": "remove",
-                "comment": "mekanism:ingot_copper"
+                "replacement": "mekanism:ingot_copper"
             },
             {
                 "itemid": "nugget_copper",
                 "action": "remove",
-                "comment": "mekanism:nugget_copper"
+                "replacement": "mekanism:nugget_copper"
             },
             {
                 "itemid": "ore_copper",
                 "action": "remove",
-                "comment": "mekanism:copper_ore"
+                "replacement": "mekanism:copper_ore"
             },
             {
                 "itemid": "stick_iron",
                 "action": "remove",
-                "comment": "silentgear:iron_rod"
+                "replacement": "silentgear:iron_rod"
             },
             {
                 "itemid": "ingot_lead",
                 "action": "remove",
-                "comment": "mysticalworld:lead_ingot"
+                "replacement": "mysticalworld:lead_ingot"
             },
             {
                 "itemid": "nugget_lead",
                 "action": "remove",
-                "comment": "mysticalworld:lead_nugget"
+                "replacement": "mysticalworld:lead_nugget"
             },
             {
                 "itemid": "ore_lead",
                 "action": "remove",
-                "comment": "mysticalworld:lead_ore"
+                "replacement": "mysticalworld:lead_ore"
             },
             {
                 "itemid": "slab_storage_lead",
                 "action": "remove",
-                "comment": "mysticalworld:lead_slab"
+                "replacement": "mysticalworld:lead_slab"
             },
             {
                 "itemid": "ingot_silver",
                 "action": "remove",
-                "comment": "silentgems:silver_ingot"
+                "replacement": "silentgems:silver_ingot"
             },
             {
                 "itemid": "nugget_silver",
                 "action": "remove",
-                "comment": "silentgems:silver_nugget"
+                "replacement": "silentgems:silver_nugget"
             },
             {
                 "itemid": "ore_silver",
                 "action": "remove",
-                "comment": "silentgems:silver_ore"
+                "replacement": "silentgems:silver_ore"
             },
             {
                 "itemid": "slab_storage_silver",
                 "action": "remove",
-                "comment": "mysticalworld:silver_slab"
+                "replacement": "mysticalworld:silver_slab"
             },
             {
                 "itemid": "armor_steel_feet",
                 "action": "remove",
-                "comment": "silentgear:boots"
+                "replacement": "silentgear:boots"
             },
             {
                 "itemid": "armor_steel_chest",
                 "action": "remove",
-                "comment": "silentgear:chestplate"
+                "replacement": "silentgear:chestplate"
             },
             {
                 "itemid": "armor_steel_head",
                 "action": "remove",
-                "comment": "silentgear:helmet"
+                "replacement": "silentgear:helmet"
             },
             {
                 "itemid": "ingot_steel",
                 "action": "remove",
-                "comment": "mekanism:ingot_steel"
+                "replacement": "mekanism:ingot_steel"
             },
             {
                 "itemid": "nugget_steel",
                 "action": "remove",
-                "comment": "mekanism:nugget_steel"
+                "replacement": "mekanism:nugget_steel"
             },
             {
                 "itemid": "dust_sulfur",
                 "action": "remove",
-                "comment": "mekanism:dust_sulfur"
+                "replacement": "mekanism:dust_sulfur"
             }
         ]
     },
@@ -300,7 +300,7 @@
             {
                 "itemid": "fried_egg",
                 "action": "remove",
-                "comment": "pamhc2foodcore:friedeggitem"
+                "replacement": "pamhc2foodcore:friedeggitem"
             }
         ]
     },
@@ -310,37 +310,37 @@
             {
                 "itemid": "iron_rod",
                 "action": "remove",
-                "comment": "silentgear:iron_rod"
+                "replacement": "silentgear:iron_rod"
             },
             {
                 "itemid": "steel_block",
                 "action": "remove",
-                "comment": "mekanism:block_steel"
+                "replacement": "mekanism:block_steel"
             },
             {
                 "itemid": "steel_boots",
                 "action": "remove",
-                "comment": "silentgear:boots"
+                "replacement": "silentgear:boots"
             },
             {
                 "itemid": "steel_chestplate",
                 "action": "remove",
-                "comment": "silentgear:chestplate"
+                "replacement": "silentgear:chestplate"
             },
             {
                 "itemid": "steel_helmet",
                 "action": "remove",
-                "comment": "silentgear:helmet"
+                "replacement": "silentgear:helmet"
             },
             {
                 "itemid": "steel_ingot",
                 "action": "remove",
-                "comment": "mekanism:ingot_steel"
+                "replacement": "mekanism:ingot_steel"
             },
             {
                 "itemid": "steel_nugget",
                 "action": "remove",
-                "comment": "mekanism:nugget_steel"
+                "replacement": "mekanism:nugget_steel"
             }
         ]
     },
@@ -350,7 +350,7 @@
             {
                 "itemid": "iron_rod",
                 "action": "remove",
-                "comment": "silentgear:iron_rod"
+                "replacement": "silentgear:iron_rod"
             }
         ]
     },
@@ -360,87 +360,87 @@
             {
                 "itemid": "block_charcoal",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "block_copper",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "dust_copper",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "ingot_copper",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "nugget_copper",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "copper_ore",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "dust_gold",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "dust_iron",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "dust_obsidian",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "block_steel",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "ingot_steel",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "nugget_steel",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "dust_sulfur",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "dust_tin",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "ingot_tin",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "nugget_tin",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "tin_ore",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             }
         ]
     },
@@ -450,137 +450,137 @@
             {
                 "itemid": "amethyst",
                 "action": "remove",
-                "comment": "silentgems:Amethyst"
+                "replacement": "silentgems:Amethyst"
             },
             {
                 "itemid": "amethyst_ore",
                 "action": "remove",
-                "comment": "silentgems:Amethyst Ore"
+                "replacement": "silentgems:Amethyst Ore"
             },
             {
                 "itemid": "copper_block",
                 "action": "remove",
-                "comment": "mekanism:copper_block"
+                "replacement": "mekanism:copper_block"
             },
             {
                 "itemid": "copper_dust",
                 "action": "remove",
-                "comment": "mekanism:copper_dust"
+                "replacement": "mekanism:copper_dust"
             },
             {
                 "itemid": "copper_ingot",
                 "action": "remove",
-                "comment": "mekanism:ingot_copper"
+                "replacement": "mekanism:ingot_copper"
             },
             {
                 "itemid": "copper_nugget",
                 "action": "remove",
-                "comment": "mekanism:nugget_copper"
+                "replacement": "mekanism:nugget_copper"
             },
             {
                 "itemid": "copper_ore",
                 "action": "remove",
-                "comment": "mekanism:copper_ore"
+                "replacement": "mekanism:copper_ore"
             },
             {
                 "itemid": "copper_shovel",
                 "action": "remove",
-                "comment": "silentgear:copper_shovel"
+                "replacement": "silentgear:copper_shovel"
             },
             {
                 "itemid": "gold_dust",
                 "action": "remove",
-                "comment": "mekanism:dust_gold"
+                "replacement": "mekanism:dust_gold"
             },
             {
                 "itemid": "iron_dust",
                 "action": "remove",
-                "comment": "mekanism:dust_iron"
+                "replacement": "mekanism:dust_iron"
             },
             {
                 "itemid": "iron_spear",
                 "action": "remove",
-                "comment": "silentgear:iron_spear"
+                "replacement": "silentgear:iron_spear"
             },
             {
                 "itemid": "lead_ingot",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "lead_nugget",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "lead_ore",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "lead_slab",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "silver_block",
                 "action": "remove",
-                "comment": "occultism:silver_block"
+                "replacement": "occultism:silver_block"
             },
             {
                 "itemid": "silver_dust",
                 "action": "remove",
-                "comment": "occultism:silver_dust"
+                "replacement": "occultism:silver_dust"
             },
             {
                 "itemid": "silver_ingot",
                 "action": "remove",
-                "comment": "silentgems:silver_ingot"
+                "replacement": "silentgems:silver_ingot"
             },
             {
                 "itemid": "silver_nugget",
                 "action": "remove",
-                "comment": "silentgems:silver_nugget"
+                "replacement": "silentgems:silver_nugget"
             },
             {
                 "itemid": "silver_ore",
                 "action": "remove",
-                "comment": "silentgems:silver_ore"
+                "replacement": "silentgems:silver_ore"
             },
             {
                 "itemid": "silver_slab",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "tin_boots",
                 "action": "remove",
-                "comment": "silentgear:boots"
+                "replacement": "silentgear:boots"
             },
             {
                 "itemid": "tin_dust",
                 "action": "remove",
-                "comment": "mekanism:dust_tin"
+                "replacement": "mekanism:dust_tin"
             },
             {
                 "itemid": "tin_ingot",
                 "action": "remove",
-                "comment": "mekanism:ingot_tin"
+                "replacement": "mekanism:ingot_tin"
             },
             {
                 "itemid": "tin_leggings",
                 "action": "remove",
-                "comment": "silentgear:leggings"
+                "replacement": "silentgear:leggings"
             },
             {
                 "itemid": "tin_nugget",
                 "action": "remove",
-                "comment": "mekanism:nugget_tin"
+                "replacement": "mekanism:nugget_tin"
             },
             {
                 "itemid": "tin_ore",
                 "action": "remove",
-                "comment": "mekanism:tin_ore"
+                "replacement": "mekanism:tin_ore"
             }
         ]
     },
@@ -590,67 +590,67 @@
             {
                 "itemid": "copper_block",
                 "action": "remove",
-                "comment": "mekanism:copper_block"
+                "replacement": "mekanism:copper_block"
             },
             {
                 "itemid": "copper_dust",
                 "action": "remove",
-                "comment": "mekanism:copper_dust"
+                "replacement": "mekanism:copper_dust"
             },
             {
                 "itemid": "copper_ingot",
                 "action": "remove",
-                "comment": "mekanism:ingot_copper"
+                "replacement": "mekanism:ingot_copper"
             },
             {
                 "itemid": "copper_nugget",
                 "action": "remove",
-                "comment": "mekanism:nugget_copper"
+                "replacement": "mekanism:nugget_copper"
             },
             {
                 "itemid": "copper_ore",
                 "action": "remove",
-                "comment": "mekanism:copper_ore"
+                "replacement": "mekanism:copper_ore"
             },
             {
                 "itemid": "gold_dust",
                 "action": "remove",
-                "comment": "mekanism:dust_gold"
+                "replacement": "mekanism:dust_gold"
             },
             {
                 "itemid": "iron_dust",
                 "action": "remove",
-                "comment": "mekanism:dust_iron"
+                "replacement": "mekanism:dust_iron"
             },
             {
                 "itemid": "obsidian_dust",
                 "action": "remove",
-                "comment": "mekanism:dust_obsidian"
+                "replacement": "mekanism:dust_obsidian"
             },
             {
                 "itemid": "silver_block",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "silver_dust",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "silver_ingot",
                 "action": "remove",
-                "comment": "silentgems:silver_ingot"
+                "replacement": "silentgems:silver_ingot"
             },
             {
                 "itemid": "silver_nugget",
                 "action": "remove",
-                "comment": "silentgems:silver_nugget"
+                "replacement": "silentgems:silver_nugget"
             },
             {
                 "itemid": "silver_ore",
                 "action": "remove",
-                "comment": "silentgems:silver_ore"
+                "replacement": "silentgems:silver_ore"
             }
         ]
     },
@@ -660,17 +660,17 @@
             {
                 "itemid": "doughitem",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "flouritem",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "friedeggitem",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             }
         ]
     },
@@ -680,22 +680,22 @@
             {
                 "itemid": "charcoal_block",
                 "action": "remove",
-                "comment": "pamhc2foodcore:friedeggitem"
+                "replacement": "pamhc2foodcore:friedeggitem"
             },
             {
                 "itemid": "iron_rod",
                 "action": "remove",
-                "comment": "silentgear:iron_rod"
+                "replacement": "silentgear:iron_rod"
             },
             {
                 "itemid": "jasper",
                 "action": "remove",
-                "comment": "silentgems:jasper"
+                "replacement": "silentgems:jasper"
             },
             {
                 "itemid": "jasper_bricks",
                 "action": "remove",
-                "comment": "silentgems:jasper_bricks"
+                "replacement": "silentgems:jasper_bricks"
             }
         ]
     },
@@ -705,37 +705,37 @@
             {
                 "itemid": "shovel",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "iron_rod",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "spear",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "boots",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "chestplate",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "boots",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "leggings",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             }
         ]
     },
@@ -745,67 +745,67 @@
             {
                 "itemid": "amber",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "amber_ore",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "amethyst",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "amethyst_ore",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "jade",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "jade_bricks",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "jasper",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "jasper_bricks",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "moonstone",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "moonstone_ore",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "silver_ingot",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "silver_nugget",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             },
             {
                 "itemid": "silver_ore",
                 "action": "ignore",
-                "comment": "master"
+                "replacement": "master"
             }
         ]
     },
@@ -815,87 +815,87 @@
             {
                 "itemid": "bedroll_black",
                 "action": "remove",
-                "comment": "silentgems:silver_ore"
+                "replacement": "silentgems:silver_ore"
             },
             {
                 "itemid": "bedroll_blue",
                 "action": "remove",
-                "comment": "mysticalworld:tin_block"
+                "replacement": "mysticalworld:tin_block"
             },
             {
                 "itemid": "bedroll_brown",
                 "action": "remove",
-                "comment": "upgrade_aquatic:bedroll_blue"
+                "replacement": "upgrade_aquatic:bedroll_blue"
             },
             {
                 "itemid": "jellyfish_bucket",
                 "action": "remove",
-                "comment": "mekanism:crystal_tin"
+                "replacement": "mekanism:crystal_tin"
             },
             {
                 "itemid": "bedroll_cyan",
                 "action": "remove",
-                "comment": "upgrade_aquatic:jellyfish_bucket"
+                "replacement": "upgrade_aquatic:jellyfish_bucket"
             },
             {
                 "itemid": "bedroll_gray",
                 "action": "remove",
-                "comment": "mysticalworld:tin_hoe"
+                "replacement": "mysticalworld:tin_hoe"
             },
             {
                 "itemid": "bedroll_green",
                 "action": "remove",
-                "comment": "upgrade_aquatic:bedroll_gray"
+                "replacement": "upgrade_aquatic:bedroll_gray"
             },
             {
                 "itemid": "bedroll_light_blue",
                 "action": "remove",
-                "comment": "mysticalworld:tin_knife"
+                "replacement": "mysticalworld:tin_knife"
             },
             {
                 "itemid": "bedroll_light_gray",
                 "action": "remove",
-                "comment": "upgrade_aquatic:bedroll_light_blue"
+                "replacement": "upgrade_aquatic:bedroll_light_blue"
             },
             {
                 "itemid": "bedroll_lime",
                 "action": "remove",
-                "comment": "upgrade_aquatic:bedroll_light_gray"
+                "replacement": "upgrade_aquatic:bedroll_light_gray"
             },
             {
                 "itemid": "bedroll_magenta",
                 "action": "remove",
-                "comment": "upgrade_aquatic:bedroll_lime"
+                "replacement": "upgrade_aquatic:bedroll_lime"
             },
             {
                 "itemid": "bedroll_orange",
                 "action": "remove",
-                "comment": "upgrade_aquatic:bedroll_magenta"
+                "replacement": "upgrade_aquatic:bedroll_magenta"
             },
             {
                 "itemid": "bedroll_pink",
                 "action": "remove",
-                "comment": "upgrade_aquatic:bedroll_orange"
+                "replacement": "upgrade_aquatic:bedroll_orange"
             },
             {
                 "itemid": "bedroll_purple",
                 "action": "remove",
-                "comment": "minecraft:white_bed"
+                "replacement": "minecraft:white_bed"
             },
             {
                 "itemid": "bedroll_red",
                 "action": "remove",
-                "comment": "upgrade_aquatic:bedroll_purple"
+                "replacement": "upgrade_aquatic:bedroll_purple"
             },
             {
                 "itemid": "bedroll_white",
                 "action": "remove",
-                "comment": "minecraft:yellow_bed"
+                "replacement": "minecraft:yellow_bed"
             },
             {
                 "itemid": "bedroll_yellow",
                 "action": "remove",
-                "comment": "upgrade_aquatic:bedroll_white"
+                "replacement": "upgrade_aquatic:bedroll_white"
             }
         ]
     }
