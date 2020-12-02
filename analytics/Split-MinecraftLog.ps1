@@ -1,7 +1,7 @@
 param (
     [Parameter(Mandatory=$True)][string]$LogFilePath
 )
-
+Push-Location
 Set-Location $PSScriptRoot
 
 Import-Module .\Analytics.psm1 -Force
@@ -585,3 +585,4 @@ $endTime = Get-Date
 (Get-ModIdMapping).GetEnumerator() | Select-Object -Property Key,Value | Export-Csv -Path "$DestinationDirectory\!modlist.log" -NoTypeInformation -Encoding ascii
 $duration = New-TimeSpan -Start $startTime -End $endTime
 "Processed {0:n0} lines and wrote {1:n0} lines in {2:g}" -f $processedLineCount, $writtenLineCount, $duration
+Pop-Location
