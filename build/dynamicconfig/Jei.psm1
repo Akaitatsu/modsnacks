@@ -14,7 +14,7 @@ function New-JeiHideItemScript {
     foreach ($modGroup in $configData) {
         $itemsToHide = $modGroup.items | Where-Object -Property action -EQ -Value remove
         foreach ($itemToHide in $itemsToHide) {
-            "      event.hide('$($modGroup.modid):$($itemToHide.itemid)') // $($itemToHide.comment)" | Out-File $jeiHideScriptPath -Encoding ascii -Append
+            "      event.hide('$($modGroup.modid):$($itemToHide.itemid)') // $($itemToHide.replacement)" | Out-File $jeiHideScriptPath -Encoding ascii -Append
         }
     }
 
